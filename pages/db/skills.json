@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "name": "HTML",
+    "img": "/logos/html.png"
+  },
+  {
+    "id": 1,
+    "name": "CSS",
+    "img": "/logos/css.png"
+  },
+  {
+    "id": 2,
+    "name": "Sass",
+    "img": "/logos/sass.png"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "img": "/logos/js.png"
+  },
+  {
+    "id": 4,
+    "name": "React",
+    "img": "/logos/react.png"
+  }
+]
