@@ -14,11 +14,6 @@
     font-family: 'League Gothic', sans-serif;
   }
 
-  main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
 }
 
 @media (prefers-color-scheme: dark) {

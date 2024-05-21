@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import { Header } from './components/Header/Header'
+import { Footer } from './components/Footer/Footer'
 
 export default function Document() {
   return (
@@ -15,6 +16,7 @@ export default function Document() {
         <Header />
         <Main />
         <NextScript />
+        <Footer />
       </body>
     </Html>
   )

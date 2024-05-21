@@ -10,7 +10,7 @@ export function Skills() {
         <h2 className="text-4xl mt-2 mb-24 text-center text-main-color">
           COMPÉTENCES
         </h2>
-        <div className="flex justify-around md:flex-row flex-col gap-4">
+        <div className="flex justify-around md:flex-row flex-col gap-16">
           <article className="bg-white w-96 drop-shadow-lg rounded-3xl py-12">
             <div className="flex justify-center items-start">
               <Image
@@ -51,7 +51,7 @@ export function Skills() {
           </article>
         </div>
         <div className="text-center">
-          <button className="pointer-events-auto rounded-3xl bg-secondary-color mt-24 px-3 py-1 sm:text-xs md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white">
+          <button className="pointer-events-auto rounded-3xl bg-secondary-color mt-20 px-3 py-1 sm:text-xs md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white">
             <a href="./CV_Nelly_Bise.pdf" download>
               Télécharger mon CV
             </a>

@@ -1,0 +1,24 @@
+import mail from '../../src/mail.png'
+import linkedin from '../../src/linkedin.png'
+import github from '../../src/github.png'
+import Image from 'next/image'
+
+export function Footer() {
+  return (
+    <footer className="bg-light-color">
+      <div className="max-w-7xl m-auto flex justify-between items-center h-24 pl-2 pr-2">
+        <p>Réalisé par Nelly Bise </p>
+        <div className="flex gap-4">
+          <Image src={mail} alt="lien vers GitHub" width={40} />
+
+          <a href="https://github.com/NellyBise">
+            <Image src={github} alt="lien vers GitHub" width={40} />
+          </a>
+          <a href="https://www.linkedin.com/in/nelly-bise/">
+            <Image src={linkedin} alt="lien vers GitHub" width={40} />
+          </a>
+        </div>
+      </div>
+    </footer>
+  )
+}
