@@ -29,9 +29,12 @@ export function About() {
             la recherche de nouveaux défis et de projets passionnants, alors
             n'hésitez pas à me contacter.
           </p>
-          <button className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color mt-20 px-3 py-1 sm:text-xs md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white">
+          <a
+            className="w-1/3 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color mt-20 px-3 py-1 sm:text-xs md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
+            href="mailto:nelly.bise@free.fr"
+          >
             Contactez-moi
-          </button>
+          </a>
         </div>
         <div className="md:w-2/5"></div>
       </div>
