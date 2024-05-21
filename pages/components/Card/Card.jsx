@@ -7,7 +7,7 @@ function Card() {
       >
         <div className="absolute opacity-0 duration-500 hover:opacity-100 flex flex-col justify-center items-center rounded-xl bg-secondary-color/80 h-72 w-full">
           <h2 className="block relative text-4xl text-main-color">
-            PROJET D'ÉTUDES KASA
+            PROJET D&rsquo;ÉTUDES KASA
           </h2>
           <p className="absolute bottom-2 right-2 text-main-color">
             Voir plus -&gt;

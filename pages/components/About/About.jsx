@@ -22,13 +22,13 @@ function About() {
       <div className="flex flex-col items-center mt-12 md:mt-6 md:flex-row md:justify-center">
         <div className="flex flex-col md:w-2/5">
           <p className="leading-loose  sm:text-xs md:text-xl">
-            Passionnée par l'amélioration continue et la productivité, je me
-            suis spécialisée dans le développement web Front-End. J'apprécie
-            particulièrement la modularité de React et la technicité de
-            JavaScript. Dans mon travail, je m'efforce toujours de garantir la
-            maintenabilité et l'accessibilité de mes projets. Je suis toujours à
-            la recherche de nouveaux défis et de projets passionnants, alors
-            n'hésitez pas à me contacter.
+            Passionnée par l&rsquo;amélioration continue et la productivité, je
+            me suis spécialisée dans le développement web Front-End.
+            J&rsquo;apprécie particulièrement la modularité de React et la
+            technicité de JavaScript. Dans mon travail, je m&rsquo;efforce
+            toujours de garantir la maintenabilité et l&rsquo;accessibilité de
+            mes projets. Je suis toujours à la recherche de nouveaux défis et de
+            projets passionnants, alors n&rsquo;hésitez pas à me contacter.
           </p>
           <a
             className="w-1/3 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color mt-20 px-3 py-1 sm:text-xs md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
