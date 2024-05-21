@@ -13,10 +13,13 @@ module.exports = {
       xl: '1280px',
     },
     colors: {
-      'main-color': '#00C2B3',
-      'secondary-color': '#6CDCD3FF',
-      'light-color': '#D9F6F4FF',
+      'main-color': '#201087',
+      'secondary-color': '#F5A623',
+      'light-color': '#F3F2F8FF',
+      white: '#FFFFFF',
+      transparent: 'transparent',
     },
+    darkMode: 'selector',
   },
   plugins: [],
 }

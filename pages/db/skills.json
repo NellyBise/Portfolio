@@ -23,5 +23,25 @@
     "id": 4,
     "name": "React",
     "img": "/logos/react.png"
+  },
+  {
+    "id": 5,
+    "name": "HTML",
+    "img": "/logos/html.png"
+  },
+  {
+    "id": 6,
+    "name": "CSS",
+    "img": "/logos/css.png"
+  },
+  {
+    "id": 7,
+    "name": "Sass",
+    "img": "/logos/sass.png"
+  },
+  {
+    "id": 8,
+    "name": "JavaScript",
+    "img": "/logos/js.png"
   }
 ]

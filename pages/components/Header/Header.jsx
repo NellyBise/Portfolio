@@ -3,15 +3,36 @@ import Logo from '../../src/logo.png'
 
 export function Header() {
   return (
-    <header className="fixed w-full bg-secondary-color z-10">
+    <header className="fixed w-full bg-light-color z-10">
       <div className="max-w-7xl m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-xl">
-        <Image width={60} src={Logo} alt="logo" />
+        <Image height={50} src={Logo} alt="logo" />
 
         <nav>
-          <ul className="flex space-x-4 md:space-x-8">
-            <li>COMPÉTENCES</li>
-            <li>PROJETS</li>
-            <li>CONTACT</li>
+          <ul className="flex space-x-4 md:space-x-8 text-main-color">
+            <li className="hover:font-bold">
+              <a
+                className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
+                href="#skills"
+              >
+                COMPÉTENCES
+              </a>{' '}
+            </li>
+            <li className="hover:font-bold">
+              <a
+                className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
+                href="#projects"
+              >
+                PROJETS
+              </a>{' '}
+            </li>
+            <li className="hover:font-bold border-b-4 border-transparent hover:border-secondary-color">
+              <a
+                className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
+                href="#contact"
+              >
+                CONTACT
+              </a>{' '}
+            </li>
           </ul>
         </nav>
       </div>

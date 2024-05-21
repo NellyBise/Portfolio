@@ -3,17 +3,22 @@ import photo from '../../src/photo.png'
 
 export function About() {
   return (
-    <section className="min-h-screen pt-48">
+    <section className="min-h-screen pt-48 ">
       <div className="flex flex-col items-center md:flex-row md:justify-around">
-        <div className="md:w-2/5">
-          <h1 className="font-bold leading-snug text-7xl">Nelly Bise</h1>
-          <h2 className="text-4xl">DÉVELOPPEUSE FRONT-END</h2>
+        <div className="md:w-2/5 text-center md:text-left text-main-color">
+          <h1 className="leading-snug text-7xl">Nelly Bise</h1>
+          <h2 className="text-4xl mb-12 md:mb-6">DÉVELOPPEUSE FRONT-END</h2>
         </div>
-        <div className="md:w-2/5 flex justify-center">
-          <Image src={photo} alt="portrait" width={200} />
+        <div className="md:w-2/5 md:relative flex justify-center md:self-start">
+          <Image
+            className="md:absolute"
+            src={photo}
+            alt="portrait"
+            width={300}
+          />
         </div>
       </div>
-      <div className="flex flex-col items-center md:flex-row md:justify-around">
+      <div className="flex flex-col items-center mt-12 md:mt-6 md:flex-row md:justify-around">
         <p className="leading-loose md:w-2/5 sm:text-xs md:text-xl">
           Passionnée par l’amélioration continue et la productivité, je me suis
           naturellement tournée vers le développement web et plus

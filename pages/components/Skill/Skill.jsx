@@ -4,13 +4,13 @@ export function Skill({ image, name }) {
   return (
     <div className="flex flex-col items-center">
       <Image
-        className="flex items-center h-16 w-auto p-2"
+        className="flex items-center h-14 w-auto p-2 mx-2"
         src={image}
         alt={name}
-        height={50}
-        width={50}
+        height={40}
+        width={40}
       />
-      <p>{name}</p>
+      <p className="mb-6">{name}</p>
     </div>
   )
 }
