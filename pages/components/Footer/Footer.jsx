@@ -3,7 +3,7 @@ import linkedin from '../../src/linkedin.png'
 import github from '../../src/github.png'
 import Image from 'next/image'
 
-export function Footer() {
+function Footer() {
   return (
     <footer className="bg-light-color">
       <div className="max-w-7xl m-auto flex justify-between items-center h-24 pl-2 pr-2">
@@ -23,3 +23,5 @@ export function Footer() {
     </footer>
   )
 }
+
+export default Footer

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export function Skill({ image, name }) {
+function Skill({ image, name }) {
   return (
     <div className="flex flex-col items-center">
       <Image
@@ -14,3 +14,5 @@ export function Skill({ image, name }) {
     </div>
   )
 }
+
+export default Skill

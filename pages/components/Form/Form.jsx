@@ -1,18 +1,18 @@
-export function Form() {
+function Form() {
   return (
     <section className="flex flex-col items-center py-24" id="contact">
       <h2 className="text-4xl mt-2 mb-10 text-center text-main-color">
         CONTACTEZ-MOI
       </h2>
       <form className="mt-8 flex flex-col w-2/5">
-        <label for="email">Email</label>
+        <label htmlFor="email">Email</label>
         <input
           className="p-2 drop-shadow-lg rounded-l"
           id="email"
           type="email"
           placeholder="email@mail.com"
         ></input>
-        <label className="mt-8" for="message">
+        <label className="mt-8" htmlFor="message">
           Votre message
         </label>
         <textarea
@@ -26,3 +26,5 @@ export function Form() {
     </section>
   )
 }
+
+export default Form

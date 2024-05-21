@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Logo from '../../src/logo.png'
 
-export function Header() {
+function Header() {
   return (
     <header className="fixed w-full bg-white drop-shadow-lg z-10">
       <div className="max-w-7xl m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-xl">
@@ -39,3 +39,5 @@ export function Header() {
     </header>
   )
 }
+
+export default Header

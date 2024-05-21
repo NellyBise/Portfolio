@@ -1,9 +1,9 @@
 import skills from '../../db/Skills.json'
-import { Skill } from '../Skill/Skill'
+import Skill from '../Skill/Skill'
 import puce from '../../src/puce3.png'
 import Image from 'next/image'
 
-export function Skills() {
+function Skills() {
   return (
     <section id="skills" className="bg-light-color py-24">
       <div className="w-4/5 mx-auto py-4 px-6 flex flex-col items-center">
@@ -26,7 +26,11 @@ export function Skills() {
             </div>
             <div className="flex flex-wrap px-6 justify-center">
               {skills.map((skill) => (
-                <Skill image={skill.img} name={skill.name} key={skill.name} />
+                <Skill
+                  image={skill.img}
+                  name={skill.name}
+                  key={`${skill.name}-${skill.id}`}
+                />
               ))}
             </div>
           </article>
@@ -61,3 +65,5 @@ export function Skills() {
     </section>
   )
 }
+
+export default Skills

@@ -26,22 +26,22 @@
   },
   {
     "id": 5,
-    "name": "HTML",
+    "name": "HTML2",
     "img": "/logos/html.png"
   },
   {
     "id": 6,
-    "name": "CSS",
+    "name": "CSS2",
     "img": "/logos/css.png"
   },
   {
     "id": 7,
-    "name": "Sass",
+    "name": "Sass2",
     "img": "/logos/sass.png"
   },
   {
     "id": 8,
-    "name": "JavaScript",
+    "name": "JavaScript2",
     "img": "/logos/js.png"
   }
 ]

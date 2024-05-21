@@ -1,6 +1,6 @@
-import { Card } from '../Card/Card'
+import Card from '../Card/Card'
 
-export function Projects() {
+function Projects() {
   return (
     <section id="projects" className="py-24 max-w-screen-xl m-auto">
       <h2 className="text-4xl mt-2 mb-16 text-center text-main-color">
@@ -15,3 +15,5 @@ export function Projects() {
     </section>
   )
 }
+
+export default Projects
