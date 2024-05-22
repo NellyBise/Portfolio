@@ -5,28 +5,29 @@ import { useParams } from 'next/navigation'
 import Tags from '@/app/components/Tags'
 import Title3 from '@/app/components/Title3'
 import Slideshow from '@/app/components/Slideshow'
+import Error from './Error'
 import github from '../src/github.png'
 import Image from 'next/image'
 
 export default function Project() {
   const { id } = useParams()
   const projectId = parseInt(id, 10)
-
   const project2 = projects?.find((project) => project.id === projectId)
-  return (
+
+  return project2 ? (
     <>
       <section className="max-w-7xl mx-auto mt-12">
         <a
-          className="text-3xl font-bold text-main-color p-12"
+          className="text-3xl font-bold text-main-color p-6 md:p-12"
           href="/#projects"
         >
           &lt;-
         </a>
-        <h2 className="uppercase text-4xl my-20 text-center text-main-color">
+        <h2 className="uppercase text-4xl mt-6 mb-20 text-center text-main-color">
           {project2.name}
         </h2>
-        <div className="flex justify-around">
-          <div className="w-2/5 flex flex-col">
+        <div className="flex flex-col md:flex-row justify-around p-6 md:p-0">
+          <div className="md:w-2/5 flex flex-col">
             <Title3 title="LA MISSION" />
             <p className="pl-6 my-8">{project2.description}</p>
             <Title3 title="TECHNOLOGIES" />
@@ -44,24 +45,25 @@ export default function Project() {
                 ''
               )}
               {project2.github ? (
-                <a href={project2.link} target="_blank">
-                  <Image
-                    className="hover:125"
-                    src={github}
-                    alt="lien vers GitHub"
-                    width={30}
-                  />
+                <a
+                  className="hover:scale-125"
+                  href={project2.github}
+                  target="_blank"
+                >
+                  <Image src={github} alt="lien vers GitHub" width={35} />
                 </a>
               ) : (
                 ''
               )}
             </div>
           </div>
-          <div className="w-2/5 ">
+          <div className="md:w-2/5">
             <Slideshow pictures={project2.images} />
           </div>
         </div>
       </section>
     </>
+  ) : (
+    <Error />
   )
 }

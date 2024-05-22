@@ -25,7 +25,7 @@ function Header() {
                 PROJETS
               </a>{' '}
             </li>
-            <li className="hover:font-bold border-b-4 border-transparent hover:border-secondary-color">
+            <li className="hover:font-bold">
               <a
                 className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                 href="#contact"

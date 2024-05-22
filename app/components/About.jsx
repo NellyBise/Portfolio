@@ -3,7 +3,7 @@ import photo from '../src/photo.png'
 
 function About() {
   return (
-    <section className="min-h-screen pt-24 md:pt-48 ">
+    <section className="min-h-screen pt-24 md:pt-36 ">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center md:flex-row md:justify-around">
           <div className="md:w-2/5 text-center md:text-left text-main-color dark:text-secondary-color">
