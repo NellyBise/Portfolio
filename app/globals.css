@@ -25,6 +25,12 @@ h3 {
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-league);
+  }
 }
 
 body {

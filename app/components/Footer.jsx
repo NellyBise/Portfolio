@@ -1,6 +1,6 @@
-import mail from '../../src/mail.png'
-import linkedin from '../../src/linkedin.png'
-import github from '../../src/github.png'
+import mail from '../src/mail.png'
+import linkedin from '../src/linkedin.png'
+import github from '../src/github.png'
 import Image from 'next/image'
 
 function Footer() {
