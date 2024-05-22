@@ -3,19 +3,21 @@
 @tailwind utilities;
 
 
-@layer base {
-  :root {
-    background: #FFFfff;
-    font-family: 'Inter', sans-serif;
-  }
 
-  h1,
-  h2,
-  h3 {
-    font-family: 'League Gothic', sans-serif;
-  }
 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0;
+  font-family: var(--font-inter);
 }
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-league);
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {

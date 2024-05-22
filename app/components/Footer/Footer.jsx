@@ -12,10 +12,10 @@ function Footer() {
           <a href="mailto:nelly.bise@free.fr">
             <Image src={mail} alt="lien vers GitHub" width={40} />
           </a>
-          <a href="https://github.com/NellyBise">
+          <a href="https://github.com/NellyBise" target="_blank">
             <Image src={github} alt="lien vers GitHub" width={40} />
           </a>
-          <a href="https://www.linkedin.com/in/nelly-bise/">
+          <a href="https://www.linkedin.com/in/nelly-bise/" target="_blank">
             <Image src={linkedin} alt="lien vers GitHub" width={40} />
           </a>
         </div>
