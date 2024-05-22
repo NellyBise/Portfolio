@@ -8,12 +8,12 @@ function Skills() {
       id="skills"
       className="bg-light-color dark:bg-dark-color py-12 md:py-24"
     >
-      <div className="w-4/5 mx-auto md:py-4 px-6 flex flex-col items-center">
+      <div className="md:w-4/5 mx-auto md:py-4 px-6 flex flex-col items-center">
         <h2 className="text-4xl mt-2 mb-12 md:mb-24 text-center text-main-color dark:text-secondary-color">
           COMPÉTENCES
         </h2>
         <div className="flex justify-around md:flex-row flex-col gap-6 md:gap-16">
-          <article className="bg-white dark:bg-light-color dark:text-main-color w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
+          <article className="bg-white dark:bg-light-color dark:text-main-color md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <Title3 title="TECHNOLOGIES" />
             <div className="flex flex-wrap mt-16 px-6 justify-center">
               {skills.map((skill) => (
@@ -25,7 +25,7 @@ function Skills() {
               ))}
             </div>
           </article>
-          <article className="bg-white dark:bg-light-color dark:text-main-color w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
+          <article className="bg-white dark:bg-light-color dark:text-main-color md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <Title3 title="LOGICIELS" />
             <div className="flex flex-wrap mt-16 px-6 justify-center">
               {skills.map((skill) => (
