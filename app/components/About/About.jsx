@@ -3,16 +3,16 @@ import photo from '../../src/photo.png'
 
 function About() {
   return (
-    <section className="min-h-screen pt-48 ">
-      <div className="max-w-7xl m-auto">
+    <section className="min-h-screen pt-24 md:pt-48 ">
+      <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center md:flex-row md:justify-around">
           <div className="md:w-2/5 text-center md:text-left text-main-color">
             <h1 className="leading-snug text-7xl">Nelly Bise</h1>
             <h2 className="text-4xl mb-12 md:mb-6">DÉVELOPPEUSE FRONT-END</h2>
           </div>
-          <div className="md:w-2/5 md:relative flex justify-center md:self-start">
+          <div className="w-1/2 md:w-2/5 md:relative flex justify-center md:self-start">
             <Image
-              className="md:absolute"
+              className="md:absolute md:top-10"
               src={photo}
               alt="portrait"
               width={300}
@@ -32,7 +32,7 @@ function About() {
               de projets passionnants, alors n&rsquo;hésitez pas à me contacter.
             </p>
             <a
-              className="w-1/3 md:w-1/2 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color mt-20 px-3 py-1 sm:text-s md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
+              className="w-1/2 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color my-12 md:mt-20 px-3 py-1 text-s md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
               href="mailto:nelly.bise@free.fr"
             >
               Contactez-moi
