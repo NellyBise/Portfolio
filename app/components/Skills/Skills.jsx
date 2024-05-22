@@ -1,4 +1,4 @@
-import skills from '../../db/Skills.json'
+import skills from '../../db/TechnologySkills.json'
 import Skill from '../Skill/Skill'
 import puce from '../../src/puce3.png'
 import Image from 'next/image'
