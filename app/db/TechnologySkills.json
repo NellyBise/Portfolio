@@ -2,46 +2,46 @@
   {
     "id": 0,
     "name": "HTML",
-    "img": "/logos/html.png"
+    "img": "/logos/HTML.png"
   },
   {
     "id": 1,
     "name": "CSS",
-    "img": "/logos/css.png"
+    "img": "/logos/CSS.png"
   },
   {
     "id": 2,
     "name": "Sass",
-    "img": "/logos/sass.png"
+    "img": "/logos/Sass.png"
   },
   {
     "id": 3,
     "name": "JavaScript",
-    "img": "/logos/js.png"
+    "img": "/logos/JS.png"
   },
   {
     "id": 4,
     "name": "React",
-    "img": "/logos/react.png"
+    "img": "/logos/React.png"
   },
   {
     "id": 5,
     "name": "HTML2",
-    "img": "/logos/html.png"
+    "img": "/logos/HTML.png"
   },
   {
     "id": 6,
     "name": "CSS2",
-    "img": "/logos/css.png"
+    "img": "/logos/CSS.png"
   },
   {
     "id": 7,
     "name": "Sass2",
-    "img": "/logos/sass.png"
+    "img": "/logos/Sass.png"
   },
   {
     "id": 8,
     "name": "JavaScript2",
-    "img": "/logos/js.png"
+    "img": "/logos/JS.png"
   }
 ]

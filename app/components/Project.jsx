@@ -15,8 +15,13 @@ export default function Project() {
   const project2 = projects?.find((project) => project.id === projectId)
   return (
     <>
-      <section className="max-w-7xl mx-auto">
-        <div>retour</div>
+      <section className="max-w-7xl mx-auto mt-12">
+        <a
+          className="text-3xl font-bold text-main-color p-12"
+          href="/#projects"
+        >
+          &lt;-
+        </a>
         <h2 className="uppercase text-4xl my-20 text-center text-main-color">
           {project2.name}
         </h2>
@@ -40,7 +45,12 @@ export default function Project() {
               )}
               {project2.github ? (
                 <a href={project2.link} target="_blank">
-                  <Image src={github} alt="lien vers GitHub" width={30} />
+                  <Image
+                    className="hover:125"
+                    src={github}
+                    alt="lien vers GitHub"
+                    width={30}
+                  />
                 </a>
               ) : (
                 ''

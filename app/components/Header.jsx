@@ -12,14 +12,6 @@ function Header() {
             <li className="hover:font-bold">
               <a
                 className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
-                href="/"
-              >
-                ACCUEIL
-              </a>{' '}
-            </li>
-            <li className="hover:font-bold">
-              <a
-                className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                 href="#skills"
               >
                 COMPÉTENCES

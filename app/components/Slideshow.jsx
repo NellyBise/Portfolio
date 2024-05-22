@@ -17,7 +17,7 @@ function Slideshow({ pictures }) {
   }
 
   return (
-    <article className="relative w-full h-auto drop-shadow-lg rounded-3xl overflow-hidden">
+    <article className="relative w-full h-auto drop-shadow-lg rounded-xl overflow-hidden">
       <div className="flex min-w-full duration-500" style={containerStyle}>
         {pictures.map((picture, index) => (
           <div className="min-w-full" key={index}>
