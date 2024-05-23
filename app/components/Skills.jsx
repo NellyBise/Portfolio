@@ -1,8 +1,7 @@
-import skills from '../db/TechnologySkills.json'
 import Skill from './Skill'
 import Title3 from './Title3'
 
-function Skills() {
+function Skills({ allTechSkills, allToolSkills }) {
   return (
     <section
       id="skills"
@@ -16,21 +15,23 @@ function Skills() {
           <article className="bg-white dark:bg-light-color dark:text-main-color md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <Title3 title="TECHNOLOGIES" />
             <div className="flex flex-wrap mt-16 px-6 justify-center">
-              {skills.map((skill) => (
-                <Skill
-                  image={skill.img}
-                  name={skill.name}
-                  key={`${skill.name}-${skill.id}`}
-                />
-              ))}
+              {allTechSkills &&
+                allTechSkills.map((skill) => (
+                  <Skill
+                    image={skill.img}
+                    name={skill.name}
+                    key={`${skill.name}-${skill.id}`}
+                  />
+                ))}
             </div>
           </article>
           <article className="bg-white dark:bg-light-color dark:text-main-color md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
-            <Title3 title="LOGICIELS" />
+            <Title3 title="OUTILS" />
             <div className="flex flex-wrap mt-16 px-6 justify-center">
-              {skills.map((skill) => (
-                <Skill image={skill.img} name={skill.name} key={skill.name} />
-              ))}
+              {allToolSkills &&
+                allToolSkills.map((skill) => (
+                  <Skill image={skill.img} name={skill.name} key={skill.name} />
+                ))}
             </div>
           </article>
         </div>
