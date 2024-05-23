@@ -1,4 +1,4 @@
-import error from '../src/error.png'
+import error from '../src/Error.png'
 import Image from 'next/image'
 
 export default function Error() {
