@@ -6,7 +6,8 @@ import Form from './components/Form'
 import Footer from './components/Footer'
 
 export default async function Home() {
-  const res = await fetch('http://localhost:3000/api/techSkills', {
+  const apiUrl = process.env.API_URL
+  const res = await fetch(`${apiUrl}/techSkills`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -18,7 +19,7 @@ export default async function Home() {
   }
   const allTechSkills = await res.json()
 
-  const res2 = await fetch('http://localhost:3000/api/toolSkills', {
+  const res2 = await fetch(`${apiUrl}/toolSkills`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

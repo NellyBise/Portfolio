@@ -18,12 +18,12 @@ export default function Project() {
     <>
       <section className="max-w-7xl mx-auto mt-12">
         <a
-          className="text-3xl font-bold text-main-color p-6 md:p-12"
+          className="text-3xl font-bold text-main-color dark:text-secondary-color p-6 md:p-12"
           href="/#projects"
         >
           &lt;-
         </a>
-        <h2 className="uppercase text-4xl mt-6 mb-20 text-center text-main-color">
+        <h2 className="uppercase text-4xl mt-6 mb-20 text-center text-main-color dark:text-secondary-color">
           {project2.name}
         </h2>
         <div className="flex flex-col md:flex-row justify-around p-6 md:p-0">

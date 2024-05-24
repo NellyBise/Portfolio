@@ -11,7 +11,9 @@ export default function Title3({ title }) {
         width={30}
         height={30}
       ></Image>
-      <h3 className="text-3xl text-center text-main-color">{title}</h3>
+      <h3 className="text-3xl text-center text-main-color dark:text-secondary-color">
+        {title}
+      </h3>
     </div>
   )
 }
