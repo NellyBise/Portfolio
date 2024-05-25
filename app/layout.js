@@ -21,7 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${inter.variable} ${league.variable}`}>
-      <body>{children}</body>
+      <body className="flex flex-col justify-between min-h-screen">
+        {children}
+      </body>
     </html>
   )
 }
