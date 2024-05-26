@@ -7,6 +7,7 @@ import Title3 from '@/app/components/Title3'
 import Slideshow from '@/app/components/Slideshow'
 import Error from './Error'
 import github from '../src/github.png'
+import githubDark from '../src/github_dark.png'
 import Image from 'next/image'
 
 export default function Project() {
@@ -50,7 +51,18 @@ export default function Project() {
                   href={project2.github}
                   target="_blank"
                 >
-                  <Image src={github} alt="lien vers GitHub" width={35} />
+                  <Image
+                    className="block dark:hidden"
+                    src={github}
+                    alt="lien vers GitHub"
+                    width={35}
+                  />
+                  <Image
+                    className="hidden dark:block"
+                    src={githubDark}
+                    alt="lien vers GitHub"
+                    width={35}
+                  />
                 </a>
               ) : (
                 ''

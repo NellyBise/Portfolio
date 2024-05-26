@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter, League_Gothic } from 'next/font/google'
+import { DarkModeProvider } from './contexts/Darkmode'
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -20,10 +21,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${league.variable}`}>
-      <body className="flex flex-col justify-between min-h-screen">
-        {children}
-      </body>
-    </html>
+    <DarkModeProvider>
+      <html lang="fr" className={`${inter.variable} ${league.variable}`}>
+        <body className="flex flex-col justify-between min-h-screen">
+          {children}
+        </body>
+      </html>
+    </DarkModeProvider>
   )
 }
