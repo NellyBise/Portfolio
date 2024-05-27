@@ -12,7 +12,7 @@ function Skills({ allTechSkills, allToolSkills }) {
           COMPÉTENCES
         </h2>
         <div className="flex justify-around md:flex-row flex-col gap-6 md:gap-16">
-          <article className="bg-white dark:bg-main-color md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
+          <article className="bg-white dark:bg-grey md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <Title3 title="TECHNOLOGIES" />
             <div className="flex flex-wrap mt-16 px-6 justify-center">
               {allTechSkills &&
@@ -25,7 +25,7 @@ function Skills({ allTechSkills, allToolSkills }) {
                 ))}
             </div>
           </article>
-          <article className="bg-white dark:bg-main-color md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
+          <article className="bg-white dark:bg-grey md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <Title3 title="OUTILS" />
             <div className="flex flex-wrap mt-16 px-6 justify-center">
               {allToolSkills &&
@@ -36,7 +36,7 @@ function Skills({ allTechSkills, allToolSkills }) {
           </article>
         </div>
         <div className="text-center">
-          <button className="pointer-events-auto rounded-3xl bg-secondary-color mt-12 md:mt-20 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white">
+          <button className="pointer-events-auto rounded-3xl bg-secondary-color mt-12 md:mt-20 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white dark:hover:text-white">
             <a href="./CV_Nelly_Bise.pdf" download>
               Télécharger mon CV
             </a>

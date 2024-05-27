@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 function LoginForm() {
   const router = useRouter()
-  const apiUrl = process.env.API_URL
+  const apiUrl = 'http://localhost:3000'
   const [formData, setFormData] = useState({})
 
   const handleChange = (event) => {
@@ -70,6 +70,7 @@ function LoginForm() {
           value={formData.password || ''}
           name="password"
           placeholder="password"
+          autoComplete="current-password"
           onChange={handleChange}
         ></input>
         <button

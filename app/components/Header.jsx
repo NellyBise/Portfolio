@@ -15,18 +15,20 @@ function Header() {
     <>
       <header className="fixed w-full bg-white dark:bg-dark-color drop-shadow-lg z-20">
         <div className="max-w-7xl m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-xl">
-          <Image
-            className="block dark:hidden"
-            height={50}
-            src={Logo}
-            alt="logo"
-          />
-          <Image
-            className="hidden dark:block"
-            height={50}
-            src={LogoDark}
-            alt="logo"
-          />
+          <a href="/">
+            <Image
+              className="block dark:hidden"
+              height={50}
+              src={Logo}
+              alt="logo"
+            />
+            <Image
+              className="hidden dark:block"
+              height={50}
+              src={LogoDark}
+              alt="logo"
+            />
+          </a>
           <nav className="hidden h-14 md:flex space-x-4 md:space-x-8 text-main-color dark:text-white">
             <ul className="flex items-center space-x-4 md:space-x-8 text-main-color dark:text-white">
               <li className="hover:font-bold">
@@ -128,6 +130,7 @@ function Header() {
               <a
                 className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                 href="/#skills"
+                onClick={toggle}
               >
                 COMPÉTENCES
               </a>
@@ -136,6 +139,7 @@ function Header() {
               <a
                 className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                 href="/#projects"
+                onClick={toggle}
               >
                 PROJETS
               </a>
@@ -144,6 +148,7 @@ function Header() {
               <a
                 className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                 href="/#contact"
+                onClick={toggle}
               >
                 CONTACT
               </a>

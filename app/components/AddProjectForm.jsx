@@ -75,7 +75,10 @@ function AddProjectForm() {
 
   return (
     <section className="flex flex-col items-center py-12 md:py-24" id="contact">
-      <button onClick={handleLogout}> se déconnecter </button>
+      <button className="self-left" onClick={handleLogout}>
+        {' '}
+        se déconnecter{' '}
+      </button>
       <h2 className="text-4xl mt-2 mb-10 text-center text-main-color dark:text-secondary-color">
         AJOUTER UN NOUVEAU PROJET
       </h2>

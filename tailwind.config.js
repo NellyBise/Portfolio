@@ -15,7 +15,8 @@ module.exports = {
       'main-color': '#201087',
       'secondary-color': '#F5A623',
       'light-color': '#F3F2F8FF',
-      'dark-color': '#101525',
+      'dark-color': '#212121',
+      grey: '#3C3C3C',
       white: '#FFFFFF',
       transparent: 'transparent',
     },
@@ -27,6 +28,6 @@ module.exports = {
       },
     },
   },
-  darkMode: ['class', '[data-mode="dark"]'],
+  darkMode: ['media', '[data-mode="dark"]'],
   plugins: [],
 }

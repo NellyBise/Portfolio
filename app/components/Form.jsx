@@ -19,7 +19,7 @@ function Form() {
           className="h-36 p-2 drop-shadow-lg bg-light-color dark:bg-dark-color rounded"
           id="message"
         ></textarea>
-        <button className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color my-6 md:my-12 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white">
+        <button className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color my-6 md:my-12 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white dark:hover:text-white">
           Envoyer
         </button>
       </form>

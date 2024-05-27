@@ -32,7 +32,7 @@ function About() {
               de projets passionnants, alors n&rsquo;hésitez pas à me contacter.
             </p>
             <a
-              className="w-1/2 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color my-12 md:mt-20 px-3 py-1 text-s md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
+              className="w-1/2 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color my-12 md:mt-20 px-3 py-1 text-s md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white dark:hover:text-white"
               href="mailto:nelly.bise@free.fr"
             >
               Contactez-moi
