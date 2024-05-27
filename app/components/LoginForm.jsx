@@ -14,6 +14,7 @@ function LoginForm() {
       return {
         ...prev,
         [name]: value,
+        action: 'login',
       }
     })
   }

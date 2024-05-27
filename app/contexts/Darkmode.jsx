@@ -8,7 +8,6 @@ export const DarkModeProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
-    // Script pour définir le mode sombre initial
     const savedMode = localStorage.getItem('dark-mode')
     if (savedMode) {
       const root = window.document.documentElement
@@ -16,7 +15,6 @@ export const DarkModeProvider = ({ children }) => {
       root.setAttribute('data-mode', isDarkMode ? 'dark' : 'light')
       setIsDark(isDarkMode)
     } else {
-      // Optionnel : définir le mode par défaut en fonction de `prefers-color-scheme`
       const prefersDark =
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches

@@ -8,6 +8,28 @@ function AddProjectForm() {
   const apiUrl = 'http://localhost:3000/api'
   const [formData, setFormData] = useState({})
 
+  const handleLogout = async (event) => {
+    event.preventDefault()
+    try {
+      const response = await fetch(`${apiUrl}/user`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          action: 'logout', // Indiquer l'action de déconnexion
+        }),
+        credentials: 'include',
+      })
+      if (!response.ok) {
+        throw new Error('Failed to logout')
+      }
+      router.push('/login')
+    } catch (error) {
+      console.error('Error:', error)
+    }
+  }
+
   const handleChange = (event) => {
     const { name, value, type } = event.target
     if (type === 'file') {
@@ -53,6 +75,7 @@ function AddProjectForm() {
 
   return (
     <section className="flex flex-col items-center py-12 md:py-24" id="contact">
+      <button onClick={handleLogout}> se déconnecter </button>
       <h2 className="text-4xl mt-2 mb-10 text-center text-main-color dark:text-secondary-color">
         AJOUTER UN NOUVEAU PROJET
       </h2>

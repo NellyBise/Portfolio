@@ -1,12 +1,13 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Header from '../components/Header'
 import AddProjectForm from '../components/AddProjectForm'
 import Footer from '../components/Footer'
-import { middleware } from '@/middleware'
 
 export default function Admin() {
-  const router = useRouter()
+  /*const router = useRouter()
   const [isAuthenticated, setIsAuthenticated] = useState(false)
 
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function Admin() {
     // Rediriger vers la page de connexion si l'utilisateur n'est pas authentifié
     router.push('/login')
     return null
-  }
+  }*/
 
   return (
     <>

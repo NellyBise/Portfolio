@@ -1,20 +1,14 @@
 import { NextResponse } from 'next/server'
-import jwt from 'jsonwebtoken'
-import Cookies from 'js-cookie'
+import { cookies } from 'next/headers'
 
 export function middleware(request) {
-  const token = Cookies.get('token')
   console.log('ici')
-  if (token) {
-    try {
-      jwt.verify(token, process.env.JWT_SECRET)
-      return NextResponse.next()
-    } catch (error) {
-      console.error('Token verification failed:', error)
-      return NextResponse.redirect('http://localhost:3000/login')
-    }
+  const cookieStore = cookies()
+  const session = cookieStore.get('session')
+  if (session) {
+    return NextResponse.next()
   } else {
-    return NextResponse.redirect('http://localhost:3000/login')
+    return NextResponse.redirect(new URL('/login', request.url))
   }
 }
 
