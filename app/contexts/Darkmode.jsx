@@ -5,19 +5,19 @@ import { createContext, useContext, useEffect, useState } from 'react'
 const DarkModeContext = createContext()
 
 export const DarkModeProvider = ({ children }) => {
-  const [isDark, setIsDark] = useState(() => {
-    const savedMode = localStorage.getItem('dark-mode')
-    if (savedMode) {
-      return savedMode === 'dark'
-    } else {
-      return (
-        window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-      )
-    }
-  })
+  const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
+    const savedMode = localStorage.getItem('dark-mode')
+    if (savedMode) {
+      setIsDark(savedMode === 'dark')
+    } else {
+      const prefersDarkMode =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      setIsDark(prefersDarkMode)
+    }
+
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
     const handleChange = (event) => {
       setIsDark(event.matches)
