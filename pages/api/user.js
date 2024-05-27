@@ -3,7 +3,7 @@ import clientPromise from '@/lib/mongodb'
 export default async function handler(req, res) {
   switch (req.method) {
     case 'POST':
-      const { email, password, action } = req.body // Extrayez également 'action' du corps de la requête
+      const { email, password, action } = req.body
 
       try {
         const client = await clientPromise
