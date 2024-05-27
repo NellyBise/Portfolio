@@ -32,11 +32,11 @@ export const DarkModeProvider = ({ children }) => {
     }
   }, [])
 
-  /*useEffect(() => {
+  useEffect(() => {
     const root = window.document.documentElement
     root.setAttribute('data-mode', isDark ? 'dark' : 'light')
     localStorage.setItem('dark-mode', isDark ? 'dark' : 'light')
-  }, [isDark])*/
+  }, [isDark])
 
   const toggleDark = () => {
     const newIsDark = !isDark
