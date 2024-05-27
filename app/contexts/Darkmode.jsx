@@ -17,7 +17,9 @@ export const DarkModeProvider = ({ children }) => {
         window.matchMedia('(prefers-color-scheme: dark)').matches
       setIsDark(prefersDarkMode)
     }
+  }, [])
 
+  useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
     const handleChange = (event) => {
       setIsDark(event.matches)
@@ -30,14 +32,16 @@ export const DarkModeProvider = ({ children }) => {
     }
   }, [])
 
-  useEffect(() => {
+  /*useEffect(() => {
     const root = window.document.documentElement
     root.setAttribute('data-mode', isDark ? 'dark' : 'light')
     localStorage.setItem('dark-mode', isDark ? 'dark' : 'light')
-  }, [isDark])
+  }, [isDark])*/
 
   const toggleDark = () => {
-    setIsDark((prevIsDark) => !prevIsDark)
+    const newIsDark = !isDark
+    setIsDark(newIsDark)
+    localStorage.setItem('dark-mode', newIsDark ? 'dark' : 'light')
   }
 
   return (

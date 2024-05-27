@@ -28,6 +28,6 @@ module.exports = {
       },
     },
   },
-  darkMode: ['media', '[data-mode="dark"]'],
+  darkMode: ['class'],
   plugins: [],
 }
