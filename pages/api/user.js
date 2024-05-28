@@ -24,7 +24,7 @@ export default async function handler(req, res) {
             res.status(401).json({ message: 'Email ou mot de passe incorrect' })
           }
         } else if (action === 'logout') {
-          res.setHeader('Set-Cookie', 'session=; HttpOnly; Path=/; Max-Age=0') // Supprimez le cookie de session correctement
+          res.setHeader('Set-Cookie', 'session=; HttpOnly; Path=/; Max-Age=0')
           res.status(200).json({ message: 'Déconnecté avec succès' })
         } else {
           res.status(400).json({ message: 'Action non valide' })
@@ -33,8 +33,9 @@ export default async function handler(req, res) {
         console.error("Erreur lors de l'authentification", error)
         res.status(500).json({ message: 'Erreur interne du serveur' })
       }
+      break
     default:
       res.setHeader('Allow', ['POST'])
-      res.status(405).end(`Méthode non autorisée`)
+      res.status(405).end(`Méthode ${req.method} non autorisée`)
   }
 }
