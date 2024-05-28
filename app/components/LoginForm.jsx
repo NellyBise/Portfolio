@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 function LoginForm() {
   const router = useRouter()
-  const apiUrl = process.env.API_URL
+  const apiUrl = process.env.API_URL + 'api'
   const [formData, setFormData] = useState({
     email: '',
     password: '',

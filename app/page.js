@@ -6,7 +6,7 @@ import Form from './components/Form'
 import Footer from './components/Footer'
 
 export default async function Home() {
-  const apiUrl = process.env.API_URL
+  const apiUrl = process.env.API_URL + 'api'
   const res = await fetch(`${apiUrl}/techSkills`, {
     method: 'GET',
     headers: {
