@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 function AddProjectForm() {
   const router = useRouter()
-  const apiUrl = process.env.API_URL
+  const apiUrl = /*process.env.API_URL*/ 'http://localhost:3000/api'
   const [formData, setFormData] = useState({})
 
   const handleLogout = async (event) => {

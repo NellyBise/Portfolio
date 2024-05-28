@@ -1,16 +1,6 @@
 import clientPromise from '@/lib/mongodb'
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Credentials', true)
-  res.setHeader(
-    'Access-Control-Allow-Origin',
-    'https://portfolio-five-beta-21.vercel.app/'
-  )
-  res.setHeader(
-    'Access-Control-Allow-Methods',
-    'GET,OPTIONS,PATCH,DELETE,POST,PUT'
-  )
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
   switch (req.method) {
     case 'POST':
       const { email, password, action } = req.body

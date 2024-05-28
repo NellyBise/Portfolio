@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 function LoginForm() {
   const router = useRouter()
-  const apiUrl = process.env.API_URL
+  const apiUrl = /*'http://localhost:3000/api'*/ process.env.API_URL
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -31,12 +31,12 @@ function LoginForm() {
         },
         body: JSON.stringify(formData),
       })
+      const result = await response.json()
 
       if (!response.ok) {
-        throw new Error(result.message || 'Network response was not ok')
+        throw new Error(result.message)
       }
 
-      const result = await response.json()
       router.push('/admin')
       console.log('Success')
     } catch (error) {
