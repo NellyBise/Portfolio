@@ -4,33 +4,40 @@ import { createContext, useContext, useEffect, useState } from 'react'
 
 const DarkModeContext = createContext()
 
-export const DarkModeProvider = ({ children }) => {
-  const [isDark, setIsDark] = useState(false)
-
-  useEffect(() => {
+const getInitialState = () => {
+  if (typeof window !== 'undefined') {
     const savedMode = localStorage.getItem('dark-mode')
     if (savedMode) {
-      setIsDark(savedMode === 'dark')
+      return savedMode === 'dark'
     } else {
       const prefersDarkMode =
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
-      setIsDark(prefersDarkMode)
+      return prefersDarkMode
     }
-  }, [])
+  }
+  return false
+}
+
+export const DarkModeProvider = ({ children }) => {
+  const [isDark, setIsDark] = useState(getInitialState)
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
     const handleChange = (event) => {
-      setIsDark(event.matches)
+      if (event.matches !== isDark) {
+        setIsDark(event.matches)
+      }
     }
 
-    mediaQuery.addEventListener('change', handleChange)
+    if (typeof window !== 'undefined') {
+      mediaQuery.addEventListener('change', handleChange)
 
-    return () => {
-      mediaQuery.removeEventListener('change', handleChange)
+      return () => {
+        mediaQuery.removeEventListener('change', handleChange)
+      }
     }
-  }, [])
+  })
 
   useEffect(() => {
     const root = window.document.documentElement
