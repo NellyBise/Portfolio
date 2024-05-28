@@ -6,7 +6,11 @@ import { useRouter } from 'next/navigation'
 function LoginForm() {
   const router = useRouter()
   const apiUrl = process.env.API_URL
-  const [formData, setFormData] = useState({})
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    action: 'login',
+  })
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -14,7 +18,6 @@ function LoginForm() {
       return {
         ...prev,
         [name]: value,
-        action: 'login',
       }
     })
   }
@@ -30,7 +33,7 @@ function LoginForm() {
       })
 
       if (!response.ok) {
-        throw new Error('Network response was not ok')
+        throw new Error(result.message || 'Network response was not ok')
       }
 
       const result = await response.json()
