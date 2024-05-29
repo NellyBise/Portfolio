@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 function LoginForm() {
   const router = useRouter()
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL
+  const apiUrl = 'http://localhost:3000/api'
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -78,7 +78,7 @@ function LoginForm() {
         ></input>
         <button
           type="submit"
-          className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color my-6 md:my-12 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
+          className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color my-6 md:my-12 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white dark:hover:text-white"
         >
           Envoyer
         </button>

@@ -4,6 +4,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Form from './components/Form'
 import Footer from './components/Footer'
+import BackTop from './components/BackTopButton'
 
 export default async function Home() {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL
@@ -36,6 +37,7 @@ export default async function Home() {
     <>
       <main>
         <Header />
+        <BackTop />
         <About />
         <Skills allTechSkills={allTechSkills} allToolSkills={allToolSkills} />
         <Projects />

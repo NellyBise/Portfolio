@@ -6,17 +6,12 @@ export default async function handler(req, res) {
     const db = client.db('Portfolio')
 
     switch (req.method) {
-      case 'POST':
-        const toolSkill = req.body
-        await db.collection('techSkills').insertOne(toolSkill)
-        res.status(201).json({ message: 'Tool skill added successfully' })
-        break
       case 'GET':
         const toolSkills = await db.collection('toolSkills').find({}).toArray()
         res.status(200).json(toolSkills)
         break
       default:
-        res.setHeader('Allow', ['GET', 'POST'])
+        res.setHeader('Allow', ['GET'])
         res.status(405).end(`Method ${req.method} Not Allowed`)
     }
   } catch (error) {

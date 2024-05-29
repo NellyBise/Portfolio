@@ -22,7 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <DarkModeProvider>
-      <html lang="fr" className={`${inter.variable} ${league.variable}`}>
+      <html
+        lang="fr"
+        className={`${inter.variable} ${league.variable} scroll-smooth`}
+      >
         <body className="flex flex-col justify-between min-h-screen">
           {children}
         </body>
