@@ -8,7 +8,6 @@ import BackTop from './components/BackTopButton'
 
 export default async function Home() {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL
-  console.log('apiUrl:', apiUrl)
   const res = await fetch(`${apiUrl}/techSkills`, {
     method: 'GET',
     headers: {

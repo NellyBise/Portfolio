@@ -31,7 +31,7 @@ export default function BackTop() {
       onClick={handleTop}
       data-twe-ripple-init
       data-twe-ripple-color="light"
-      className={`!fixed bottom-5 end-5 rounded-full bg-grey p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-secondary-color active:shadow-lg ${
+      className={`!fixed md:bottom-5 md:end-5 rounded-full bg-grey p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-secondary-color active:shadow-lg ${
         showButton ? '' : 'hidden'
       }`}
     >

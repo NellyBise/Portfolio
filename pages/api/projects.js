@@ -23,10 +23,6 @@ export default async function handler(req, res) {
     if (error) {
       return res.status(400).json({ error: error.message })
     }
-
-    console.log(req.body)
-    console.log(req.files)
-
     const { name, mission, link, github, techno } = req.body
     const cover =
       req.files.find((file) => file.fieldname === 'cover')?.path || null
