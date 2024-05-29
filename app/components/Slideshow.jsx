@@ -1,4 +1,4 @@
-import puce from '../src/puce.png'
+import puce from '../src/fleche.png'
 import { useState } from 'react'
 import Image from 'next/image'
 
@@ -22,7 +22,7 @@ function Slideshow({ pictures }) {
         {pictures.map((picture, index) => (
           <div className="min-w-full" key={index}>
             <Image
-              className="min-w-full h-96 object-cover"
+              className="w-full h-full object-fit"
               id={index}
               src={picture}
               alt={`vue du logement : ${index}`}
@@ -36,26 +36,23 @@ function Slideshow({ pictures }) {
         <div>
           <div className="flex justify-between absolute w-full px-2 bottom-1/2">
             <button
-              className="font-bold text-3xl text-main-color"
+              className="font-bold text-3xl text-main-color hover:scale-110"
               onClick={PrevPicture}
             >
               <Image
                 className="rotate-180"
                 src={puce}
                 alt="flèche droite"
-                width={40}
-                height={40}
+                width={30}
+                height={30}
               />
             </button>
             <button
-              className="font-bold text-3xl text-main-color"
+              className="font-bold text-3xl text-main-color hover:scale-110"
               onClick={NextPicture}
             >
-              <Image src={puce} alt="flèche droite" width={40} height={40} />
+              <Image src={puce} alt="flèche droite" width={30} height={30} />
             </button>
-          </div>
-          <div className="text-main-color absolute bottom-2 w-full text-center font-bold">
-            {clickedIndex + 1} / {pictures.length}
           </div>
         </div>
       ) : (

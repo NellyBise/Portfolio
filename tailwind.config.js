@@ -18,6 +18,7 @@ module.exports = {
       'dark-color': '#212121',
       grey: '#3C3C3C',
       white: '#FFFFFF',
+      black: '#000000',
       transparent: 'transparent',
     },
     extend: {

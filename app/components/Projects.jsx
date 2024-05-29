@@ -11,7 +11,7 @@ function Projects() {
       <h2 className="text-4xl mt-2 mb-16 text-center text-main-color dark:text-secondary-color">
         SÉLECTION DE PROJETS
       </h2>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 md:mx-24">
         {projects.map((project) => (
           <Link key={project.id} href={`/Projects/${project.id}`}>
             <Card

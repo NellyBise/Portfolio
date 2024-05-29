@@ -17,14 +17,14 @@ export default function Project() {
 
   return project2 ? (
     <>
-      <section className="max-w-7xl mx-auto mt-12">
+      <section className="max-w-7xl mx-auto mt-2">
         <a
           className="text-3xl font-bold text-main-color dark:text-secondary-color p-6 md:p-12"
           href="/#projects"
         >
           &lt;-
         </a>
-        <h2 className="uppercase text-4xl mt-6 mb-20 text-center text-main-color dark:text-secondary-color">
+        <h2 className="uppercase text-4xl mb-20 text-center text-main-color dark:text-secondary-color">
           {project2.name}
         </h2>
         <div className="flex flex-col md:flex-row justify-around p-6 md:p-0">
@@ -33,10 +33,10 @@ export default function Project() {
             <p className="pl-6 my-8">{project2.description}</p>
             <Title3 title="TECHNOLOGIES" />
             <Tags tagsContent={project2.techno} />
-            <div className="flex justify-center gap-8 mt-12 mb-24">
+            <div className="flex justify-center gap-8 mt-6 mb-24">
               {project2.link ? (
                 <a
-                  className="w-1/3 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color px-3 py-1 text-s md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
+                  className="w-44 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color px-3 py-1 text-s md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
                   href={project2.link}
                   target="_blank"
                 >
