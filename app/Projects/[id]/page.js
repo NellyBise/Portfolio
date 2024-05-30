@@ -10,7 +10,7 @@ export default function ProjectPage() {
   const [projects, setProject] = useState(null)
 
   useEffect(() => {
-    const apiUrl = 'http://localhost:3000/api'
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL
     fetch(`${apiUrl}/projects`, {
       method: 'GET',
       headers: {

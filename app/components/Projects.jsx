@@ -2,7 +2,7 @@ import Card from './Card'
 import Link from 'next/link'
 
 export default async function Projects() {
-  const apiUrl = 'http://localhost:3000/api'
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL
   const res = await fetch(`${apiUrl}/projects`, {
     method: 'GET',
     headers: {
