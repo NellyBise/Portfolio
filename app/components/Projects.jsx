@@ -1,29 +1,42 @@
 import Card from './Card'
-import projects from '../db/Projects.json'
 import Link from 'next/link'
 
-function Projects() {
+export default async function Projects() {
+  const apiUrl = 'http://localhost:3000/api'
+  const res = await fetch(`${apiUrl}/projects`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    cache: 'no-store',
+  })
+  if (!res.ok) {
+    throw new Error(`Failed to fetch projects: ${res.status}`)
+  }
+  const projects = await res.json()
+
   return (
     <section
       id="projects"
-      className="py-12 px-6  md:py-24 max-w-screen-xl m-auto"
+      className="py-12 px-6 md:py-24 max-w-screen-lg m-auto"
     >
       <h2 className="text-4xl mt-2 mb-16 text-center text-main-color dark:text-secondary-color">
         SÉLECTION DE PROJETS
       </h2>
-      <div className="grid md:grid-cols-2 gap-8 md:mx-24">
-        {projects.map((project) => (
-          <Link key={project.id} href={`/Projects/${project.id}`}>
-            <Card
-              cover={project.cover}
-              name={project.name}
-              key={`${project.name}-${project.id}`}
-            />
-          </Link>
-        ))}
+      <div className="grid md:grid-cols-2 gap-8">
+        {projects
+          .slice()
+          .reverse()
+          .map((project) => (
+            <Link key={project._id} href={`/Projects/${project._id}`}>
+              <Card
+                cover={project.cover}
+                name={project.name}
+                key={`${project.name}-${project._id}`}
+              />
+            </Link>
+          ))}
       </div>
     </section>
   )
 }
-
-export default Projects

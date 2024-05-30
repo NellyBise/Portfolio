@@ -3,7 +3,6 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 
 const DarkModeContext = createContext()
-
 const getInitialState = () => {
   if (typeof window !== 'undefined') {
     const savedMode = localStorage.getItem('dark-mode')

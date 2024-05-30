@@ -10,6 +10,7 @@ export default function Title3({ title }) {
         alt="flèche décorative"
         width={30}
         height={30}
+        aria-hidden
       ></Image>
       <h3 className="text-3xl text-center text-main-color dark:text-secondary-color">
         {title}

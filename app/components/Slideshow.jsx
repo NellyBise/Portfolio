@@ -1,3 +1,5 @@
+'use client'
+
 import puce from '../src/fleche.png'
 import { useState } from 'react'
 import Image from 'next/image'

@@ -5,6 +5,7 @@ import Logo from '../src/logo.png'
 import LogoDark from '../src/logo_dark.png'
 import { useState } from 'react'
 import ToggleDarkButton from './ToggleDarkButton'
+import Link from 'next/link'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -14,7 +15,7 @@ function Header() {
     <>
       <header className="fixed w-full bg-white dark:bg-dark-color drop-shadow-lg z-20">
         <div className="max-w-7xl m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-xl">
-          <a href="/">
+          <Link href="/">
             <Image
               className="block dark:hidden"
               height={50}
@@ -27,32 +28,32 @@ function Header() {
               src={LogoDark}
               alt="logo"
             />
-          </a>
+          </Link>
           <nav className="hidden h-14 md:flex space-x-4 md:space-x-8 text-main-color dark:text-white">
             <ul className="flex items-center space-x-4 md:space-x-8 text-main-color dark:text-white">
               <li className="hover:font-bold">
-                <a
+                <Link
                   className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                   href="/#skills"
                 >
                   COMPÉTENCES
-                </a>
+                </Link>
               </li>
               <li className="hover:font-bold">
-                <a
+                <Link
                   className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                   href="/#projects"
                 >
                   PROJETS
-                </a>
+                </Link>
               </li>
               <li className="hover:font-bold">
-                <a
+                <Link
                   className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                   href="/#contact"
                 >
                   CONTACT
-                </a>
+                </Link>
               </li>
               <li>
                 <div className="h-14 flex justify-center items-center">
@@ -104,31 +105,31 @@ function Header() {
         <nav className="flex flex-col items-center mt-16 h-full space-y-8 text-main-color dark:text-white py-8">
           <ul className="space-y-16 text-center text-2xl font-bold">
             <li className="hover:font-bold">
-              <a
+              <Link
                 className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                 href="/#skills"
                 onClick={toggle}
               >
                 COMPÉTENCES
-              </a>
+              </Link>
             </li>
             <li className="hover:font-bold">
-              <a
+              <Link
                 className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                 href="/#projects"
                 onClick={toggle}
               >
                 PROJETS
-              </a>
+              </Link>
             </li>
             <li className="hover:font-bold">
-              <a
+              <Link
                 className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                 href="/#contact"
                 onClick={toggle}
               >
                 CONTACT
-              </a>
+              </Link>
             </li>
             <li>
               <div className="h-14 flex justify-center items-center dark:bg-gray-800">
