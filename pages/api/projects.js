@@ -16,14 +16,15 @@ export const config = {
 export default async function handler(req, res) {
   try {
     const client = await clientPromise
-    const collection = client.db('Portfolio').collection('projects')
+    const db = client.db('Portfolio')
+    const collection = await db('projects')
 
     switch (req.method) {
       case 'GET':
         const projects = await collection.find().toArray()
         res.status(200).json(projects)
         break
-      /*case 'POST':
+      case 'POST':
         upload.any()(req, res, async (error) => {
           if (error) {
             return res.status(400).json({ error: error.message })
@@ -61,7 +62,7 @@ export default async function handler(req, res) {
           const result = await collection.insertOne(newProject)
           res.status(201).json({ id: result.insertedId, ...newProject })
         })
-        break*/
+        break
       default:
         res.setHeader('Allow', ['GET', 'POST'])
         res.status(405).end(`Method ${req.method} Not Allowed`)
