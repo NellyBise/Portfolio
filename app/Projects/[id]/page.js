@@ -11,7 +11,7 @@ export default function ProjectPage() {
 
   useEffect(() => {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL
-    fetch(`${apiUrl}/projects`, {
+    fetch(`${apiUrl}/getProjects`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
