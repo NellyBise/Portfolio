@@ -1,21 +1,8 @@
 import Card from './Card'
 import Link from 'next/link'
 
-export default async function Projects() {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL
-  const res = await fetch(`${apiUrl}/projects`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    cache: 'no-store',
-  })
-  if (!res.ok) {
-    throw new Error(`Failed to fetch projects: ${res.status}`)
-  }
-  const projects = await res.json()
-
-  return (
+export default async function Projects({ projects }) {
+  return projects ? (
     <section
       id="projects"
       className="py-12 px-6 md:py-24 max-w-screen-lg m-auto"
@@ -38,5 +25,7 @@ export default async function Projects() {
           ))}
       </div>
     </section>
+  ) : (
+    <div>Erreur de chargement</div>
   )
 }

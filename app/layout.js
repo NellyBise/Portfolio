@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter, League_Gothic } from 'next/font/google'
-import { DarkModeProvider } from './contexts/Darkmode'
+import { DarkModeProvider } from './utils/Darkmode'
 
 export const inter = Inter({
   subsets: ['latin'],

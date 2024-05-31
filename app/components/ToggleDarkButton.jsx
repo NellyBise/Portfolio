@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useDarkMode } from '../contexts/Darkmode'
+import { useDarkMode } from '../utils/Darkmode'
 
 export default function ToggleDarkButton() {
   const { isDark, toggleDark } = useDarkMode()
