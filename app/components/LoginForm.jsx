@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 function LoginForm() {
   const router = useRouter()
-  const apiUrl = 'http://localhost:3000/api'
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL
   const [formData, setFormData] = useState({
     email: '',
     password: '',
