@@ -11,7 +11,6 @@ export default async function Home() {
   const allTechSkills = await fetchData('techSkills')
   const allToolSkills = await fetchData('toolSkills')
   const projects = await fetchData('projects')
-  console.log(`Fetched projects: ${JSON.stringify(projects)}`)
 
   return (
     <>
