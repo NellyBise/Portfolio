@@ -12,7 +12,7 @@ export default function Project({ project }) {
     <>
       <section className="max-w-7xl mx-auto mt-2">
         <Link
-          className="text-3xl font-bold text-main-color dark:text-secondary-color p-6 md:p-12"
+          className="text-3xl font-bold text-main-color dark:text-secondary-color m-6 md:m-12"
           href="/#projects"
         >
           &lt;-

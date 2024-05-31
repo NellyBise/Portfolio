@@ -35,13 +35,13 @@ function Skills({ allTechSkills, allToolSkills }) {
             </div>
           </article>
         </div>
-        <div className="text-center">
-          <button className="pointer-events-auto rounded-3xl bg-secondary-color mt-12 md:mt-20 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white dark:hover:text-white">
-            <a href="./CV_Nelly_Bise.pdf" target="_blank">
-              Voir mon CV
-            </a>
-          </button>
-        </div>
+        <a
+          className="mt-12 md:mt-20 text-center pointer-events-auto rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-1 text-s md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white dark:hover:text-white"
+          href="./CV_Nelly_Bise.pdf"
+          target="_blank"
+        >
+          Voir mon CV
+        </a>
       </div>
     </section>
   )
