@@ -59,7 +59,7 @@ function AddProjectForm() {
       form.append('img', formData.img[i])
     }
 
-    const response = await fetch('/api/projects', {
+    const response = await fetch('/api/postProjects', {
       method: 'POST',
       body: form,
     })

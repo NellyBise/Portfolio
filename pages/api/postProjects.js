@@ -19,11 +19,6 @@ export default async function handler(req, res) {
     const collection = client.db('Portfolio').collection('projects')
 
     switch (req.method) {
-      case 'GET':
-        const projects = await collection.find().toArray()
-        res.status(200).json(projects)
-        client.close()
-        break
       case 'POST':
         upload.any()(req, res, async (error) => {
           if (error) {
@@ -65,11 +60,12 @@ export default async function handler(req, res) {
         })
         break
       default:
-        res.setHeader('Allow', ['GET', 'POST'])
+        res.setHeader('Allow', ['POST'])
         res.status(405).end(`Method ${req.method} Not Allowed`)
     }
   } catch (error) {
     console.error(error)
     res.status(500).json({ message: 'Internal Server Error' })
+    client.close()
   }
 }

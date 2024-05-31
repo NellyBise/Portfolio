@@ -10,7 +10,7 @@ import fetchData from './utils/Fetch'
 export default async function Home() {
   const allTechSkills = await fetchData('techSkills')
   const allToolSkills = await fetchData('toolSkills')
-  const projects = await fetchData('projects')
+  const projects = await fetchData('getProjects')
 
   return (
     <>
