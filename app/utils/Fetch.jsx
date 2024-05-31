@@ -1,5 +1,5 @@
 export default async function fetchData(endpoint) {
-  const apiUrl = 'http://localhost:3000//api' || process.env.NEXT_PUBLIC_API_URL
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL
   const response = await fetch(`${apiUrl}/${endpoint}`, {
     method: 'GET',
     headers: {

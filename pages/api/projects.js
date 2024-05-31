@@ -23,7 +23,7 @@ export default async function handler(req, res) {
         const projects = await collection.find().toArray()
         res.status(200).json(projects)
         break
-      case 'POST':
+      /*case 'POST':
         upload.any()(req, res, async (error) => {
           if (error) {
             return res.status(400).json({ error: error.message })
@@ -61,7 +61,7 @@ export default async function handler(req, res) {
           const result = await collection.insertOne(newProject)
           res.status(201).json({ id: result.insertedId, ...newProject })
         })
-        break
+        break*/
       default:
         res.setHeader('Allow', ['GET', 'POST'])
         res.status(405).end(`Method ${req.method} Not Allowed`)
