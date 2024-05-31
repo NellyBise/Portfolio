@@ -9,7 +9,6 @@ export default async function handler(req, res) {
       case 'GET':
         const projects = await collection.find().toArray()
         res.status(200).json(projects)
-        client.close()
         break
       default:
         res.setHeader('Allow', ['GET'])
@@ -18,6 +17,5 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error(error)
     res.status(500).json({ message: 'Internal Server Error' })
-    client.close()
   }
 }

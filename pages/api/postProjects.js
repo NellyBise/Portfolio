@@ -56,7 +56,6 @@ export default async function handler(req, res) {
 
           const result = await collection.insertOne(newProject)
           res.status(201).json({ id: result.insertedId, ...newProject })
-          client.close()
         })
         break
       default:
@@ -66,6 +65,5 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error(error)
     res.status(500).json({ message: 'Internal Server Error' })
-    client.close()
   }
 }
