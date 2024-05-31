@@ -22,6 +22,7 @@ export default async function handler(req, res) {
       case 'GET':
         const projects = await collection.find().toArray()
         res.status(200).json(projects)
+        client.close()
         break
       case 'POST':
         upload.any()(req, res, async (error) => {
@@ -60,6 +61,7 @@ export default async function handler(req, res) {
 
           const result = await collection.insertOne(newProject)
           res.status(201).json({ id: result.insertedId, ...newProject })
+          client.close()
         })
         break
       default:
