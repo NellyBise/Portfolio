@@ -1,10 +1,23 @@
 import nodemailer from 'nodemailer'
 import rateLimit from 'express-rate-limit'
 
+function getClientIp(req) {
+  const forwardedIpsStr = req.headers['x-forwarded-for']
+  if (forwardedIpsStr) {
+    const forwardedIps = forwardedIpsStr.split(',')
+    const clientIp = forwardedIps[0].trim().split(' ').pop()
+    return clientIp
+  }
+  return req.connection.remoteAddress || req.socket.remoteAddress
+}
+
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   limit: 100,
   message: 'Too many requests from this IP, please try again later',
+  keyGenerator: (req) => {
+    return getClientIp(req)
+  },
 })
 
 export default async function handler(req, res) {

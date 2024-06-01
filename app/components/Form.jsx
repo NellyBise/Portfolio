@@ -20,7 +20,7 @@ export default function Form() {
   }
 
   const handleSubmit = async (event) => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = 'http://localhost:3000/api'
     event.preventDefault()
     try {
       const response = await fetch(`${apiUrl}/contact`, {
