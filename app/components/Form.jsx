@@ -35,8 +35,26 @@ export default function Form() {
       if (!response.ok) {
         throw new Error(result.message)
       }
+      const errorDisplay = document.getElementById('responseMessage')
+      if (errorDisplay) {
+        errorDisplay.innerText = 'Votre message a bien été envoyé.'
+      } else {
+        console.error('Element with ID responseMessage not found.')
+      }
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      })
       console.log('Success')
     } catch (error) {
+      const errorDisplay = document.getElementById('responseMessage')
+      if (errorDisplay) {
+        errorDisplay.innerText =
+          "Erreur : votre message n'a pas pu être envoyé."
+      } else {
+        console.error('Element with ID responseMessage not found.')
+      }
       console.error('Error:', error)
     }
   }
@@ -92,6 +110,7 @@ export default function Form() {
         <button className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color my-6 md:my-12 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white dark:hover:text-white">
           Envoyer
         </button>
+        <p className="text-center font-bold" id="responseMessage"></p>
       </form>
     </section>
   )

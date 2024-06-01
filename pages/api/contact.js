@@ -64,10 +64,14 @@ export default async function handler(req, res) {
       `,
       })
 
-      return res.status(200).json({ message: 'Success: email was sent' })
+      return res
+        .status(200)
+        .json({ message: 'Votre message a bien été envoyé.' })
     } catch (error) {
       console.log(error)
-      return res.status(500).json({ message: 'COULD NOT SEND MESSAGE' })
+      return res
+        .status(500)
+        .json({ message: "Votre message n'a pas pu être envoyé." })
     }
   })
 }
