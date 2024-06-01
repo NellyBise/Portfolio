@@ -57,6 +57,8 @@ function LoginForm() {
         <input
           className="p-2 drop-shadow-lg bg-light-color dark:bg-dark-color rounded"
           id="email"
+          required
+          autoComplete="email"
           type="email"
           value={formData.email || ''}
           name="email"
