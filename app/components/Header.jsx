@@ -9,7 +9,12 @@ import Link from 'next/link'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
-  const toggle = () => setIsOpen(!isOpen)
+  function toggle() {
+    if (window.innerWidth <= 768) {
+      setIsOpen(!isOpen)
+    }
+  }
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -60,6 +65,7 @@ function Header() {
                   <Link
                     className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                     href="/#skills"
+                    onClick={toggle}
                   >
                     COMPÉTENCES
                   </Link>
@@ -68,6 +74,7 @@ function Header() {
                   <Link
                     className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                     href="/#projects"
+                    onClick={toggle}
                   >
                     PROJETS
                   </Link>
@@ -76,6 +83,7 @@ function Header() {
                   <Link
                     className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                     href="/#contact"
+                    onClick={toggle}
                   >
                     CONTACT
                   </Link>

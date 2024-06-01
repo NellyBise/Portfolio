@@ -21,7 +21,7 @@ export default function Project({ project }) {
           {project.name}
         </h2>
         <div className="flex flex-col md:flex-row justify-around p-6 md:p-0 mb-24">
-          <div className="md:w-2/5 flex flex-col">
+          <div className="md:w-1/2 md:pr-20 flex flex-col">
             <Title3 title="LA MISSION" />
             <p className="pl-6 my-8">{project.mission}</p>
             <Title3 title="TECHNOLOGIES" />
@@ -62,7 +62,7 @@ export default function Project({ project }) {
               )}
             </div>
           </div>
-          <div className="md:w-2/5 flex flex-col justify-center">
+          <div className="md:w-1/2 mt-12 md:mt-0 flex flex-col justify-center">
             <Slideshow pictures={project.images} />
           </div>
         </div>
