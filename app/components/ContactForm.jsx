@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -18,6 +18,22 @@ export default function Form() {
       }
     })
   }
+
+  const [isDisabled, setIsDisabled] = useState(true)
+  useEffect(() => {
+    const checkValues = () => {
+      if (
+        formData.name.length > 3 &&
+        formData.email.length > 3 &&
+        formData.message.length > 10
+      ) {
+        setIsDisabled(false)
+      } else {
+        setIsDisabled(true)
+      }
+    }
+    checkValues()
+  }, [formData.message, formData.name, formData.email])
 
   const handleSubmit = async (event) => {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL
@@ -107,7 +123,10 @@ export default function Form() {
           value={formData.message || ''}
           onChange={handleChange}
         ></textarea>
-        <button className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color my-6 md:my-12 px-3 py-1 sm:text-xs md:text-lg dark:text-main-color dark:font-bold drop-shadow-lg duration-500 hover:bg-main-color hover:text-white dark:hover:text-white">
+        <button
+          disabled={isDisabled}
+          className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color my-6 md:my-12 px-3 py-1 sm:text-xs md:text-lg dark:text-black drop-shadow-lg duration-300 hover:bg-secondary-color/50 disabled:bg-light-color disabled:cursor-not-allowed"
+        >
           Envoyer
         </button>
         <p className="text-center font-bold" id="responseMessage"></p>

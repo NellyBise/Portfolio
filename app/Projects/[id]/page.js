@@ -2,16 +2,19 @@
 
 import Footer from '@/app/components/Footer'
 import Project from '@/app/components/Project'
+import { Loader } from '@/app/components/Loader'
 import { useParams } from 'next/navigation'
 import { useState, useEffect } from 'react'
 
 export default function ProjectPage() {
   const { id } = useParams()
-  const [projects, setProject] = useState(null)
+  const [project, setProject] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL
-    fetch(`${apiUrl}/getProjects`, {
+    fetch(`${apiUrl}/getOneProject?id=${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -26,17 +29,26 @@ export default function ProjectPage() {
       })
       .then((data) => {
         setProject(data)
+        setLoading(false)
       })
       .catch((err) => {
         console.error(err)
+        setError(err.message)
+        setLoading(false)
       })
   }, [id])
 
-  const projectSelected = projects?.find((project) => project._id === id)
+  if (loading) {
+    return <Loader />
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>
+  }
 
   return (
     <>
-      <Project project={projectSelected} />
+      <Project project={project} />
       <Footer />
     </>
   )

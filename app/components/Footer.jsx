@@ -9,7 +9,7 @@ import Image from 'next/image'
 function Footer() {
   return (
     <footer className="bg-light-color dark:bg-dark-color">
-      <div className="max-w-7xl m-auto flex justify-between items-center h-24 pl-2 pr-2">
+      <div className="max-w-7xl m-auto flex justify-between items-center h-24 px-2">
         <p>Réalisé par Nelly Bise </p>
         <div className="flex gap-4">
           <a

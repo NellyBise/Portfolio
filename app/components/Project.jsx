@@ -10,7 +10,7 @@ import Link from 'next/link'
 export default function Project({ project }) {
   return project ? (
     <>
-      <section className="max-w-7xl mx-auto mt-2">
+      <section className="max-w-7xl mx-auto mt-2 px-4">
         <Link
           className="text-3xl font-bold text-main-color dark:text-secondary-color m-6 md:m-12"
           href="/#projects"
@@ -29,7 +29,7 @@ export default function Project({ project }) {
             <div className="flex justify-center gap-8 mt-6">
               {project.link ? (
                 <a
-                  className="w-44 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color px-3 py-1 text-s md:text-lg drop-shadow-lg duration-500 hover:bg-main-color hover:text-white"
+                  className="w-44 self-end text-center pointer-events-auto rounded-3xl bg-secondary-color px-3 py-1 text-s md:text-lg drop-shadow-lg dark:text-black duration-300 hover:bg-secondary-color/50"
                   href={project.link}
                   target="_blank"
                 >
@@ -40,7 +40,7 @@ export default function Project({ project }) {
               )}
               {project.github ? (
                 <a
-                  className="hover:scale-125"
+                  className="hover:scale-125 duration-300"
                   href={project.github}
                   target="_blank"
                 >

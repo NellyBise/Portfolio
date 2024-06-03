@@ -1,6 +1,6 @@
 'use client'
 
-import puce from '../src/fleche.png'
+import puce from '../src/arrow.png'
 import { useState } from 'react'
 import Image from 'next/image'
 
@@ -24,7 +24,7 @@ function Slideshow({ pictures }) {
         {pictures.map((picture, index) => (
           <div className="min-w-full" key={index}>
             <Image
-              className="w-full h-full object-fit"
+              className="w-full h-full aspect-auto object-fit"
               id={index}
               src={picture}
               alt={`vue du logement : ${index}`}
@@ -38,22 +38,23 @@ function Slideshow({ pictures }) {
         <div>
           <div className="flex justify-between absolute w-full px-2 bottom-1/2">
             <button
-              className="font-bold text-3xl text-main-color hover:scale-110"
+              className="bg-grey/50 rounded-full w-8 h-8 flex justify-center items-center"
               onClick={PrevPicture}
             >
               <Image
-                className="rotate-180"
+                className="rotate-180 "
                 src={puce}
                 alt="flèche droite"
-                width={30}
-                height={30}
+                width={10}
+                height={10}
               />
             </button>
+
             <button
-              className="font-bold text-3xl text-main-color hover:scale-110"
+              className="bg-grey/50 rounded-full w-8 h-8 flex justify-center items-center"
               onClick={NextPicture}
             >
-              <Image src={puce} alt="flèche droite" width={30} height={30} />
+              <Image src={puce} alt="flèche droite" width={10} height={10} />
             </button>
           </div>
         </div>
