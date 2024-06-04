@@ -14,7 +14,7 @@ function Skills({ allTechSkills, allToolSkills }) {
         <div className="flex justify-around md:flex-row flex-col gap-6 md:gap-16">
           <article className="bg-white dark:bg-grey md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <Title3 title="TECHNOLOGIES" />
-            <div className="flex flex-wrap mt-16 px-6 justify-center">
+            <ul className="flex flex-wrap mt-16 px-6 justify-center">
               {allTechSkills &&
                 allTechSkills.map((skill) => (
                   <Skill
@@ -23,7 +23,7 @@ function Skills({ allTechSkills, allToolSkills }) {
                     key={`${skill.name}-${skill.id}`}
                   />
                 ))}
-            </div>
+            </ul>
           </article>
           <article className="bg-white dark:bg-grey md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <Title3 title="OUTILS" />

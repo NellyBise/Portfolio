@@ -16,6 +16,7 @@ export default function ToggleDarkButton() {
     <button
       onClick={toggleDark}
       className="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+      aria-label="passer en affichage sombre ou clair"
     >
       <svg
         className="fill-violet-700 block dark:hidden"

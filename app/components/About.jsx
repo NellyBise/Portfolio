@@ -40,15 +40,17 @@ function About() {
               <a
                 className="text-center w-1/3 pointer-events-auto rounded-3xl bg-secondary-color my-12 md:mt-20 px-3 py-1 text-s md:text-lg dark:text-black drop-shadow-lg duration-300 hover:bg-secondary-color/50"
                 href="mailto:nelly.bise@free.fr"
+                aria-label="cliquer pour envoyer un email"
               >
                 Mail
               </a>
-              <p
+              <button
                 className="text-center w-1/3 pointer-events-auto rounded-3xl bg-secondary-color my-12 md:mt-20 px-3 py-1 text-s md:text-lg dark:text-black drop-shadow-lg duration-300 hover:bg-secondary-color/50"
                 onClick={toggle}
+                aria-label="cliquer pour afficher mon numéro de téléphone"
               >
                 {isOpen ? '06 20 14 30 13' : 'Téléphone'}
-              </p>
+              </button>
             </div>
           </div>
           <div className="md:w-2/5"></div>

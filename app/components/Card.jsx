@@ -9,9 +9,12 @@ function Card({ cover, name }) {
           <h3 className="block relative text-3xl sm:text-4xl text-main-color">
             {name}
           </h3>
-          <p className="hidden md:block absolute bottom-2 right-2 text-main-color">
+          <span
+            className="hidden md:block absolute bottom-2 right-2 text-main-color aria-hidden"
+            aria-hidden="true"
+          >
             Voir plus -&gt;
-          </p>
+          </span>
         </div>
       </div>
     </article>

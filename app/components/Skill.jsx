@@ -2,16 +2,18 @@ import Image from 'next/image'
 
 function Skill({ image, name }) {
   return (
-    <div className="flex flex-col items-center">
+    <li className="flex flex-col items-center">
       <Image
         className="flex items-center h-14 w-auto p-2 mx-2"
         src={image}
-        alt={name}
+        alt=""
         height={40}
         width={40}
       />
-      <p className="mb-6">{name}</p>
-    </div>
+      <p id={name} className="mb-6">
+        {name}
+      </p>
+    </li>
   )
 }
 

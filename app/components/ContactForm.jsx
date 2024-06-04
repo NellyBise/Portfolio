@@ -95,7 +95,6 @@ export default function Form() {
           type="text"
           value={formData.name || ''}
           onChange={handleChange}
-          placeholder="John Doe"
         ></input>
         <label className="mt-8" htmlFor="email">
           Votre adresse email
@@ -110,7 +109,6 @@ export default function Form() {
           type="email"
           value={formData.email || ''}
           onChange={handleChange}
-          placeholder="jane-doe@email.com"
         ></input>
         <label className="mt-8" htmlFor="message">
           Votre message

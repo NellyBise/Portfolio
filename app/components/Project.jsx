@@ -14,10 +14,11 @@ export default function Project({ project }) {
         <Link
           className="text-3xl font-bold text-main-color dark:text-secondary-color m-6 md:m-12"
           href="/#projects"
+          aria-label="Retour à l'ensemble des projets"
         >
-          &lt;-
+          <span aria-hidden="true">&lt;-</span>
         </Link>
-        <h2 className="uppercase text-4xl mb-20 text-center text-main-color dark:text-secondary-color">
+        <h2 className="uppercase text-4xl mt-6 md:mt-0 mb-12 md:mb-20 text-center text-main-color dark:text-secondary-color">
           {project.name}
         </h2>
         <div className="flex flex-col md:flex-row justify-around p-6 md:p-0 mb-24">

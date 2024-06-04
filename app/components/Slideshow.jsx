@@ -27,7 +27,7 @@ function Slideshow({ pictures }) {
               className="w-full h-full aspect-auto object-fit"
               id={index}
               src={picture}
-              alt={`vue du logement : ${index}`}
+              alt=""
               width={500}
               height={500}
             />
@@ -40,11 +40,12 @@ function Slideshow({ pictures }) {
             <button
               className="bg-grey/50 rounded-full w-8 h-8 flex justify-center items-center"
               onClick={PrevPicture}
+              aria-hidden="true"
             >
               <Image
                 className="rotate-180 "
                 src={puce}
-                alt="flèche droite"
+                alt=""
                 width={10}
                 height={10}
               />
@@ -53,8 +54,9 @@ function Slideshow({ pictures }) {
             <button
               className="bg-grey/50 rounded-full w-8 h-8 flex justify-center items-center"
               onClick={NextPicture}
+              aria-hidden="true"
             >
-              <Image src={puce} alt="flèche droite" width={10} height={10} />
+              <Image src={puce} alt="" width={10} height={10} />
             </button>
           </div>
         </div>

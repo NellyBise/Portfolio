@@ -55,13 +55,13 @@ function Footer() {
             <Image
               className="block dark:hidden"
               src={linkedin}
-              alt="lien vers GitHub"
+              alt="lien vers LinkedIn"
               width={40}
             />
             <Image
               className="hidden dark:block"
               src={linkedinDark}
-              alt="lien vers GitHub"
+              alt="lien vers LinkedIn"
               width={40}
             />
           </a>
