@@ -13,7 +13,7 @@ export default function ProjectPage() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    const apiUrl = 'http://localhost:3000/api'
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL
     fetch(`${apiUrl}/getOneProject?id=${id}`, {
       method: 'GET',
       headers: {
