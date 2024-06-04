@@ -37,18 +37,18 @@ function Header() {
     <>
       <header className="fixed w-full bg-white dark:bg-dark-color drop-shadow-lg z-20">
         <div className="max-w-7xl m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-xl">
-          <Link href="/">
+          <Link href="/" aria-label="Cliquer pour revenir à l'accueil">
             <Image
               className="block dark:hidden"
               height={50}
               src={Logo}
-              alt="logo"
+              alt=""
             />
             <Image
               className="hidden dark:block"
               height={50}
               src={LogoDark}
-              alt="logo"
+              alt=""
             />
           </Link>
           <div
@@ -59,7 +59,10 @@ function Header() {
             }`}
             style={{ zIndex: isOpen ? 10 : -1 }}
           >
-            <nav className="flex flex-col items-center mt-16 h-full space-y-8 text-main-color dark:text-white py-8 md:h-14 md:mt-0 md:flex-row md:space-x-8">
+            <nav
+              id="menu"
+              className="flex flex-col items-center mt-16 h-full space-y-8 text-main-color dark:text-white py-8 md:h-14 md:mt-0 md:flex-row md:space-x-8"
+            >
               <ul className="space-y-16 text-center text-2xl font-bold md:font-normal md:flex md:items-center md:space-y-0 md:space-x-8">
                 <li className="hover:font-bold">
                   <Link
