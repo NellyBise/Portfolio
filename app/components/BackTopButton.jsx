@@ -29,6 +29,7 @@ export default function BackTop() {
     <button
       type="button"
       onClick={handleTop}
+      aria-label="cliquer pour revenir au début de la page"
       data-twe-ripple-init
       data-twe-ripple-color="light"
       className={`!fixed md:bottom-5 md:end-5 rounded-full bg-grey p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-main-color dark:hover:bg-secondary-color hover:shadow-lg focus:bg-main-color dark:focus:bg-secondary-color focus:shadow-lg focus:outline-none focus:ring-0 ${

@@ -7,8 +7,8 @@ function Skill({ image, name }) {
         className="flex items-center h-14 w-auto p-2 mx-2"
         src={image}
         alt=""
-        height={40}
-        width={40}
+        height={50}
+        width={50}
       />
       <p id={name} className="mb-6">
         {name}
