@@ -5,12 +5,14 @@ import Projects from './components/Projects'
 import Form from './components/ContactForm'
 import Footer from './components/Footer'
 import BackTop from './components/BackTopButton'
-import fetchData from './utils/Fetch'
+import techSkills from './data/techSkills.json'
+import toolSkills from './data/toolSkills.json'
+import Allprojects from './data/projects.json'
 
 export default async function Home() {
-  const allTechSkills = await fetchData('techSkills')
-  const allToolSkills = await fetchData('toolSkills')
-  const projects = await fetchData('getProjects')
+  const allTechSkills = techSkills
+  const allToolSkills = toolSkills
+  const projects = Allprojects
 
   return (
     <>
