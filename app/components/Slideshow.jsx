@@ -28,8 +28,8 @@ function Slideshow({ pictures }) {
               id={index}
               src={picture}
               alt=""
-              width={500}
-              height={500}
+              width={20000}
+              height={10000}
               quality={100}
             />
           </div>
