@@ -18,6 +18,7 @@ export default function Form() {
       }
     })
   }
+  const [errorMessage, setErrorMessage] = useState('')
 
   const [isDisabled, setIsDisabled] = useState(true)
   useEffect(() => {
@@ -38,6 +39,7 @@ export default function Form() {
   const handleSubmit = async (event) => {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL
     event.preventDefault()
+    setErrorMessage('')
     try {
       const response = await fetch(`${apiUrl}/contact`, {
         method: 'POST',
@@ -51,12 +53,6 @@ export default function Form() {
       if (!response.ok) {
         throw new Error(result.message)
       }
-      const errorDisplay = document.getElementById('responseMessage')
-      if (errorDisplay) {
-        errorDisplay.innerText = 'Votre message a bien été envoyé.'
-      } else {
-        console.error('Element with ID responseMessage not found.')
-      }
       setFormData({
         name: '',
         email: '',
@@ -64,13 +60,7 @@ export default function Form() {
       })
       console.log('Success')
     } catch (error) {
-      const errorDisplay = document.getElementById('responseMessage')
-      if (errorDisplay) {
-        errorDisplay.innerText =
-          "Erreur : votre message n'a pas pu être envoyé."
-      } else {
-        console.error('Element with ID responseMessage not found.')
-      }
+      setErrorMessage('Identifiants non valides')
       console.error('Error:', error)
     }
   }
@@ -127,7 +117,11 @@ export default function Form() {
         >
           Envoyer
         </button>
-        <p className="text-center font-bold" id="responseMessage"></p>
+        {errorMessage && (
+          <p className="text-center font-bold" id="connexionMessage">
+            {errorMessage}
+          </p>
+        )}
       </form>
     </section>
   )

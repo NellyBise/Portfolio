@@ -11,6 +11,7 @@ function LoginForm() {
     password: '',
     action: 'login',
   })
+  const [errorMessage, setErrorMessage] = useState('')
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -23,6 +24,7 @@ function LoginForm() {
   }
   const handleSubmit = async (event) => {
     event.preventDefault()
+    setErrorMessage('')
     try {
       const response = await fetch(`${apiUrl}/user`, {
         method: 'POST',
@@ -34,12 +36,12 @@ function LoginForm() {
       const result = await response.json()
 
       if (!response.ok) {
-        throw new Error(result.message)
+        throw new Error(result.message || 'Identifiants non valides')
       }
-
       router.push('/admin')
       console.log('Success')
     } catch (error) {
+      setErrorMessage('Identifiants non valides')
       console.error('Error:', error)
     }
   }
@@ -84,6 +86,11 @@ function LoginForm() {
         >
           Envoyer
         </button>
+        {errorMessage && (
+          <p className="text-center font-bold" id="connexionMessage">
+            {errorMessage}
+          </p>
+        )}
       </form>
     </section>
   )

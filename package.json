@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.15",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express-rate-limit": "^7.3.0",
     "mongodb": "^3.5.9",
