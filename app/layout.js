@@ -15,8 +15,26 @@ export const league = League_Gothic({
 })
 
 export const metadata = {
-  title: 'Nelly Bise',
-  description: 'Nelly Bise, développeuse Front-End',
+  title: 'Nelly Bise, développeuse front-end',
+  description:
+    "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et de l'accessibilité.",
+  openGraph: {
+    title: 'Nelly Bise, développeuse front-end',
+    description:
+      "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et de l'accessibilité.",
+    type: 'website',
+    url: 'https://nelly-bise.fr/',
+    images: [
+      {
+        type: 'image/png',
+        width: 500,
+        height: 500,
+        url: 'https://nelly-bise.fr/NELLY-BISE.png',
+      },
+    ],
+    site_name: 'Nelly Bise, développeuse front-end',
+    locale: 'fr_FR',
+  },
 }
 
 export default function RootLayout({ children }) {
