@@ -56,7 +56,7 @@ export default async function handler(req, res) {
         from: username,
         to: myEmail,
         replyTo: email,
-        subject: `Website activity from ${email}`,
+        subject: `Mail de ${email} depuis mon portfolio`,
         html: `
         <p>Name: ${name}</p>
         <p>Email: ${email}</p>
@@ -71,7 +71,7 @@ export default async function handler(req, res) {
       console.log(error)
       return res
         .status(500)
-        .json({ message: "Votre message n'a pas pu être envoyé." })
+        .json({ message: "Erreur: votre message n'a pas pu être envoyé." })
     }
   })
 }

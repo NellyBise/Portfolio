@@ -58,9 +58,10 @@ export default function Form() {
         email: '',
         message: '',
       })
+      setErrorMessage('Votre message a bien été envoyé')
       console.log('Success')
     } catch (error) {
-      setErrorMessage('Identifiants non valides')
+      setErrorMessage("Erreur : votre message n'a pas pu être envoyé")
       console.error('Error:', error)
     }
   }
