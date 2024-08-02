@@ -41,5 +41,20 @@
       "/projects/1717080492123-2-kasa.jpg",
       "/projects/1717080492126-3-kasa.jpg"
     ]
+  },
+  {
+    "_id": "66588fdb4533d71dd017587",
+    "name": "Musicalement Vôtre (en cours)",
+    "mission": "Refonte complète du site web dans le respect de la charte graphique déjà établie. L'organisation du site est reprise pour une navigation plus agréable et le site devient responsive.",
+    "link": "",
+    "github": "https://github.com/NellyBise/Musicalement-votre",
+    "techno": ["React", "Next.js", "Tailwind"],
+    "cover": "/projects/cover-musicalement.jpg",
+    "images": [
+      "/projects/1-musicalement.png",
+      "/projects/2-musicalement.png",
+      "/projects/3-musicalement.png",
+      "/projects/4-musicalement.png"
+    ]
   }
 ]

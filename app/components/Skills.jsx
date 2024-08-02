@@ -60,7 +60,7 @@ function Skills({ allTechSkills, allToolSkills }) {
         </div>
         <a
           className="mt-12 md:mt-20 text-center pointer-events-auto rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-1 text-s md:text-lg dark:text-black drop-shadow-lg duration-300 hover:bg-secondary-color/50"
-          href="./CV_Nelly_Bise.pdf"
+          href="./Nelly_Bise_developpeuse_front-end.pdf"
           target="_blank"
           aria-label="Cliquer pour ouvrir mon CV en PDF dans une nouvelle fenêtre"
         >

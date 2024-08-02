@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import photo from '../src/photo.svg'
+import photo from '../src/photo.png'
 import { useState } from 'react'
 
 function About() {
@@ -18,13 +18,13 @@ function About() {
             <h1 className="leading-snug text-7xl">Nelly Bise</h1>
             <h2 className="text-4xl mb-12 md:mb-6">DÉVELOPPEUSE FRONT-END</h2>
           </div>
-          <div className="w-1/2 md:w-2/5 md:relative flex justify-center md:self-start">
+          <div className="w-1/2 md:w-1/4 md:relative flex justify-center md:self-start ">
             <Image
               className="md:absolute md:top-10"
               src={photo}
               alt="portrait"
-              width={300}
-              height={300}
+              width={1000}
+              height={1000}
             />
           </div>
         </div>
