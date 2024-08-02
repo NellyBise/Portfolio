@@ -10,7 +10,7 @@ import Link from 'next/link'
 export default function Project({ project }) {
   return project ? (
     <>
-      <section className="max-w-7xl mx-auto mt-2 px-4">
+      <section className="max-w-7xl mx-auto mt-20 px-4">
         <Link
           className="text-3xl font-bold text-main-color dark:text-secondary-color m-6 md:m-12"
           href="/#projects"

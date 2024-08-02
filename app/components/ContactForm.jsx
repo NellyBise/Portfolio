@@ -59,9 +59,6 @@ export default function Form() {
         message: '',
       })
       setErrorMessage('Votre message a bien été envoyé')
-      setTimeout(() => {
-        setSuccessMessage('')
-      }, 5000)
       console.log('Success')
     } catch (error) {
       setErrorMessage("Erreur : votre message n'a pas pu être envoyé")

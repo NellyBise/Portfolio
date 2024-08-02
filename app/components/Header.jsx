@@ -66,7 +66,7 @@ function Header() {
               <ul className="space-y-16 text-center text-2xl font-bold md:font-normal md:flex md:items-center md:space-y-0 md:space-x-8">
                 <li className="hover:font-bold">
                   <Link
-                    className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
+                    className="py-1.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                     href="/#skills"
                     onClick={toggle}
                   >
@@ -75,7 +75,7 @@ function Header() {
                 </li>
                 <li className="hover:font-bold">
                   <Link
-                    className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
+                    className="py-1.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                     href="/#projects"
                     onClick={toggle}
                   >
@@ -84,7 +84,7 @@ function Header() {
                 </li>
                 <li className="hover:font-bold">
                   <Link
-                    className="border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
+                    className="py-1.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                     href="/#contact"
                     onClick={toggle}
                   >

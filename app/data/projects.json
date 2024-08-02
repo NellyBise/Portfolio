@@ -1,0 +1,60 @@
+[
+  {
+    "_id": "66588fdb4533d71dd0171491",
+    "name": "Portfolio de Sophie Bluel",
+    "mission": "Projet d'études : il consistait à mettre en place, côté Front-End avec Javascript, la connexion utilisateur et la gestion des photos. La principale contrainte du projet était la gestion de l'ajout et suppression de photos sans rafraîchissement de la page.",
+    "link": "",
+    "github": "https://github.com/NellyBise/Portfolio-architecte-sophie-bluel",
+    "techno": ["HTML", "CSS", "JavaScript"],
+    "cover": "/projects/1717080027162-cover-sophie.png",
+    "images": [
+      "/projects/1717080027165-1-sophie.png",
+      "/projects/1717080027170-2-sophie.png",
+      "/projects/1717080027176-3-sophie.png",
+      "/projects/1717080027180-4-sophie.png"
+    ]
+  },
+  {
+    "_id": "665890e94533d71dd0171492",
+    "name": "Portfolio de Nina Carducci",
+    "mission": "Projet d'études: débogage et optimisation. Le projet consistait à rendre le site plus performant et plus accessible. Pour ce faire, j'ai réalisé un audit de l'accessibilité selon les critères WCAG et corrigé tous les points sensibles. Ensuite, j'ai optimisé les performances du site afin qu'il charge plus rapidement. Enfin, j'ai débuggé le défilement photos dans la fenêtre modale, et la sélection du filtre.",
+    "link": "https://nina-carducci-lake.vercel.app/",
+    "github": "https://github.com/NellyBise/nina-carducci_P5",
+    "techno": ["JavaScript"],
+    "cover": "/projects/1717080297153-cover-nina.png",
+    "images": [
+      "/projects/1717080297161-1-nina.png",
+      "/projects/1717080297172-2-nina.png",
+      "/projects/1717080297179-3-nina.png"
+    ]
+  },
+  {
+    "_id": "665891ac4533d71dd0171493",
+    "name": "Kasa - location immobilière",
+    "mission": "Projet d'études : développement du Front-End avec React et Sass en conformité avec les maquettes. Une attention toute particulière a été portée sur le carrousel ainsi que sur les menus déroulants, créés sans bibliothèques. J'ai choisi pour ce projet d'utiliser la nomenclature BEM pour Sass, ce qui rend sa compréhension facile. Le site est également navigable au clavier.",
+    "link": "https://kasa-ochre.vercel.app/",
+    "github": "https://github.com/NellyBise/P5-Kasa",
+    "techno": ["React", "Sass"],
+    "cover": "/projects/1717080492119-cover-kasa.jpg",
+    "images": [
+      "/projects/1717080492120-1-kasa.jpg",
+      "/projects/1717080492123-2-kasa.jpg",
+      "/projects/1717080492126-3-kasa.jpg"
+    ]
+  },
+  {
+    "_id": "66588fdb4533d71dd017587",
+    "name": "Musicalement Vôtre (en cours)",
+    "mission": "Refonte complète du site web dans le respect de la charte graphique déjà établie. L'organisation du site est reprise pour une navigation plus agréable et le site devient responsive.",
+    "link": "",
+    "github": "https://github.com/NellyBise/Musicalement-votre",
+    "techno": ["React", "Next.js", "Tailwind"],
+    "cover": "/projects/cover-musicalement.jpg",
+    "images": [
+      "/projects/1-musicalement.png",
+      "/projects/2-musicalement.png",
+      "/projects/3-musicalement.png",
+      "/projects/4-musicalement.png"
+    ]
+  }
+]

@@ -23,13 +23,13 @@ export const metadata = {
     description:
       "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et de l'accessibilité.",
     type: 'website',
-    url: 'https://nelly-bise.vercel.app/',
+    url: 'https://nelly-bise.fr/',
     images: [
       {
         type: 'image/png',
         width: 500,
         height: 500,
-        url: 'https://nelly-bise.vercel.app/NELLY-BISE.png',
+        url: 'https://nelly-bise.fr/NELLY-BISE.png',
       },
     ],
     site_name: 'Nelly Bise, développeuse front-end',
