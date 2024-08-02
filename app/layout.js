@@ -17,11 +17,11 @@ export const league = League_Gothic({
 export const metadata = {
   title: 'Nelly Bise, développeuse front-end',
   description:
-    "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et de l'accessibilité.",
+    "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et l'accessibilité.",
   openGraph: {
     title: 'Nelly Bise, développeuse front-end',
     description:
-      "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et de l'accessibilité.",
+      "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et l'accessibilité.",
     type: 'website',
     url: 'https://nelly-bise.fr/',
     images: [
