@@ -71,6 +71,16 @@ export default function Form() {
       <h2 className="text-4xl mt-2 mb-10 text-center text-main-color dark:text-secondary-color">
         CONTACTEZ-MOI
       </h2>
+      <p>
+        Vous pouvez utiliser le formulaire ou m&rsquo;envoyer directement un{' '}
+        <a
+          className="text-main-color underline pointer-events-auto dark:text-secondary-color  duration-300 hover:font-bold"
+          href="mailto:nelly.bise@free.fr"
+          aria-label="cliquer pour envoyer un email"
+        >
+          mail
+        </a>
+      </p>
       <form
         className="mt-8 flex flex-col w-full px-6 md:w-2/5"
         onSubmit={handleSubmit}
@@ -114,7 +124,7 @@ export default function Form() {
         ></textarea>
         <button
           disabled={isDisabled}
-          className="w-1/3 self-end pointer-events-auto rounded-3xl bg-secondary-color my-6 md:my-12 px-3 py-1 sm:text-xs md:text-lg dark:text-black drop-shadow-lg duration-300 hover:bg-secondary-color/50 disabled:bg-light-color disabled:cursor-not-allowed"
+          className="w-1/3 self-end pointer-events-auto border-[1px] border-secondary-color text-center pointer-events-auto  outline outline-1 -outline-offset-1 outline-secondary-color/60 hover:outline-offset-8 hover:drop-shadow-none hover:outline-main-color/0  rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-2 text-s md:text-lg dark:text-black drop-shadow-lg duration-500 hover:shadow-def disabled:bg-light-color disabled:cursor-not-allowed disabled:outline-light-color disabled:border-light-color disabled:transform-none disabled:hover:hover:-outline-offset-1 disabled:hover:drop-shadow-lg disabled:hover:shadow-none"
         >
           Envoyer
         </button>

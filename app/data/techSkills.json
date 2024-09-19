@@ -43,5 +43,10 @@
     "_id": "665ef565bb3086eed8b2e842",
     "name": "Tailwind",
     "img": "/logos/Tailwind.png"
+  },
+  {
+    "_id": "665ef565bb3086eed8b2e858",
+    "name": "GraphQL",
+    "img": "/logos/GraphQL.png"
   }
 ]

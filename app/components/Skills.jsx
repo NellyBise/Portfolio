@@ -13,7 +13,7 @@ function Skills({ allTechSkills, allToolSkills }) {
           COMPÉTENCES
         </h2>
         <div className="flex justify-around md:flex-row flex-col gap-6 md:gap-16">
-          <article className="bg-white bg-gradient-to-br dark:from-grey dark:to-grey/80 md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
+          <article className="bg-white bg-gradient-to-br shadow-def shadow-white/20 dark:from-grey dark:to-grey/80 md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <div className="flex items-start">
               <Image
                 className="mr-2"
@@ -37,7 +37,7 @@ function Skills({ allTechSkills, allToolSkills }) {
                 ))}
             </ul>
           </article>
-          <article className="bg-white bg-gradient-to-br dark:from-grey dark:to-grey/80 md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
+          <article className="bg-white bg-gradient-to-br shadow-def shadow-white/20 dark:from-grey dark:to-grey/80 md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
             <div className="flex items-start">
               <Image
                 className="mr-2"
@@ -59,7 +59,7 @@ function Skills({ allTechSkills, allToolSkills }) {
           </article>
         </div>
         <a
-          className="mt-12 md:mt-20 text-center pointer-events-auto rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-1 text-s md:text-lg dark:text-black drop-shadow-lg duration-300 hover:bg-secondary-color/50"
+          className="mt-12 md:mt-20 text-center pointer-events-auto border-[1px] border-secondary-color outline outline-1 -outline-offset-1 outline-secondary-color/60 hover:outline-offset-8 hover:drop-shadow-none hover:outline-main-color/0  rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-2 text-s md:text-lg dark:text-black drop-shadow-lg duration-500 hover:shadow-def"
           href="./Nelly_Bise_developpeuse_front-end.pdf"
           target="_blank"
           aria-label="Cliquer pour ouvrir mon CV en PDF dans une nouvelle fenêtre"
