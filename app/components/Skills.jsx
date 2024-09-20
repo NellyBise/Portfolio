@@ -13,7 +13,7 @@ function Skills({ allTechSkills, allToolSkills }) {
           COMPÉTENCES
         </h2>
         <div className="flex justify-around md:flex-row flex-col gap-6 md:gap-16">
-          <article className="bg-white bg-gradient-to-br shadow-def shadow-white/20 dark:from-grey dark:to-grey/80 md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
+          <article className="bg-white bg-gradient-to-br shadow-cardshadow shadow-black/10 dark:shadow-white/30  dark:from-grey dark:to-grey/80 md:w-96 rounded-3xl py-12 flex flex-col items-center">
             <div className="flex items-start">
               <Image
                 className="mr-2"
@@ -37,7 +37,7 @@ function Skills({ allTechSkills, allToolSkills }) {
                 ))}
             </ul>
           </article>
-          <article className="bg-white bg-gradient-to-br shadow-def shadow-white/20 dark:from-grey dark:to-grey/80 md:w-96 drop-shadow-lg rounded-3xl py-12 flex flex-col items-center">
+          <article className="bg-white bg-gradient-to-br shadow-cardshadow shadow-black/10 dark:shadow-white/30 dark:from-grey dark:to-grey/80 md:w-96 rounded-3xl py-12 flex flex-col items-center">
             <div className="flex items-start">
               <Image
                 className="mr-2"

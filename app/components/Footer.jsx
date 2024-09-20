@@ -1,9 +1,9 @@
 import mail from '../src/mail.png'
 import linkedin from '../src/linkedin.png'
-import github from '../src/github.png'
+import github from '../src/github.svg'
 import mailDark from '../src/mail_dark.png'
 import linkedinDark from '../src/linkedin_dark.png'
-import githubDark from '../src/github_dark.png'
+import githubDark from '../src/github-dark.svg'
 import Image from 'next/image'
 
 function Footer() {
