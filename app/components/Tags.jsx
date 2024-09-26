@@ -30,7 +30,7 @@ export default function Tags({ tagsContent }) {
 
   return (
     <div className="flex justify-end ">
-      <ul className="flex gap-2 rounded-lg bg-light-color text-center  dark:bg-dark-color p-2 text-sm md:text-base w-max">
+      <ul className="flex gap-2 rounded-lg bg-light-color text-center  dark:bg-grey p-2 text-sm md:text-base w-max">
         {tagsContent.map((tag) => (
           <li className="" key={tag}>
             {iconsMap[tag] || tag}

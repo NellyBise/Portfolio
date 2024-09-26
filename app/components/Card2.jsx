@@ -7,15 +7,16 @@ import webDark from '../src/web-dark.svg'
 
 export default function Card2({ project }) {
   return (
-    <article className="p-6 flex flex-col justify-start rounded-xl shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden">
-      <Image
-        className="rounded-xl shadow-cardshadow shadow-black/10 dark:shadow-white/20"
-        src={project.cover}
-        alt=""
-        width={1600}
-        height={900}
-      />
-
+    <article className="group relative p-6 flex flex-col justify-start rounded-xl bg-white dark:bg-dark-color shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden">
+      <div className="rounded-xl shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden">
+        <Image
+          className="group-hover:scale-110 duration-500"
+          src={project.cover}
+          alt=""
+          width={1600}
+          height={900}
+        />
+      </div>
       <h3 className="text-3xl my-4 sm:text-4xl text-main-color dark:text-secondary-color">
         {project.name}
       </h3>

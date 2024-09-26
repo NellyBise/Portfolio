@@ -35,8 +35,8 @@ function Header() {
 
   return (
     <>
-      <header className="fixed w-full bg-white dark:bg-dark-color drop-shadow-lg z-20">
-        <div className="max-w-7xl m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-xl">
+      <header className="fixed w-full bg-white dark:bg-dark-color drop-shadow-lg dark:drop-shadow-[0_5px_25px_rgba(255,255,255,0.25)] z-20">
+        <div className="max-w-[1440px] m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-xl">
           <Link href="/" aria-label="Cliquer pour revenir à l'accueil">
             <Image
               className="block dark:hidden"
@@ -67,19 +67,19 @@ function Header() {
                 <li className="hover:font-bold">
                   <Link
                     className="py-1.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
-                    href="/#skills"
+                    href="/#projects"
                     onClick={toggle}
                   >
-                    COMPÉTENCES
+                    PROJETS
                   </Link>
                 </li>
                 <li className="hover:font-bold">
                   <Link
                     className="py-1.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
-                    href="/#projects"
+                    href="/#skills"
                     onClick={toggle}
                   >
-                    PROJETS
+                    COMPÉTENCES
                   </Link>
                 </li>
                 <li className="hover:font-bold">

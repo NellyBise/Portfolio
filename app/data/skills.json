@@ -1,0 +1,97 @@
+{
+  "stack": [
+    {
+      "name": "JavaScript",
+      "img": "/logos/JS.png",
+      "_id": "664f5c5bfc883cc6e5ed7810"
+    },
+
+    {
+      "name": "React",
+      "img": "/logos/React.png",
+      "_id": "664f5c72fc883cc6e5ed7811"
+    },
+    {
+      "_id": "664f5ce1fc883cc6e5ed7812",
+      "name": "Next.js",
+      "img": "/logos/Next.png"
+    },
+    {
+      "_id": "665ef565bb3086eed8b2e842",
+      "name": "Tailwind",
+      "img": "/logos/Tailwind.png"
+    },
+    {
+      "_id": "664f6205fc883cc6e5ed7815",
+      "name": "GitHub",
+      "img": "/logos/Github.png"
+    }
+  ],
+  "front": [
+    {
+      "img": "/logos/HTML.png",
+      "_id": "664f555e615963c0792c0358",
+      "name": "HTML"
+    },
+    {
+      "_id": "664f5bf9fc883cc6e5ed780e",
+      "name": "CSS",
+      "img": "/logos/CSS.png"
+    },
+    {
+      "name": "Vue.js",
+      "img": "/logos/Vue.png",
+      "_id": "664cc6e5ed7810"
+    },
+    {
+      "_id": "664f5c31fc883cc6e5ed780f",
+      "name": "Sass",
+      "img": "/logos/Sass.png"
+    }
+  ],
+  "back": [
+    {
+      "name": "Node.js",
+      "img": "/logos/Node.png",
+      "_id": "664f6061fc883cc6e5ed7813"
+    },
+    {
+      "_id": "664f6133fc883cc6e5ed7814",
+      "name": "Express",
+      "img": "/logos/Express.png"
+    },
+    {
+      "_id": "665ef565bb3086eed8b2e858",
+      "name": "GraphQL",
+      "img": "/logos/GraphQL.png"
+    },
+    {
+      "_id": "665ef565bb3086eed8b2e858",
+      "name": "MongoDB",
+      "img": "/logos/Mongodb.png"
+    }
+  ],
+  "toolSkills": [
+    {
+      "_id": "664f6205fc8835ed7815",
+      "name": "Git",
+      "img": "/logos/Git.png"
+    },
+
+    {
+      "_id": "664f622ffc883cc6e5ed7816",
+      "name": "VSCode",
+      "img": "/logos/VSCode.png"
+    },
+    {
+      "_id": "664fc6e5ed7819",
+      "name": "Vite",
+      "img": "/logos/Vite.png"
+    },
+    {
+      "_id": "664f62a3fc883cc6e5ed7819",
+      "name": "Postman",
+      "img": "/logos/Postman.png"
+    }
+  ]
+}

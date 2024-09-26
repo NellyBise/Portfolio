@@ -4,13 +4,13 @@ function Skill({ image, name }) {
   return (
     <li className="flex flex-col items-center">
       <Image
-        className="flex items-center h-14 w-auto p-2 mx-2"
+        className="flex items-center p-2 mx-2 size-12 md:size-16 lg:size-20"
         src={image}
         alt=""
         height={50}
         width={50}
       />
-      <p id={name} className="mb-6">
+      <p className="text-base lg:text-lg" id={name}>
         {name}
       </p>
     </li>

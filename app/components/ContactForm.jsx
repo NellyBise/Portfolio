@@ -3,6 +3,11 @@
 import { useEffect, useState } from 'react'
 
 export default function Form() {
+  const [isOpen, setIsOpen] = useState(false)
+  function toggle() {
+    setIsOpen(!isOpen)
+  }
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -71,18 +76,27 @@ export default function Form() {
       <h2 className="text-4xl mt-2 mb-10 text-center text-main-color dark:text-secondary-color">
         CONTACTEZ-MOI
       </h2>
-      <p>
-        Vous pouvez utiliser le formulaire ou m&rsquo;envoyer directement un{' '}
+      <p className="px-6 text-xl text-center">
+        Vous pouvez utiliser le formulaire, m&rsquo;envoyer directement un{' '}
         <a
           className="text-main-color underline pointer-events-auto dark:text-secondary-color  duration-300 hover:font-bold"
           href="mailto:nelly.bise@free.fr"
           aria-label="cliquer pour envoyer un email"
         >
           mail
-        </a>
+        </a>{' '}
+        ou{' '}
+        <button
+          className="text-main-color underline pointer-events-auto dark:text-secondary-color  duration-300 hover:font-bold"
+          onClick={toggle}
+          aria-label="cliquer pour afficher mon numéro de téléphone"
+          rel="nofollow"
+        >
+          {isOpen ? '06 20 14 30 13' : "m'appeler"}
+        </button>
       </p>
       <form
-        className="mt-8 flex flex-col w-full px-6 md:w-2/5"
+        className="mt-8 flex flex-col w-full px-6 max-w-[700px]"
         onSubmit={handleSubmit}
       >
         <label htmlFor="name">Votre nom</label>
