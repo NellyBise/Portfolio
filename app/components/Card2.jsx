@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Tags from './Tags'
 import github from '../src/github.svg'
@@ -5,9 +6,26 @@ import githubDark from '../src/github-dark.svg'
 import web from '../src/web.svg'
 import webDark from '../src/web-dark.svg'
 
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+
+const variants = {
+  visible: { x: 0, opacity: 1, filter: 'blur(0px)' },
+  hidden: { x: 80, opacity: 0, filter: 'blur(2px)' },
+}
+
 export default function Card2({ project }) {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
+
   return (
-    <article className="group relative p-6 flex flex-col justify-start rounded-xl bg-white dark:bg-dark-color shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden">
+    <motion.article
+      ref={ref}
+      variants={variants}
+      animate={isInView ? 'visible' : 'hidden'}
+      transition={{ duration: 0.5 }}
+      className="group relative p-6 flex flex-col justify-start rounded-xl bg-white dark:bg-dark-color shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden"
+    >
       <div className="rounded-xl shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden">
         <Image
           className="group-hover:scale-110 duration-500"
@@ -34,12 +52,14 @@ export default function Card2({ project }) {
               src={web}
               alt="lien vers le site"
               width={40}
+              height={40}
             />
             <Image
               className="hidden dark:block"
               src={webDark}
               alt="lien vers le site"
               width={40}
+              height={40}
             />
           </a>
         ) : (
@@ -56,12 +76,14 @@ export default function Card2({ project }) {
               src={github}
               alt="lien vers GitHub"
               width={35}
+              height={35}
             />
             <Image
               className="hidden dark:block"
               src={githubDark}
               alt="lien vers GitHub"
               width={35}
+              height={35}
             />
           </a>
         ) : (
@@ -70,6 +92,6 @@ export default function Card2({ project }) {
       </div>
       <div className="flex-grow"></div>
       <Tags tagsContent={project.techno} />
-    </article>
+    </motion.article>
   )
 }

@@ -1,15 +1,32 @@
 'use client'
 
 import Skill from './Skill'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+
+const variants = {
+  visible: { y: 0, opacity: 1, filter: 'blur(0px)' },
+  hidden: { y: 50, opacity: 0, filter: 'blur(2px)' },
+}
 
 function Skills({ allStack }) {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
   return (
-    <section id="skills" className="bg-light-color dark:bg-grey py-8 md:py-24">
+    <motion.section
+      variants={variants}
+      ref={ref}
+      animate={isInView ? 'visible' : 'hidden'}
+      transition={{ duration: 0.5 }}
+      id="skills"
+      className="bg-light-color dark:bg-grey py-8 md:py-24"
+    >
       <div className="md:w-4/5 mx-auto md:py-4 px-6 flex flex-col items-center">
         <h2 className="text-4xl mt-2 mb-12 md:mb-24 text-center text-main-color dark:text-secondary-color">
           COMPÉTENCES
         </h2>
-        <article className="bg-white dark:bg-white/40 shadow-cardshadow shadow-black/10 dark:shadow-white/20 rounded-3xl py-6 mb-12">
+        <article className="animate-fadeIn duration-300 bg-white dark:bg-white/40 shadow-cardshadow shadow-black/10 dark:shadow-white/20 rounded-3xl py-6 mb-12">
           <ul className="flex px-12 justify-center flex-wrap gap-4 lg:gap-8">
             {allStack &&
               allStack.map((skill) => (
@@ -33,7 +50,7 @@ function Skills({ allStack }) {
           Mes autres compétences - CV
         </a>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

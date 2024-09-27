@@ -32,6 +32,15 @@ module.exports = {
         cardshadow:
           '0px -2px 40px 0px rgba(187,155,255, 0.15), 0px -2px 10px 0px rgba(233,223,255, 0.3), 0px 0.5px 0px 0px rgba(255, 255, 255, 0.5) inset',
       },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 1s ease-in-out',
+      },
     },
   },
   darkMode: ['class'],

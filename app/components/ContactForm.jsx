@@ -1,8 +1,18 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+
+const variants = {
+  visible: { y: 0, opacity: 1, filter: 'blur(0px)' },
+  hidden: { y: 50, opacity: 0, filter: 'blur(5px)' },
+}
 
 export default function Form() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
   const [isOpen, setIsOpen] = useState(false)
   function toggle() {
     setIsOpen(!isOpen)
@@ -72,7 +82,14 @@ export default function Form() {
   }
 
   return (
-    <section className="flex flex-col items-center py-12 md:py-24" id="contact">
+    <motion.section
+      variants={variants}
+      ref={ref}
+      animate={isInView ? 'visible' : 'hidden'}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col items-center py-12 md:py-24"
+      id="contact"
+    >
       <h2 className="text-4xl mt-2 mb-10 text-center text-main-color dark:text-secondary-color">
         CONTACTEZ-MOI
       </h2>
@@ -148,6 +165,6 @@ export default function Form() {
           </p>
         )}
       </form>
-    </section>
+    </motion.section>
   )
 }
