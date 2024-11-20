@@ -5,6 +5,8 @@ import CSSIcon from '../../public/logos/CSS.png'
 import JavaScriptIcon from '../../public/logos/JS.png'
 import SassIcon from '../../public/logos/Sass.png'
 import TailwindIcon from '../../public/logos/Tailwind.png'
+import GraphQL from '../../public/logos/GraphQL.png'
+import Supabase from '../../public/logos/Supabase.png'
 
 import Image from 'next/image'
 
@@ -25,7 +27,8 @@ export default function Tags({ tagsContent }) {
     ),
     Sass: <Image src={SassIcon} alt="Sass" className="h-6 w-6" />,
     Tailwind: <Image src={TailwindIcon} alt="Tailwind" className="h-6 w-6" />,
-    // Ajoute d'autres icônes ici
+    GraphQL: <Image src={GraphQL} alt="GraphQL" className="h-6 w-6" />,
+    Supabase: <Image src={Supabase} alt="Supabase" className="h-6 w-6" />,
   }
 
   return (

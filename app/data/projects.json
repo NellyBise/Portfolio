@@ -6,7 +6,7 @@
     "link": "",
     "github": "https://github.com/NellyBise/Portfolio-architecte-sophie-bluel",
     "techno": ["HTML", "CSS", "JavaScript"],
-    "cover": "/projects/1717080027162-cover-sophie.png",
+    "cover": "/projects/cover-sophie.png",
     "images": [
       "/projects/1717080027165-1-sophie.png",
       "/projects/1717080027170-2-sophie.png",
@@ -21,7 +21,7 @@
     "link": "https://nina-carducci-lake.vercel.app/",
     "github": "https://github.com/NellyBise/nina-carducci_P5",
     "techno": ["JavaScript"],
-    "cover": "/projects/1717080297153-cover-nina.png",
+    "cover": "/projects/cover-nina.png",
     "images": [
       "/projects/1717080297161-1-nina.png",
       "/projects/1717080297172-2-nina.png",
@@ -35,7 +35,7 @@
     "link": "https://kasa-ochre.vercel.app/",
     "github": "https://github.com/NellyBise/P5-Kasa",
     "techno": ["React", "Sass"],
-    "cover": "/projects/1717080492119-cover-kasa.jpg",
+    "cover": "/projects/cover-kasa.jpg",
     "images": [
       "/projects/1717080492120-1-kasa.jpg",
       "/projects/1717080492123-2-kasa.jpg",
@@ -44,8 +44,8 @@
   },
   {
     "_id": "4",
-    "name": "Musicalement Vôtre (en cours)",
-    "mission": " Refonte d'un site web pour un client dans le domaine musical, en suivant une charte graphique préexistante. Amélioration de l'expérience utilisateur grâce à une navigation plus intuitive et à la création d'une interface responsive.",
+    "name": "Musicalement Vôtre",
+    "mission": "Refonte d'un site web pour un client dans le domaine musical, en suivant une charte graphique préexistante. Amélioration de l'expérience utilisateur grâce à une navigation plus intuitive et à la création d'une interface responsive.",
     "link": "https://ubiquitous-liger-099c8c.netlify.app/",
     "github": "https://github.com/NellyBise/Musicalement-votre",
     "techno": ["Nextjs", "Tailwind"],
@@ -70,5 +70,15 @@
       "/projects/2-vaultflow.png",
       "/projects/cover-vaultflow.png"
     ]
+  },
+  {
+    "_id": "6",
+    "name": "Train Up (en cours)",
+    "mission": "Développement d'une application web pour créer des circuits d'entraînement personnalisés.",
+    "link": "https://trainup-rosy.vercel.app/",
+    "github": "https://github.com/NellyBise/Training",
+    "techno": ["Nextjs", "Tailwind", "GraphQL", "Supabase"],
+    "cover": "/projects/cover-trainup.png",
+    "images": []
   }
 ]

@@ -43,7 +43,7 @@ function Skills({ allStack }) {
       <div className="flex justify-center">
         <a
           className="mt-12 md:mt-20 text-center pointer-events-auto border-[1px] border-secondary-color outline outline-1 -outline-offset-1 outline-secondary-color/60 hover:outline-offset-8 hover:drop-shadow-none hover:outline-main-color/0  rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-2 text-s md:text-lg dark:text-black drop-shadow-lg duration-500 hover:shadow-def"
-          href="./Nelly_Bise_developpeuse_front-end.pdf"
+          href="./BISE_Nelly-CV-developpeuse_web.pdf"
           target="_blank"
           aria-label="Cliquer pour ouvrir mon CV en PDF dans une nouvelle fenêtre"
         >
