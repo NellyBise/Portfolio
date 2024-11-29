@@ -75,7 +75,7 @@
     "_id": "6",
     "name": "Train Up (en cours)",
     "mission": "Développement d'une application web pour créer des circuits d'entraînement personnalisés.",
-    "link": "https://trainup-rosy.vercel.app/",
+    "link": "https://train-up.fr/",
     "github": "https://github.com/NellyBise/Training",
     "techno": ["Nextjs", "Tailwind", "GraphQL", "Supabase"],
     "cover": "/projects/cover-trainup.png",
