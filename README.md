@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <a href="https://www.nelly-bise.fr/" target="blank"><img align="center" src="https://www.nelly-bise.fr/favicon.ico" alt="" height="80" width="80" /></a> Nelly Bise | Développeuse Web
 
-## Getting Started
+Bienvenue sur mon portfolio ! Ce site présente mes projets de développement web. Vous y trouverez des exemples de mon travail, mes compétences et mes expériences.
 
-First, run the development server:
+**Lien vers le site :** www.nelly-bise.fr
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Fonctionnalités
+
+- Projets : Une section détaillée sur une sélection des projets réalisés, avec descriptions, technologies utilisées, et liens vers les repos GitHub ou démos en ligne.
+- Mes compétences : Mon parcours professionnel, mes passions et mes aspirations.
+- Contact : Un formulaire pour me contacter directement.
+
+## Technologies utilisées
+
+- Frontend : Next.js, TailwindCSS, Framer Motion
+- Backend : Nodemailer
+- Hébergement : Vercel
+
+## Installation locale
+
+Clone le repo :
+
+```
+git clone https://github.com/NellyBise/Portfolio.git
+cd train-up
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Installe les dépendances :
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+npm install
+Crée un fichier .env.local pour les variables d’environnement
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Lance l’application :
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run dev
+Accède à l’application sur http://localhost:3000.
+```
