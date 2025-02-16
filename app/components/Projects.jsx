@@ -13,6 +13,20 @@ const containerVariants = {
   hidden: { opacity: 0 },
 }
 
+const variantsleft = {
+  visible: { x: 0, opacity: 1, filter: 'blur(0px)' },
+  hidden: { x: -100, opacity: 0, filter: 'blur(2px)' },
+}
+const variantsright = {
+  visible: { x: 0, opacity: 1, filter: 'blur(0px)' },
+  hidden: { x: 100, opacity: 0, filter: 'blur(2px)' },
+}
+
+const variants = {
+  visible: { y: 0, opacity: 1, filter: 'blur(0px)' },
+  hidden: { y: -100, opacity: 0, filter: 'blur(2px)' },
+}
+
 export default function Projects({ projects }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -27,7 +41,7 @@ export default function Projects({ projects }) {
       </h2>
       <motion.div
         ref={ref}
-        variants={containerVariants}
+        variants={variants}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
         className="grid md:grid-cols-2 lg:grid-cols-3 md:max-w-7xl mx-auto -mt-20 gap-12 px-6"

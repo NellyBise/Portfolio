@@ -23,17 +23,13 @@ function About() {
           Bonjour, je suis Nelly, développeuse web !
         </h1>
         <p className="leading-loose text-lg md:text-2xl mt-6">
-          Je crée des applications web maintenables et accessibles.
+          Avec une expérience en laboratoire et en développement web, j’aime
+          comprendre, optimiser et améliorer les outils avec lesquels je
+          travaille.
         </p>
-        <div className="flex justify-center gap-4 md:gap-6 wrap">
-          <a
-            className="text-center border-[1px] border-secondary-color text-center pointer-events-auto  outline outline-1 -outline-offset-1 outline-secondary-color/60 hover:outline-offset-8 hover:drop-shadow-none hover:outline-main-color/0  rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-2 text-base md:text-xl dark:text-black drop-shadow-lg duration-500 hover:shadow-def"
-            href="#contact"
-            aria-label="cliquer pour envoyer un email"
-          >
-            Contactez-moi
-          </a>
-        </div>
+        <p className="leading-loose text-lg md:text-2xl mt-6">
+          J’aime concevoir des applications web maintenables et accessibles.
+        </p>
       </motion.div>
 
       <div className="-mt-48 md:-mt-96 -mr-96">

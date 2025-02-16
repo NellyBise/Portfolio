@@ -8,10 +8,13 @@ import Image from 'next/image'
 
 function Footer() {
   return (
-    <footer className="bg-light-color dark:bg-dark-color">
-      <div className="max-w-7xl m-auto flex justify-between items-center h-24 px-2">
-        <p>Réalisé par Nelly Bise </p>
-        <div className="flex gap-4">
+    <footer className="bg-light-color dark:bg-dark-color py-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+        <p className="text-center md:text-left text-sm text-gray-500 dark:text-gray-400">
+          Réalisé par Nelly Bise
+        </p>
+
+        <div className="flex gap-4 mt-4 md:mt-0">
           <a
             className="h-8 md:h-12 flex items-center"
             href="mailto:nelly.bise@free.fr"
@@ -33,6 +36,7 @@ function Footer() {
             className="h-8 md:h-12 flex items-center"
             href="https://github.com/NellyBise"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Image
               className="block dark:hidden"
@@ -51,6 +55,7 @@ function Footer() {
             className="h-8 md:h-12 flex items-center"
             href="https://www.linkedin.com/in/nelly-bise/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Image
               className="block dark:hidden"
@@ -64,6 +69,15 @@ function Footer() {
               alt="lien vers LinkedIn"
               width={40}
             />
+          </a>
+        </div>
+
+        <div className="mt-4 md:mt-0">
+          <a
+            href="/mentions-legales"
+            className="text-sm text-center text-gray-500 dark:text-gray-400 hover:underline"
+          >
+            Mentions légales
           </a>
         </div>
       </div>

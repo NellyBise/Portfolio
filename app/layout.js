@@ -2,6 +2,8 @@ import './globals.css'
 import { Inter, League_Gothic } from 'next/font/google'
 import { DarkModeProvider } from './utils/Darkmode'
 import Script from 'next/script'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -91,7 +93,9 @@ export default function RootLayout({ children }) {
         </noscript>
 
         <body className="flex flex-col justify-between min-h-screen">
+          <Header />
           {children}
+          <Footer />
         </body>
       </html>
     </DarkModeProvider>

@@ -76,15 +76,6 @@ function Header() {
                 <li>
                   <Link
                     className="py-2.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
-                    href="/#skills"
-                    onClick={toggle}
-                  >
-                    compétences
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="py-2.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                     href="/#contact"
                     onClick={toggle}
                   >

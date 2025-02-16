@@ -18,18 +18,10 @@ export default async function Home() {
   return (
     <>
       <main>
-        <Header />
         <BackTop />
         <About />
         <Projects projects={projects} />
-        <Skills
-          allFrontSkills={allFrontSkills}
-          allBackSkills={allBackSkills}
-          allToolSkills={allToolSkills}
-          allStack={allStack}
-        />
         <Form />
-        <Footer />
       </main>
     </>
   )
