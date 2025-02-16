@@ -93,7 +93,7 @@ export default function Form() {
       <h2 className="text-4xl mt-2 mb-10 text-center text-main-color dark:text-secondary-color">
         CONTACTEZ-MOI
       </h2>
-      <p className="px-6 text-xl text-center">
+      <p className="px-6 text-base md:text-xl text-center">
         Vous pouvez utiliser le formulaire, m&rsquo;envoyer directement un{' '}
         <a
           className="text-main-color underline pointer-events-auto dark:text-secondary-color  duration-300 hover:font-bold"

@@ -22,12 +22,12 @@ function About() {
         <h1 className="leading text-5xl lg:text-7xl text-main-color dark:text-secondary-color">
           Bonjour, je suis Nelly, développeuse web !
         </h1>
-        <p className="leading-loose text-lg md:text-2xl mt-6">
+        <p className="leading-loose text-base md:text-xl mt-6">
           Avec une expérience en laboratoire et en développement web, j’aime
           comprendre, optimiser et améliorer les outils avec lesquels je
           travaille.
         </p>
-        <p className="leading-loose text-lg md:text-2xl mt-6">
+        <p className="leading-loose text-base md:text-xl mt-6">
           J’aime concevoir des applications web maintenables et accessibles.
         </p>
       </motion.div>

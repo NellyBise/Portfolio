@@ -1,20 +1,5 @@
 [
   {
-    "_id": "1",
-    "name": "Portfolio de Sophie Bluel",
-    "mission": " Développement d'une interface utilisateur réactive pour un portfolio. Mise en place de la connexion utilisateur et d'une gestion dynamique des photos sans rechargement de page, en JavaScript pur. Le projet a mis l'accent sur une expérience utilisateur fluide.",
-    "link": "",
-    "github": "https://github.com/NellyBise/Portfolio-architecte-sophie-bluel",
-    "techno": ["HTML", "CSS", "JavaScript"],
-    "cover": "/projects/cover-sophie.png",
-    "images": [
-      "/projects/1717080027165-1-sophie.png",
-      "/projects/1717080027170-2-sophie.png",
-      "/projects/1717080027176-3-sophie.png",
-      "/projects/1717080027180-4-sophie.png"
-    ]
-  },
-  {
     "_id": "2",
     "name": "Portfolio de Nina Carducci",
     "mission": "Optimisation complète du portfolio, avec un focus sur l'amélioration de l'accessibilité (audit selon les standards WCAG). Débogage et optimisation du site pour un chargement plus rapide et une meilleure expérience utilisateur. Résolution de bugs.",
@@ -31,7 +16,7 @@
   {
     "_id": "3",
     "name": "Plateforme immobilière Kasa",
-    "mission": "Conception du Front-End pour une plateforme de location immobilière avec React et Sass (méthodologie BEM). Création de composants interactifs comme un carrousel et des menus déroulants personnalisés, sans dépendance à des bibliothèques externes. Accessibilité complète avec navigation au clavier.",
+    "mission": "À partir d'une maquette, conception de l'interface d'une plateforme de location immobilière. Création de composants interactifs comme un carrousel et des menus déroulants personnalisés, sans dépendance à des bibliothèques externes. Accessibilité complète avec navigation au clavier.",
     "link": "https://kasa-ochre.vercel.app/",
     "github": "https://github.com/NellyBise/P5-Kasa",
     "techno": ["React", "Sass"],
@@ -45,7 +30,7 @@
   {
     "_id": "4",
     "name": "Musicalement Vôtre",
-    "mission": "Refonte d'un site web pour un client dans le domaine musical, en suivant une charte graphique préexistante. Amélioration de l'expérience utilisateur grâce à une navigation plus intuitive et à la création d'une interface responsive.",
+    "mission": "Refonte d'un site web pour un client dans le domaine musical en respectant une charte graphique préexistante. L'optimisation de l'UX/UI a permis une navigation plus intuitive, et l’interface a été rendue entièrement responsive pour améliorer l'accès aux informations sur tous les appareils.",
     "link": "https://ubiquitous-liger-099c8c.netlify.app/",
     "github": "https://github.com/NellyBise/Musicalement-votre",
     "techno": ["Nextjs", "Tailwind"],
@@ -73,12 +58,22 @@
   },
   {
     "_id": "6",
-    "name": "Train Up (en cours)",
+    "name": "Train Up",
     "mission": "Développement d'une application web pour créer des circuits d'entraînement personnalisés.",
     "link": "https://train-up.fr/",
     "github": "https://github.com/NellyBise/Training",
     "techno": ["Nextjs", "Tailwind", "GraphQL", "Supabase"],
     "cover": "/projects/cover-trainup.png",
+    "images": []
+  },
+  {
+    "_id": "7",
+    "name": "Notaria Prestige",
+    "mission": "Création d'un site vitrine one-page pour Notaria Prestige, une entreprise de notariat. Ce projet présente une interface simple et moderne, optimisée pour tous les appareils.",
+    "link": "https://notaria-prestige.vercel.app/",
+    "github": "https://github.com/NellyBise/notaria-prestige",
+    "techno": ["Nextjs", "Tailwind"],
+    "cover": "/projects/cover-notaria.png",
     "images": []
   }
 ]

@@ -80,17 +80,16 @@ export default function RootLayout({ children }) {
                 gtag('config', 'G-644Y34G8MP');`,
             }}
           />
+          {/* Noscript for Google Tag Manager */}
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-PX9CTLPQ"
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            ></iframe>
+          </noscript>
         </head>
-
-        {/* Noscript for Google Tag Manager */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PX9CTLPQ"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          ></iframe>
-        </noscript>
 
         <body className="flex flex-col justify-between min-h-screen">
           <Header />
