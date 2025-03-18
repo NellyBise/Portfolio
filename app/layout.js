@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, League_Gothic } from 'next/font/google'
+import { Inter, Archivo_Black } from 'next/font/google'
 import { DarkModeProvider } from './utils/Darkmode'
 import Script from 'next/script'
 import Header from './components/Header'
@@ -11,10 +11,11 @@ export const inter = Inter({
   variable: '--font-inter',
 })
 
-export const league = League_Gothic({
+export const league = Archivo_Black({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-league',
+  weight: '400',
 })
 
 export const metadata = {

@@ -83,6 +83,15 @@ function Header() {
                   </Link>
                 </li>
                 <li>
+                  <Link
+                    className="py-2.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
+                    href="/blog"
+                    onClick={toggle}
+                  >
+                    blog
+                  </Link>
+                </li>
+                <li>
                   <div className="h-14 flex justify-center items-center">
                     <ToggleDarkButton />
                   </div>

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Stratégies SEO : Maximiser la Visibilité de Votre Site Web",
+    "excerpt": "Le SEO est un élément clé pour toute entreprise souhaitant être visible sur Google et attirer du trafic qualifié...",
+    "intro": "Le SEO (Search Engine Optimization) est un levier essentiel pour toute entreprise souhaitant être visible sur Google et attirer du trafic qualifié. Dans cet article, nous explorons les stratégies essentielles pour optimiser le référencement de votre site web en nous appuyant sur trois piliers fondamentaux : le SEO on-page, le SEO technique et le SEO off-page. Cet article explore en détail ces aspects afin d’optimiser le référencement de votre site web.",
+    "date": "12 Mars 2025",
+    "image": "/posts/SEO.png",
+    "slug": "strategie-SEO",
+    "component": "Strategie-SEO",
+    "tags": ["actualités", "personnel"]
+  },
+  {
+    "id": 2,
+    "title": "Votre temps a un prix : découvrez comment le calculer",
+    "excerpt": "Calculez la valeur financière de votre temps et interprétez-là...",
+    "intro": "Vous sentez parfois que votre temps vous échappe ? Que certaines tâches ne valent pas le temps que vous y consacrez ? Savoir combien vaut votre temps est essentiel pour optimiser votre quotidien, mieux organiser vos priorités et prendre les bonnes décisions. Dans cet article, je vous explique une méthode simple et efficace pour évaluer la valeur de votre temps et mieux l’utiliser.",
+    "date": "17 Mars 2025",
+    "image": "/posts/SEO.png",
+    "slug": "valeur-temps",
+    "component": "Valeur-temps",
+    "tags": ["tutoriel", "design"]
+  }
+]

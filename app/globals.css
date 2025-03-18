@@ -21,7 +21,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--font-league);
+  font-family: var(--font-inter);
+  font-weight: 700;
 }
 
 @layer utilities {

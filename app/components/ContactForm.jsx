@@ -155,7 +155,7 @@ export default function Form() {
         ></textarea>
         <button
           disabled={isDisabled}
-          className="w-1/3 self-end pointer-events-auto border-[1px] border-secondary-color text-center pointer-events-auto  outline outline-1 -outline-offset-1 outline-secondary-color/60 hover:outline-offset-8 hover:drop-shadow-none hover:outline-main-color/0  rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-2 text-s md:text-lg dark:text-black drop-shadow-lg duration-500 hover:shadow-def disabled:bg-light-color disabled:cursor-not-allowed disabled:outline-light-color disabled:border-light-color disabled:transform-none disabled:hover:hover:-outline-offset-1 disabled:hover:drop-shadow-lg disabled:hover:shadow-none"
+          className="w-1/3 self-end pointer-events-auto border-[1px] border-secondary-color text-center pointer-events-auto hover:drop-shadow-none  rounded-3xl bg-secondary-color my-12 md:mt-20 px-6 py-2 text-s md:text-lg dark:text-black drop-shadow-lg duration-500 hover:shadow-def disabled:bg-light-color disabled:cursor-not-allowed disabled:border-light-color disabled:transform-none disabled:hover:drop-shadow-lg disabled:hover:shadow-none"
         >
           Envoyer
         </button>

@@ -19,7 +19,7 @@ function About() {
         animate="visible"
         className="md:w-2/5 text-left px-12 md:px-0 xl:px-12"
       >
-        <h1 className="leading text-5xl lg:text-7xl text-main-color dark:text-secondary-color">
+        <h1 className="leading text-4xl lg:text-6xl text-main-color dark:text-secondary-color">
           Bonjour, je suis Nelly, développeuse web !
         </h1>
         <p className="leading-loose text-base md:text-xl mt-6">

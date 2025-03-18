@@ -31,7 +31,7 @@ export default function Card2({ project }) {
           height={900}
         />
       </div>
-      <h3 className="text-3xl my-4 sm:text-4xl text-main-color dark:text-secondary-color">
+      <h3 className="text-2xl my-4 sm:text-3xl text-main-color dark:text-secondary-color">
         {project.name}
       </h3>
 

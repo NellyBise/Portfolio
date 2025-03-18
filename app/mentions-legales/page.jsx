@@ -3,7 +3,7 @@ import React from 'react'
 export default function MentionsLegales() {
   return (
     <div className="container flex flex-col gap-6 mx-auto pt-24 px-4 py-12">
-      <h1 className="text-3xl font-bold text-center uppercase mb-6 text-main-color dark:text-secondary-color">
+      <h1 className="text-4xl mt-2 mb-10 text-center text-main-color uppercase dark:text-secondary-color">
         Mentions Légales
       </h1>
 
