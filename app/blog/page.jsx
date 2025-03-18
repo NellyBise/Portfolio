@@ -15,11 +15,13 @@ export default async function Blog() {
       </h1>
 
       <div className="grid gap-8 flex flex-col justify-center">
-        {posts.map((post) => (
+        {posts.reverse().map((post) => (
           <Link
             href={`/blog/${post.slug}`}
             key={post.id}
-            className="group flex flex-col md:flex-row p-6 gap-4 max-w-[900px] bg-white rounded-lg dark:bg-dark-color shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden transition-shadow duration-300"
+            className={`group flex flex-col md:flex-row p-6 gap-4 max-w-[900px] bg-white rounded-lg dark:bg-dark-color shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden transition-shadow duration-300  ${
+              post.id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'
+            }`}
           >
             <div className="w-9/10">
               {/*<div className="flex gap-2 mb-2">
