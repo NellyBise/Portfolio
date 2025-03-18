@@ -27,7 +27,7 @@ export default function CreerSite() {
         Nous passons souvent des heures à scroller sur notre téléphone ou à
         regarder la télévision. Si c’est votre cas, vous avez sans doute du
         temps disponible. Mais attention : il ne s’agit pas seulement de temps
-        "physique", il faut aussi une disponibilité mentale.
+        physique, il faut aussi une disponibilité mentale.
       </p>
       <p>
         Créer un site demande de l’implication. Êtes-vous prêt à vous aventurer
