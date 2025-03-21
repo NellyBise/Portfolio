@@ -54,10 +54,9 @@ function Header() {
           <div
             className={`md:flex md:static md:h-14 md:w-max md:bg-transparent fixed left-0 top-14 w-full h-screen bg-light-color dark:bg-dark-color overflow-hidden transform transition-transform duration-300 ease-in-out ${
               isOpen
-                ? 'translate-y-0 opacity-100 pointer-events-auto'
-                : '-translate-y-full opacity-0 pointer-events-none md:pointer-events-auto md:opacity-100 md:translate-y-0'
+                ? 'translate-y-0 opacity-100 pointer-events-auto z-10'
+                : '-translate-y-full opacity-0 pointer-events-none md:pointer-events-auto md:opacity-100 md:translate-y-0 -z-1'
             }`}
-            style={{ zIndex: isOpen ? 10 : -1 }}
           >
             <nav
               id="menu"

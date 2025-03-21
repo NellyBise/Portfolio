@@ -4,6 +4,7 @@ import { DarkModeProvider } from './utils/Darkmode'
 import Script from 'next/script'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import BackTop from './components/BackTopButton'
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} ${league.variable} scroll-smooth`}
       >
         <head>
+          <link rel="Canoniques" href="https://www.nelly-bise.fr"></link>
           {/* Google Tag Manager Script */}
           <Script
             id="GoogleTagManager"
@@ -93,6 +95,7 @@ export default function RootLayout({ children }) {
         </head>
 
         <body className="flex flex-col justify-between min-h-screen">
+          <BackTop />
           <Header />
           {children}
           <Footer />
