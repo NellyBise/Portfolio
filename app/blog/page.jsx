@@ -3,8 +3,19 @@ import Image from 'next/image'
 import posts from '../data/blog.json'
 
 export const metadata = {
-  title: 'Blog | Nelly Bise',
-  description: 'Découvrez les articles de blog de Nelly Bise',
+  title: 'Blog de Nelly Bise - Gestion du temps, productivité & web',
+  description:
+    'Je partage mes réflexions et expériences sur la gestion du temps, le web et bien plus encore. Suivez mon parcours et mes découvertes !',
+  openGraph: {
+    images: [
+      {
+        type: 'image/png',
+        width: 500,
+        height: 500,
+        url: 'https://nelly-bise.fr/NELLY-BISE.png',
+      },
+    ],
+  },
 }
 
 export default async function Blog() {
