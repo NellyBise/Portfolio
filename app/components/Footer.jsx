@@ -10,6 +10,7 @@ function Footer() {
           <a
             className="h-8 md:h-12 flex items-center"
             href="mailto:nelly.bise@free.fr"
+            aria-label="envoyer un mail"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,6 +25,7 @@ function Footer() {
           <a
             className="h-8 md:h-12 flex items-center"
             href="https://github.com/NellyBise"
+            aria-label="lien vers GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -40,6 +42,7 @@ function Footer() {
           <a
             className="h-8 md:h-12 flex items-center"
             href="https://www.linkedin.com/in/nelly-bise/"
+            aria-label="lien vers LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
           >

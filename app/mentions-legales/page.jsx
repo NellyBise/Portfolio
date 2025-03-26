@@ -1,5 +1,13 @@
 import React from 'react'
 
+export const metadata = {
+  title: 'Mentions légales - Nelly Bise',
+  robots: {
+    index: false,
+    follow: false,
+  },
+}
+
 export default function MentionsLegales() {
   return (
     <div className="container flex flex-col gap-6 mx-auto pt-24 px-4 py-12">

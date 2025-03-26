@@ -39,6 +39,7 @@ function About() {
           alt="portrait"
           width={700}
           height={700}
+          priority
         />
       </div>
     </section>
