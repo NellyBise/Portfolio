@@ -1,0 +1,59 @@
+// components/AboutSection.jsx
+import React from 'react'
+import Image from 'next/image'
+import photo from '../src/photoID.jpg'
+import { motion } from 'framer-motion'
+
+const variants = {
+  visible: { x: 0, opacity: 1, filter: 'blur(0px)' },
+  hidden: { x: -200, opacity: 0, filter: 'blur(5px)' },
+}
+
+export default function AboutSection() {
+  return (
+    <section className="mx-auto max-w-4xl px-2 md:px-6 py-20">
+      <div className="p-4 md:p-10">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          {/* Photo */}
+          <div className="flex-shrink-0">
+            <div className="relative h-36 w-36 md:h-44 md:w-44 rounded-full overflow-hidden ring-4 ring-white shadow-lg">
+              <Image
+                src={photo}
+                alt="portrait"
+                width={700}
+                height={700}
+                priority
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+
+          {/* Texte */}
+          <div className="text-left">
+            <h2 className="text-3xl font-semibold text-[var(--tw-color-main, #201087)] dark:text-white">
+              Bonjour, je suis Nelly
+            </h2>
+
+            <p className="mt-10 text-gray-700 dark:text-gray-300 leading-relaxed">
+              <span className="bg-teal-600 p-1 rounded text-white">
+                Technicienne de laboratoire
+              </span>{' '}
+              depuis 20 ans, mon parcours m’a menée de la chimie aux travaux
+              publics en passant par l’industrie, toujours avec un même fil
+              conducteur : la rigueur et le goût du détail.
+              <br />
+              <br />
+              Passionnée par l’
+              <span className="bg-violet-600 p-1 rounded text-white">
+                informatique
+              </span>
+              , j’ai développé en parallèle des projets numériques — outils
+              internes, automatisations, applications web — et complété cette
+              pratique par une formation diplômante en développement web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

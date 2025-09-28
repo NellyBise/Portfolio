@@ -7,6 +7,9 @@ import SassIcon from '../../public/logos/Sass.png'
 import TailwindIcon from '../../public/logos/Tailwind.png'
 import GraphQL from '../../public/logos/GraphQL.png'
 import Supabase from '../../public/logos/Supabase.png'
+import Excel from '../../public/logos/Excel.png'
+import Word from '../../public/logos/Word.png'
+import Access from '../../public/logos/Access.png'
 
 import Image from 'next/image'
 
@@ -29,6 +32,9 @@ export default function Tags({ tagsContent }) {
     Tailwind: <Image src={TailwindIcon} alt="Tailwind" className="h-6 w-6" />,
     GraphQL: <Image src={GraphQL} alt="GraphQL" className="h-6 w-6" />,
     Supabase: <Image src={Supabase} alt="Supabase" className="h-6 w-6" />,
+    Excel: <Image src={Excel} alt="Excel" className="h-6 w-6" />,
+    Word: <Image src={Word} alt="Word" className="h-6 w-6" />,
+    Access: <Image src={Access} alt="Access" className="h-6 w-6" />,
   }
 
   return (

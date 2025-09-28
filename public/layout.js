@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, League_Gothic } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
 import { DarkModeProvider } from './utils/Darkmode'
 
 export const inter = Inter({
@@ -8,7 +8,7 @@ export const inter = Inter({
   variable: '--font-inter',
 })
 
-export const league = League_Gothic({
+export const league = Montserrat({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-league',

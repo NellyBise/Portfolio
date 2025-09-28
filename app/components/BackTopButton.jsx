@@ -32,7 +32,7 @@ export default function BackTop() {
       aria-label="cliquer pour revenir au début de la page"
       data-twe-ripple-init
       data-twe-ripple-color="light"
-      className={`!fixed z-10 md:bottom-5 md:end-5 rounded-full bg-grey/60 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-main-color dark:hover:bg-secondary-color hover:shadow-lg focus:bg-main-color dark:focus:bg-secondary-color focus:shadow-lg focus:outline-none focus:ring-0 ${
+      className={`!fixed z-10 md:bottom-5 md:end-5 rounded-full bg-blue-500/50 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-main-color dark:hover:bg-secondary-color hover:shadow-lg focus:bg-main-color dark:focus:bg-secondary-color focus:shadow-lg focus:outline-none focus:ring-0 ${
         showButton ? '' : 'hidden'
       }`}
     >

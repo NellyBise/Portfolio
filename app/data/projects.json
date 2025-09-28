@@ -1,5 +1,12 @@
 [
   {
+    "_id": "1",
+    "name": "Optimisation administrative",
+    "mission": "Reprise de l'ensemble du processus de prise en charge d'un échantillon afin d'automatiser la création de rapports d'analyse et la facturation via la mise en place de bases de données.",
+    "techno": ["Excel", "Word", "Access"],
+    "cover": "/projects/cover-optimisation.png"
+  },
+  {
     "_id": "2",
     "name": "Portfolio de Nina Carducci",
     "mission": "Optimisation complète du portfolio, avec un focus sur l'amélioration de l'accessibilité (audit selon les standards WCAG). Débogage et optimisation du site pour un chargement plus rapide et une meilleure expérience utilisateur. Résolution de bugs.",

@@ -11,17 +11,13 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-    colors: {
-      'main-color': '#201087',
-      'secondary-color': '#F5A623',
-      'light-color': '#F3F2F8FF',
-      'dark-color': '#212121',
-      grey: '#3C3C3C',
-      white: '#FFFFFF',
-      black: '#000000',
-      transparent: 'transparent',
-    },
     extend: {
+      colors: {
+        'main-color': '#201087',
+        'secondary-color': '#3b82f6',
+        'light-color': '#F3F2F8FF',
+        'dark-color': '#212121',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
