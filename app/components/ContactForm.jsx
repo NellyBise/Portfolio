@@ -90,26 +90,27 @@ export default function Form() {
       className="flex flex-col items-center py-12 md:py-24"
       id="contact"
     >
-      <h2 className="text-4xl mt-2 mb-10 text-center text-main-color dark:text-secondary-color">
+      <h2 className="text-4xl mt-2 mb-10 text-center dark:text-secondary-color">
         Contactez-moi
       </h2>
-      <p className="px-6 text-base md:text-xl text-center">
-        Vous pouvez utiliser le formulaire, m&rsquo;envoyer directement un{' '}
+      <p className="px-6 text-base md:text-lg text-center">
+        Vous pouvez utiliser le formulaire, m&rsquo;envoyer directement un mail
+        à{' '}
         <a
           className="text-main-color underline pointer-events-auto dark:text-secondary-color  duration-300 hover:font-bold"
-          href="mailto:nelly.bise@free.fr"
+          href="mailto:nellybise@free.fr"
           aria-label="cliquer pour envoyer un email"
         >
-          mail
+          nellybise@free.fr
         </a>{' '}
-        ou{' '}
+        ou m&rsquo;appeler{' '}
         <button
           className="text-main-color underline pointer-events-auto dark:text-secondary-color  duration-300 hover:font-bold"
           onClick={toggle}
           aria-label="cliquer pour afficher mon numéro de téléphone"
           rel="nofollow"
         >
-          {isOpen ? '06 20 14 30 13' : "m'appeler"}
+          {isOpen ? '06 20 14 30 13' : 'en cliquant ici'}
         </button>
       </p>
       <form

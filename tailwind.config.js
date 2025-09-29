@@ -18,13 +18,18 @@ module.exports = {
         'light-color': '#F3F2F8FF',
         'dark-color': '#212121',
       },
+      fontFamily: {
+        inter: ['var(--font-inter)', 'sans-serif'],
+        league: ['var(--font-league)', 'sans-serif'],
+        manu: ['var(--font-manu)', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       boxShadow: {
-        def: 'inset 0 0 15px rgba(255,255,255, .8), 0 0 20px rgba(245,166,35, .6)',
+        def: 'inset 0 0 5px rgba(255,255,255, .8), 0 0 20px rgba(81, 171, 255, 0.6)',
         cardshadow:
           '0px -2px 40px 0px rgba(187,155,255, 0.15), 0px -2px 10px 0px rgba(233,223,255, 0.3), 0px 0.5px 0px 0px rgba(255, 255, 255, 0.5) inset',
       },

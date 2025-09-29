@@ -15,9 +15,9 @@ export default function Projects({ projects }) {
   return projects ? (
     <motion.section
       id="projects"
-      className="overflow-hidden py-12 md:py-36 m-auto"
+      className="overflow-hidden py-12 md:py-24 m-auto"
     >
-      <h2 className="bg-gradient-to-r from-purple-500 via-purple-700 to-teal-600 dark:bg-dark-color text-4xl pt-16 pb-36 text-center text-white dark:text-secondary-color">
+      <h2 className="bg-gradient-to-r from-purple-500 via-purple-700 to-teal-600 dark:from-white/20 dark:to-dark-color text-4xl pt-16 pb-36 text-center text-white dark:text-secondary-color">
         Sélection de projets
       </h2>
       <motion.div

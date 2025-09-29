@@ -7,71 +7,13 @@
     "cover": "/projects/cover-optimisation.png"
   },
   {
-    "_id": "2",
-    "name": "Portfolio de Nina Carducci",
-    "mission": "Optimisation complète du portfolio, avec un focus sur l'amélioration de l'accessibilité (audit selon les standards WCAG). Débogage et optimisation du site pour un chargement plus rapide et une meilleure expérience utilisateur. Résolution de bugs.",
-    "link": "https://nina-carducci-lake.vercel.app/",
-    "github": "https://github.com/NellyBise/nina-carducci_P5",
-    "techno": ["JavaScript"],
-    "cover": "/projects/cover-nina.png",
-    "images": [
-      "/projects/1717080297161-1-nina.png",
-      "/projects/1717080297172-2-nina.png",
-      "/projects/1717080297179-3-nina.png"
-    ]
-  },
-  {
-    "_id": "3",
-    "name": "Plateforme immobilière Kasa",
-    "mission": "À partir d'une maquette, conception de l'interface d'une plateforme de location immobilière. Création de composants interactifs comme un carrousel et des menus déroulants personnalisés, sans dépendance à des bibliothèques externes. Accessibilité complète avec navigation au clavier.",
-    "link": "https://kasa-ochre.vercel.app/",
-    "github": "https://github.com/NellyBise/P5-Kasa",
-    "techno": ["React", "Sass"],
-    "cover": "/projects/cover-kasa.jpg",
-    "images": [
-      "/projects/1717080492120-1-kasa.jpg",
-      "/projects/1717080492123-2-kasa.jpg",
-      "/projects/1717080492126-3-kasa.jpg"
-    ]
-  },
-  {
     "_id": "4",
     "name": "Musicalement Vôtre",
     "mission": "Refonte d'un site web pour un client dans le domaine musical en respectant une charte graphique préexistante. L'optimisation de l'UX/UI a permis une navigation plus intuitive, et l’interface a été rendue entièrement responsive pour améliorer l'accès aux informations sur tous les appareils.",
     "link": "https://ubiquitous-liger-099c8c.netlify.app/",
     "github": "https://github.com/NellyBise/Musicalement-votre",
     "techno": ["Nextjs", "Tailwind"],
-    "cover": "/projects/cover-musicalement.jpg",
-    "images": [
-      "/projects/1-musicalement.png",
-      "/projects/2-musicalement.png",
-      "/projects/3-musicalement.png",
-      "/projects/4-musicalement.png"
-    ]
-  },
-  {
-    "_id": "5",
-    "name": "Vaultflow",
-    "mission": "Développement d'une landing page desktop réactive avec intégration de graphiques dynamiques. Ce projet utilise Next.js et Tailwind et se concentre sur l'affichage visuel des données en temps réel.",
-    "link": "https://vaultflow.netlify.app/",
-    "github": "https://github.com/NellyBise/Vaultflow",
-    "techno": ["Nextjs", "Tailwind", "shadcn"],
-    "cover": "/projects/cover-vaultflow.png",
-    "images": [
-      "/projects/1-vaultflow.png",
-      "/projects/2-vaultflow.png",
-      "/projects/cover-vaultflow.png"
-    ]
-  },
-  {
-    "_id": "6",
-    "name": "Train Up",
-    "mission": "Développement d'une application web pour créer des circuits d'entraînement personnalisés.",
-    "link": "https://train-up.fr/",
-    "github": "https://github.com/NellyBise/Training",
-    "techno": ["Nextjs", "Tailwind", "GraphQL", "Supabase"],
-    "cover": "/projects/cover-trainup.png",
-    "images": []
+    "cover": "/projects/cover-musicalement.jpg"
   },
   {
     "_id": "7",
@@ -80,7 +22,6 @@
     "link": "https://notaria-prestige.vercel.app/",
     "github": "https://github.com/NellyBise/notaria-prestige",
     "techno": ["Nextjs", "Tailwind"],
-    "cover": "/projects/cover-notaria.png",
-    "images": []
+    "cover": "/projects/cover-notaria.png"
   }
 ]

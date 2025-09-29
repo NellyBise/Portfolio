@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Archivo_Black } from 'next/font/google'
+import { Inter, Archivo_Black, Dancing_Script } from 'next/font/google'
 import { DarkModeProvider } from './utils/Darkmode'
 import Script from 'next/script'
 import Header from './components/Header'
@@ -16,6 +16,13 @@ export const league = Archivo_Black({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-league',
+  weight: '400',
+})
+
+export const manu = Dancing_Script({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-manu',
   weight: '400',
 })
 
@@ -47,7 +54,7 @@ export default function RootLayout({ children }) {
     <DarkModeProvider>
       <html
         lang="fr"
-        className={`${inter.variable} ${league.variable} scroll-smooth`}
+        className={`${inter.variable} ${league.variable} ${manu.variable} scroll-smooth`}
       >
         <head>
           <link rel="Canoniques" href="https://www.nelly-bise.fr"></link>

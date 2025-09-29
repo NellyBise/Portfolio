@@ -11,7 +11,7 @@ const variants = {
 
 export default function AboutSection() {
   return (
-    <section className="mx-auto max-w-4xl px-2 md:px-6 py-20">
+    <section className="mx-auto max-w-4xl px-2 md:px-6 pt-24 pb-12">
       <div className="p-4 md:p-10">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Photo */}
@@ -27,32 +27,32 @@ export default function AboutSection() {
               />
             </div>
           </div>
-
-          {/* Texte */}
-          <div className="text-left">
-            <h2 className="text-3xl font-semibold text-[var(--tw-color-main, #201087)] dark:text-white">
-              Bonjour, je suis Nelly
-            </h2>
-
-            <p className="mt-10 text-gray-700 dark:text-gray-300 leading-relaxed">
-              <span className="bg-teal-600 p-1 rounded text-white">
-                Technicienne de laboratoire
-              </span>{' '}
-              depuis 20 ans, mon parcours m’a menée de la chimie aux travaux
-              publics en passant par l’industrie, toujours avec un même fil
-              conducteur : la rigueur et le goût du détail.
-              <br />
-              <br />
-              Passionnée par l’
-              <span className="bg-violet-600 p-1 rounded text-white">
-                informatique
-              </span>
-              , j’ai développé en parallèle des projets numériques — outils
-              internes, automatisations, applications web — et complété cette
-              pratique par une formation diplômante en développement web.
-            </p>
-          </div>
+          <h1 className="text-3xl font-semibold text-center md:text-left dark:text-white">
+            Technicienne de laboratoire & développeuse passionnée par
+            l’optimisation
+          </h1>
         </div>
+      </div>
+      <div className="text-left p-4 md:p-10">
+        <p className="mt-10 text-gray-700 dark:text-gray-300 leading-relaxed">
+          Je suis Nelly,{' '}
+          <span className="bg-teal-600 p-1 rounded text-white">
+            technicienne de laboratoire
+          </span>{' '}
+          depuis 20 ans, mon parcours m’a menée de la chimie aux travaux publics
+          en passant par l’industrie, toujours avec un même fil conducteur : la
+          rigueur et l’amélioration continue.
+          <br />
+          <br />
+          Passionnée par l’
+          <span className="bg-violet-600 p-1 rounded text-white">
+            informatique
+          </span>
+          , j’ai développé en parallèle des projets numériques : outils internes
+          et automatisations de processus. J’ai complété cette pratique par une
+          formation diplômante en développement web me permettant de créer des
+          applications web.
+        </p>
       </div>
     </section>
   )

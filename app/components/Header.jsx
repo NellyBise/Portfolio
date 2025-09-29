@@ -1,11 +1,11 @@
 'use client'
 
-import Image from 'next/image'
-import Logo from '../src/logo.png'
-import LogoDark from '../src/logo_dark.png'
 import { useState, useEffect } from 'react'
 import ToggleDarkButton from './ToggleDarkButton'
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '../src/Logo.png'
+import LogoDark from '../src/Logo-dark.png'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -36,7 +36,7 @@ function Header() {
   return (
     <>
       <header className="fixed w-full bg-white dark:bg-dark-color drop-shadow-lg dark:drop-shadow-[0_5px_25px_rgba(255,255,255,0.25)] z-20">
-        <div className="max-w-[1440px] m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-xl">
+        <div className="max-w-[1440px] m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-3xl">
           <Link href="/" aria-label="Cliquer pour revenir à l'accueil">
             <Image
               className="block dark:hidden"
@@ -60,16 +60,25 @@ function Header() {
           >
             <nav
               id="menu"
-              className="flex flex-col items-center mt-16 h-full space-y-8 text-main-color dark:text-white py-8 md:h-14 md:mt-0 md:flex-row md:space-x-8"
+              className="flex flex-col items-center mt-16 h-full space-y-8  dark:text-white py-8 md:h-14 md:mt-0 md:flex-row md:space-x-8"
             >
-              <ul className="space-y-16 text-center text-xl uppercase md:normal-case font-bold md:font-normal md:flex md:items-center md:space-y-0 md:space-x-8">
+              <ul className="space-y-16 text-center text-xl md:normal-case font-bold md:font-normal md:flex md:items-center md:space-y-0 md:space-x-8">
+                <li>
+                  <Link
+                    className="py-2.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
+                    href="/#parcours"
+                    onClick={toggle}
+                  >
+                    Parcours
+                  </Link>
+                </li>
                 <li>
                   <Link
                     className="py-2.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
                     href="/#projects"
                     onClick={toggle}
                   >
-                    projets
+                    Projets
                   </Link>
                 </li>
                 <li>
@@ -78,7 +87,7 @@ function Header() {
                     href="/#contact"
                     onClick={toggle}
                   >
-                    contact
+                    Contact
                   </Link>
                 </li>
                 <li>
@@ -98,19 +107,19 @@ function Header() {
               <div className="block w-8 h-8 relative ">
                 <span
                   aria-hidden="true"
-                  className={`block absolute top-1/2 left-0 w-8 h-0.5 bg-main-color dark:bg-white transform transition duration-500 ease-in-out ${
+                  className={`block absolute top-1/2 left-0 w-8 h-0.5 bg-black dark:bg-white transform transition duration-500 ease-in-out ${
                     isOpen ? 'rotate-45' : '-translate-y-2'
                   }`}
                 ></span>
                 <span
                   aria-hidden="true"
-                  className={`block absolute top-1/2 left-0 w-8 h-0.5 bg-main-color dark:bg-white transform transition duration-500 ease-in-out ${
+                  className={`block absolute top-1/2 left-0 w-8 h-0.5 bg-black dark:bg-white transform transition duration-500 ease-in-out ${
                     isOpen ? 'opacity-0' : ''
                   }`}
                 ></span>
                 <span
                   aria-hidden="true"
-                  className={`block absolute top-1/2 left-0 w-8 h-0.5 bg-main-color dark:bg-white transform transition duration-500 ease-in-out ${
+                  className={`block absolute top-1/2 left-0 w-8 h-0.5 bg-black dark:bg-white transform transition duration-500 ease-in-out ${
                     isOpen ? '-rotate-45' : 'translate-y-2'
                   }`}
                 ></span>

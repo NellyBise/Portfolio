@@ -56,8 +56,8 @@ function Timeline() {
   ]
 
   return (
-    <section className="mx-auto max-w-5xl md:px-6">
-      <h2 className="text-4xl mt-2 mb-20 text-center dark:text-secondary-color">
+    <section id="parcours" className="mx-auto max-w-5xl md:px-6">
+      <h2 className="text-4xl pt-20 mb-20 text-center dark:text-secondary-color">
         Mon parcours
       </h2>
 
