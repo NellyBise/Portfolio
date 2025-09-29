@@ -1,7 +1,7 @@
 // components/AboutSection.jsx
 import React from 'react'
 import Image from 'next/image'
-import photo from '../src/photoID.jpg'
+import photo from '../src/photoID.JPG'
 import { motion } from 'framer-motion'
 
 const variants = {

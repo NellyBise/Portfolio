@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import ToggleDarkButton from './ToggleDarkButton'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../src/Logo.png'
+import Logo from '../src/logo.png'
 import LogoDark from '../src/Logo-dark.png'
 
 function Header() {
