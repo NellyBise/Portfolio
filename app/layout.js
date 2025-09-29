@@ -38,7 +38,7 @@ export const metadata = {
     url: 'https://nelly-bise.fr/',
     images: [
       {
-        url: 'https://nelly-bise.fr/logo.png',
+        url: 'https://nelly-bise.fr/og-image.png',
         width: 500,
         height: 500,
         type: 'image/png',
