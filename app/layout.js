@@ -27,25 +27,28 @@ export const manu = Dancing_Script({
 })
 
 export const metadata = {
-  title: 'Nelly Bise, développeuse front-end',
+  title: 'Nelly Bise – Technicienne de laboratoire & Développeuse web',
   description:
-    "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et l'accessibilité.",
+    '20 ans d’expérience en laboratoire et passion pour l’informatique. Découvrez mon parcours, mes projets et mon profil hybride.',
   openGraph: {
-    title: 'Nelly Bise, développeuse front-end',
+    title: 'Nelly Bise – Technicienne de laboratoire & Développeuse web',
     description:
-      "Développeuse front-end spécialisée en JavaScript et React. Je vous propose un travail soigneux axé sur la maintenabilité et l'accessibilité.",
+      '20 ans d’expérience en laboratoire et passion pour l’informatique. Découvrez mon parcours, mes projets et mon profil hybride.',
     type: 'website',
     url: 'https://nelly-bise.fr/',
     images: [
       {
-        type: 'image/png',
+        url: 'https://nelly-bise.fr/logo.png',
         width: 500,
         height: 500,
-        url: 'https://nelly-bise.fr/NELLY-BISE.png',
+        type: 'image/png',
       },
     ],
-    site_name: 'Nelly Bise, développeuse front-end',
+    siteName: 'Nelly Bise',
     locale: 'fr_FR',
+  },
+  icons: {
+    icon: '/favicon.ico',
   },
 }
 
