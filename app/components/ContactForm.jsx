@@ -52,11 +52,10 @@ export default function Form() {
   }, [formData.message, formData.name, formData.email])
 
   const handleSubmit = async (event) => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
     event.preventDefault()
     setErrorMessage('')
     try {
-      const response = await fetch(`${apiUrl}/contact`, {
+      const response = await fetch(`/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

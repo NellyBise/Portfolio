@@ -19,7 +19,11 @@ const limiter = rateLimit({
 })
 
 export default async function handler(req, res) {
-  const allowedOrigins = ['https://www.nelly-bise.fr', 'https://nelly-bise.fr']
+  const allowedOrigins = [
+    'https://www.nelly-bise.fr',
+    'https://nelly-bise.fr',
+    'http://localhost:3001',
+  ]
   const origin = req.headers.origin
 
   if (allowedOrigins.includes(origin)) {
@@ -28,7 +32,6 @@ export default async function handler(req, res) {
 
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
-  res.setHeader('Access-Control-Max-Age', '86400')
 
   if (req.method === 'OPTIONS') {
     return res.status(200).end()
