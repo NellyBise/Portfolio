@@ -44,7 +44,9 @@ export default function MentionsLegales() {
         </p>
         <p>
           Adresse de l’hébergeur :{' '}
-          <strong>340 S Lemon Ave #4133 Walnut, CA 91789 United States.</strong>
+          <strong>
+            440 N Barranca Ave #4133, Covina, CA 91723, United States.
+          </strong>
         </p>
       </div>
       <div className="prose lg:prose-xl">

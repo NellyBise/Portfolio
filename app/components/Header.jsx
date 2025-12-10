@@ -36,7 +36,7 @@ function Header() {
   return (
     <>
       <header className="fixed w-full bg-white dark:bg-dark-color drop-shadow-lg dark:drop-shadow-[0_5px_25px_rgba(255,255,255,0.25)] z-20">
-        <div className="max-w-[1440px] m-auto flex justify-between items-center h-14 pl-2 pr-2 md:text-3xl">
+        <div className="max-w-[1440px] m-auto flex justify-between items-center h-14 px-2 md:text-3xl">
           <Link href="/" aria-label="Cliquer pour revenir à l'accueil">
             <Image
               className="block dark:hidden"
