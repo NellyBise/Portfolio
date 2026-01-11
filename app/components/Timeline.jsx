@@ -53,6 +53,13 @@ function Timeline() {
         desc: 'Applications React',
       },
     },
+    {
+      year: '2026',
+      labo: {
+        title: 'Pernod Ricard',
+        role: 'Technicienne labo',
+      },
+    },
   ]
 
   return (
