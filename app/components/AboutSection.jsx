@@ -2,12 +2,6 @@
 import React from 'react'
 import Image from 'next/image'
 import photo from '../src/photoID.JPG'
-import { motion } from 'framer-motion'
-
-const variants = {
-  visible: { x: 0, opacity: 1, filter: 'blur(0px)' },
-  hidden: { x: -200, opacity: 0, filter: 'blur(5px)' },
-}
 
 export default function AboutSection() {
   return (
@@ -28,8 +22,9 @@ export default function AboutSection() {
             </div>
           </div>
           <h1 className="text-3xl font-semibold text-center md:text-left dark:text-white">
-            Technicienne de laboratoire & développeuse passionnée par
-            l’optimisation
+            Technicienne de laboratoire
+            <br />
+            Experte HSE & Amélioration continue
           </h1>
         </div>
       </div>
@@ -44,14 +39,12 @@ export default function AboutSection() {
           rigueur et l’amélioration continue.
           <br />
           <br />
-          Passionnée par l’
+          Passionnée par la{' '}
           <span className="bg-violet-600 p-1 rounded text-white">
-            informatique
+            prévention HSE
           </span>
-          , j’ai développé en parallèle des projets numériques : outils internes
-          et automatisations de processus. J’ai complété cette pratique par une
-          formation diplômante en développement web me permettant de créer des
-          applications web.
+          , j’ai développé en parallèle une expertise sur ce sujet notamment sur
+          la partie risque chimiques.
         </p>
       </div>
     </section>

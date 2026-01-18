@@ -20,6 +20,7 @@ export default function Projects({ projects }) {
       <h2 className="bg-gradient-to-r from-purple-500 via-purple-700 to-teal-600 dark:from-white/20 dark:to-dark-color text-4xl pt-16 pb-36 text-center text-white dark:text-secondary-color">
         Sélection de projets
       </h2>
+
       <motion.div
         ref={ref}
         variants={variants}

@@ -92,11 +92,11 @@ export default function Form() {
       <h2 className="text-4xl mt-2 mb-10 text-center dark:text-secondary-color">
         Contactez-moi
       </h2>
-      <p className="px-6 text-base md:text-lg text-center">
+      <p className="px-6 text-base text-center">
         Vous pouvez utiliser le formulaire, m&rsquo;envoyer directement un mail
         à{' '}
         <a
-          className="text-main-color underline pointer-events-auto dark:text-secondary-color  duration-300 hover:font-bold"
+          className="font-bold underline pointer-events-auto dark:text-secondary-color  duration-300 hover:text-main-color"
           href="mailto:nellybise@free.fr"
           aria-label="cliquer pour envoyer un email"
         >
@@ -104,7 +104,7 @@ export default function Form() {
         </a>{' '}
         ou m&rsquo;appeler{' '}
         <button
-          className="text-main-color underline pointer-events-auto dark:text-secondary-color  duration-300 hover:font-bold"
+          className=" font-bold underline pointer-events-auto dark:text-secondary-color duration-300 hover:text-main-color"
           onClick={toggle}
           aria-label="cliquer pour afficher mon numéro de téléphone"
           rel="nofollow"

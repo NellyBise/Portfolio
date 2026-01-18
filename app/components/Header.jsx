@@ -75,10 +75,10 @@ function Header() {
                 <li>
                   <Link
                     className="py-2.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
-                    href="/#projects"
+                    href="/blog"
                     onClick={toggle}
                   >
-                    Projets
+                    Blog
                   </Link>
                 </li>
                 <li>

@@ -27,13 +27,15 @@ export const manu = Dancing_Script({
 })
 
 export const metadata = {
-  title: 'Nelly Bise – Technicienne de laboratoire & Développeuse web',
+  title:
+    'Nelly Bise – Technicienne de laboratoire - Experte HSE & amélioration continue',
   description:
-    '20 ans d’expérience en laboratoire et passion pour l’informatique. Découvrez mon parcours, mes projets et mon profil hybride.',
+    '20 ans d’expérience en laboratoire et HSE. Découvrez mon parcours.',
   openGraph: {
-    title: 'Nelly Bise – Technicienne de laboratoire & Développeuse web',
+    title:
+      'Nelly Bise – Technicienne de laboratoire - Experte HSE & amélioration continue',
     description:
-      '20 ans d’expérience en laboratoire et passion pour l’informatique. Découvrez mon parcours, mes projets et mon profil hybride.',
+      '20 ans d’expérience en laboratoire et HSE. Découvrez mon parcours.',
     type: 'website',
     url: 'https://nelly-bise.fr/',
     images: [

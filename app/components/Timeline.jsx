@@ -20,23 +20,27 @@ function Timeline() {
         title: 'CAMP',
         role: 'Technicienne labo (pesticides)',
       },
+      dev: {
+        title: 'Responsable des produits chimiques',
+        desc: 'Gestion des stocks, FDS, évaluation du risque résiduel',
+      },
     },
     {
       year: '2012',
       labo: {
         title: 'CAMP',
         role: 'Technicienne labo (eau)',
-        desc: 'Responsable des analyses, référente hygiène et sécurité',
+        desc: 'Responsable des analyses, mission informatique d’automatisation',
       },
       dev: {
-        title: 'CAMP',
-        role: 'Mission informatique',
-        desc: 'Automatisation de tâches techniques et administratives',
+        title: 'Référente hygiène et sécurité',
+
+        desc: 'mise en place et suivi de procédures de sécurité, formation du personnel et gestion des risques',
       },
     },
     {
       year: '2024',
-      dev: {
+      labo: {
         title: 'OpenClassrooms',
         role: 'Formation diplômante en Développement web',
       },
@@ -48,9 +52,7 @@ function Timeline() {
         role: 'Technicienne labo',
       },
       dev: {
-        title: 'Projets personnels',
-        role: 'Développement web',
-        desc: 'Applications React',
+        desc: 'Mise à jour des FDS et de l’affichage de prévention',
       },
     },
     {
