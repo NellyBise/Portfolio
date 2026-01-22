@@ -20,17 +20,44 @@ export default function Blog() {
           j'aborde un sujet spécifique.
         </p>
       </div>
-
-      <article className="flex flex-wrap justify-center gap-2 ">
-        <iframe
-          src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7416895810975735808?collapsed=1"
-          height="567"
-          width="400"
-          frameborder="0"
-          allowfullscreen=""
-          title="Post intégré"
-        ></iframe>
-      </article>
+      <div className="flex flex-wrap justify-center gap-2">
+        <article className="max-w-[400px] mx-auto">
+          <h2 className="text-lg font-semibold text-gray-900">
+            Présentation de la série
+          </h2>
+          <p className="mt-1 text-sm">
+            Mon objectif: informer pour améliorer la prévention du risque
+            chimique
+          </p>
+          <div className="relative mt-4 overflow-hidden rounded-lg">
+            <iframe
+              src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7416895810975735808?collapsed=1"
+              height="567"
+              width="400"
+              allowfullscreen
+              title="Post LinkedIn – Incompatibilités chimiques"
+            ></iframe>
+          </div>
+        </article>
+        <article className="max-w-[400px] mx-auto">
+          <h2 className="text-lg font-semibold text-gray-900">
+            Épisode 1 : les produits ménagers
+          </h2>
+          <p className="mt-1 text-sm">
+            Ils sont parfois les grands absents de l'évaluation des risques.
+            Pourquoi ? Quel est le rôle de chacun ?
+          </p>
+          <div className="relative mt-4 overflow-hidden rounded-lg">
+            <iframe
+              src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7416896701174808576?collapsed=1"
+              height="567"
+              width="400"
+              allowfullscreen
+              title="Post LinkedIn – Incompatibilités chimiques"
+            ></iframe>
+          </div>
+        </article>
+      </div>
     </section>
   )
 }
