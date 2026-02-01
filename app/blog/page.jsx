@@ -1,63 +1,70 @@
 import Link from 'next/link'
+import posts from '../data/blog.json'
+import Image from 'next/image'
 
 export default function Blog() {
   return (
-    <section className="mx-auto max-w-7xl px-2 md:px-6 pt-24 pb-12">
+    <div>
       <h1 className="text-4xl pt-20 mb-10 text-center dark:text-secondary-color">
-        Mes posts sur le risque chimique
+        La prévention du risque chimique
       </h1>
       <div className="text-left p-4 md:p-10">
+        <p>
+          Les produits chimiques font partie de notre quotidien professionnel.
+          Pourtant, le risque chimique reste souvent mal compris, mal évalué ou
+          sous-estimé. Je partage aujourd'hui mon expérience dans des articles
+          pratiques.
+        </p>
         <p className="mt-10 text-gray-700 dark:text-gray-300 leading-relaxed">
-          La série vient de commencer. Vous pouvez retrouver un nouveau post
-          tous les mercredis. N'hésitez pas à me{' '}
+          N'hésitez pas à me{' '}
           <Link
             className="font-bold underline hover:text-secondary-color"
             href="/#contact"
           >
             contacter
           </Link>{' '}
-          si vous souhaitez plus d'informations ou si vous souhaitez que
-          j'aborde un sujet spécifique.
+          si vous souhaitez plus d'informations ou si vous avez un sujet
+          spécifique à me suggérer.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-2">
-        <article className="max-w-[400px] mx-auto">
-          <h2 className="text-lg font-semibold text-gray-900">
-            Présentation de la série
-          </h2>
-          <p className="mt-1 text-sm">
-            Mon objectif: informer pour améliorer la prévention du risque
-            chimique
-          </p>
-          <div className="relative mt-4 overflow-hidden rounded-lg">
-            <iframe
-              src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7416895810975735808?collapsed=1"
-              height="567"
-              width="400"
-              allowfullscreen
-              title="Post LinkedIn – Incompatibilités chimiques"
-            ></iframe>
-          </div>
-        </article>
-        <article className="max-w-[400px] mx-auto">
-          <h2 className="text-lg font-semibold text-gray-900">
-            Épisode 1 : les produits ménagers
-          </h2>
-          <p className="mt-1 text-sm">
-            Ils sont parfois les grands absents de l'évaluation des risques.
-            Pourquoi ? Quel est le rôle de chacun ?
-          </p>
-          <div className="relative mt-4 overflow-hidden rounded-lg">
-            <iframe
-              src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7416896701174808576?collapsed=1"
-              height="567"
-              width="400"
-              allowfullscreen
-              title="Post LinkedIn – Incompatibilités chimiques"
-            ></iframe>
-          </div>
-        </article>
+
+      <div className="gap-8 flex flex-col md:flex-row p-4 justify-center">
+        {posts.reverse().map((post) => (
+          <Link
+            href={`/blog/${post.slug}`}
+            key={post.id}
+            className="group flex flex-col w-min-96 w-full md:w-1/3 gap-4 bg-white rounded-lg dark:bg-dark-color shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden transition-shadow duration-300"
+          >
+            <div>
+              {/*<div className="flex gap-2 mb-2">
+                {post.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>*/}
+              <div className="self-center shadow-cardshadow shadow-black/10 dark:shadow-white/20 overflow-hidden">
+                <Image
+                  className="group-hover:scale-110 duration-500"
+                  src={post.image}
+                  alt=""
+                  width={1600}
+                  height={900}
+                />
+              </div>
+              <div className="p-3">
+                <h2 className="text-2xl py-2 dark:text-secondary-color">
+                  {post.title}
+                </h2>
+                <p className="text-gray-600 py-2">{post.excerpt}</p>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
-    </section>
+    </div>
   )
 }

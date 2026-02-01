@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Les produits ménagers",
+    "excerpt": "On ne pense pas à eux comme à de vrais produits chimiques et pourtant, ils peuvent eux aussi être dangereux.",
+    "intro": "On associe souvent le risque chimique aux laboratoires ou à l’industrie. Mais les produits chimiques sont partout. Pensez aux produits ménagers, ils sont utilisés tous les jours. Et pourtant, ils sont régulièrement oubliés de l’évaluation des risques.",
+    "date": "14 janvier 2026",
+    "image": "/posts/produits-menagers.png",
+    "slug": "produits-menagers",
+    "component": "produits-menagers.mdx",
+    "tags": ["produits chimiques", "bla bla"]
+  },
+  {
+    "id": 2,
+    "title": "L'accessibilité des Fiches de Données de Sécurité",
+    "excerpt": "Elles sont essentielles à la sécurité et doivent être faciles à trouver. Comment faire pour bien les gérer ?",
+    "intro": "Les Fiches de Données de Sécurité (FDS) sont les documents de base de l'évaluation du risque chimique. Elles peuvent parfois faire peur mais elles contiennent un tas d'informations utiles pour prévenir l'ensemble des risques. Elles sont également utiles en cas d'exposition et leur gestion ne doit pas être négligée.",
+    "date": "21 janvier 2026",
+    "image": "/posts/FDS.png",
+    "slug": "FDS",
+    "component": "FDS.mdx",
+    "tags": ["FDS", "prévention"]
+  }
+]
