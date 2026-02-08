@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react'
 import ToggleDarkButton from './ToggleDarkButton'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../src/logo.png'
-import LogoDark from '../src/Logo-dark.png'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,14 +38,16 @@ function Header() {
           <Link href="/" aria-label="Cliquer pour revenir à l'accueil">
             <Image
               className="block dark:hidden"
+              width={50}
               height={50}
-              src={Logo}
+              src="/src/logo.png"
               alt=""
             />
             <Image
               className="hidden dark:block"
+              width={50}
               height={50}
-              src={LogoDark}
+              src="/src/logo-dark.png"
               alt=""
             />
           </Link>
@@ -66,10 +66,10 @@ function Header() {
                 <li>
                   <Link
                     className="py-2.5 border-b-4 border-transparent duration-300 ease-in-out hover:border-secondary-color"
-                    href="/#parcours"
+                    href="/"
                     onClick={toggle}
                   >
-                    Parcours
+                    Accueil
                   </Link>
                 </li>
                 <li>
@@ -78,7 +78,7 @@ function Header() {
                     href="/blog"
                     onClick={toggle}
                   >
-                    Blog
+                    Risque Chimique
                   </Link>
                 </li>
                 <li>

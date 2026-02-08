@@ -1,17 +1,15 @@
 import AboutSection from './components/AboutSection'
 import Form from './components/ContactForm'
 import Timeline from './components/Timeline'
-//import Allprojects from './data/projects.json'
-//import Projects from './components/Projects'
+import BlogLastArticles from './components/BlogLastArticles'
 
 export default async function Home() {
-  // const projects = Allprojects
-
   return (
     <>
       <main>
         <AboutSection />
         <Timeline />
+        <BlogLastArticles />
         <Form />
       </main>
     </>

@@ -4,11 +4,15 @@ import { useParams } from 'next/navigation'
 import posts from '../../data/blog.json'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function BlogPost() {
   const { slug } = useParams()
   const post = posts?.find((post) => post.slug === slug)
   const [ArticleComponent, setArticleComponent] = useState(null)
+  const currentIndex = posts.findIndex((p) => p.slug === slug)
+  const previousPost = posts[currentIndex - 1] || null
+  const nextPost = posts[currentIndex + 1] || null
 
   useEffect(() => {
     if (post) {
@@ -21,8 +25,8 @@ export default function BlogPost() {
   if (!post) return <p>Article introuvable.</p>
 
   return (
-    <section className="container flex flex-col gap-6 mx-auto pt-24 md:px-4 py-12 md:max-w-7xl">
-      <div className="p-6">
+    <section className="max-w-7xl mx-auto w-full flex flex-col gap-6 px-4 md:px-6">
+      <div>
         {/*<div className="flex gap-2 mb-2">
            {post.tags.map((tag) => (
             <span
@@ -34,7 +38,7 @@ export default function BlogPost() {
           ))}
         </div>*/}
 
-        <h1 className="text-4xl mt-2 text-center dark:text-secondary-color">
+        <h1 className="text-4xl text-center dark:text-secondary-color">
           {post.title}
         </h1>
         <div className="text-sm text-gray-500 text-center mt-2 mb-10">
@@ -47,6 +51,38 @@ export default function BlogPost() {
         </div>
 
         {ArticleComponent ? <ArticleComponent /> : <p>Chargement...</p>}
+      </div>
+      {/* nav articles précédent / suivant */}
+      <div className="flex w-full my-8 md:gap-4">
+        {previousPost ? (
+          <Link
+            href={`/blog/${previousPost.slug}`}
+            className="flex-1 p-2 md:p-4 min-w-0 flex flex-col hover:bg-gray-50 rounded-lg transition-all duration-300 group"
+          >
+            <span className="text-xs text-gray-500 mb-1">← Précédent</span>
+            <span className="flex-grow text-sm md:text-base break-words line-clamp-2 group-hover:font-semibold duration-300">
+              {previousPost.title}
+            </span>
+          </Link>
+        ) : (
+          <div className="flex-1" />
+        )}
+
+        {nextPost ? (
+          <Link
+            href={`/blog/${nextPost.slug}`}
+            className="flex-1 p-2 md:p-4 min-w-0 flex flex-col hover:bg-gray-50 rounded-lg transition-all duration-300 group"
+          >
+            <span className="text-xs text-gray-500 mb-1 self-end">
+              Suivant →
+            </span>
+            <span className="flex-grow text-sm md:text-base break-words line-clamp-2 group-hover:font-semibold duration-300 text-right">
+              {nextPost.title}
+            </span>
+          </Link>
+        ) : (
+          <div className="flex-1" />
+        )}
       </div>
     </section>
   )

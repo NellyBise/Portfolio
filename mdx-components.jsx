@@ -1,9 +1,21 @@
 export function useMDXComponents(components) {
   return {
     h2: ({ children }) => (
-      <h2 className="text-2xl font-semibold mt-12">{children}</h2>
+      <h2
+        className="text-2xl font-semibold"
+        style={{ marginTop: '44px', marginBottom: '20px' }}
+      >
+        {children}
+      </h2>
     ),
-    h3: ({ children }) => <h3 className="font-semibold mt-8">{children}</h3>,
+    h3: ({ children }) => (
+      <h3
+        className="font-semibold"
+        style={{ marginTop: '16px', marginBottom: '8px' }}
+      >
+        {children}
+      </h3>
+    ),
     p: ({ children }) => <p className="my-4 leading-7">{children}</p>,
     a: ({ href, children }) => (
       <a href={href} className="text-blue-600 hover:underline">

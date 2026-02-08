@@ -9,18 +9,24 @@ export default function Callout({ title, items, img, variant = 'default' }) {
   }
 
   return (
-    <aside className={`my-10 rounded-xl border-l-4 p-5 ${styles[variant]}`}>
-      <Image
-        className="max-h-28 w-auto mx-auto"
-        src={img}
-        width="500"
-        height="100"
-      />
+    <aside
+      className={`my-10 rounded-xl border-l-4 p-5 max-w-[600px] mx-auto ${styles[variant]}`}
+    >
+      {img ? (
+        <Image
+          className="max-h-28 w-auto mx-auto"
+          src={img}
+          width="500"
+          height="100"
+        />
+      ) : (
+        ''
+      )}
       {title && (
-        <p className="mb-2 text-center font-semibold text-gray-800">{title}</p>
+        <p className="mb-3 text-center font-semibold text-gray-800">{title}</p>
       )}
 
-      <ul className="space-y-2 text-sm text-gray-800">
+      <ul className="space-y-2 text-gray-800">
         {items.map((item, i) => (
           <li key={i} className="leading-relaxed">
             {item}

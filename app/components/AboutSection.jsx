@@ -1,18 +1,16 @@
-// components/AboutSection.jsx
-import React from 'react'
 import Image from 'next/image'
-import photo from '../src/photoID.JPG'
+import Link from 'next/link'
 
 export default function AboutSection() {
   return (
-    <section className="mx-auto max-w-4xl px-2 md:px-6 pt-24 pb-12">
+    <section className="mx-auto flex flex-col max-w-4xl px-2 md:px-6 pt-24 pb-12">
       <div className="p-4 md:p-10">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Photo */}
           <div className="flex-shrink-0">
             <div className="relative h-36 w-36 md:h-44 md:w-44 rounded-full overflow-hidden ring-4 ring-white shadow-lg">
               <Image
-                src={photo}
+                src="/src/photoID.JPG"
                 alt="portrait"
                 width={700}
                 height={700}
@@ -47,6 +45,12 @@ export default function AboutSection() {
           la partie risque chimiques.
         </p>
       </div>
+      <Link
+        className="md:w-1/3 self-center pointer-events-auto border-[1px] border-violet-600 bg-violet-600 text-white text-center rounded px-6 py-1 duration-500 group-hover:scale-110 hover:bg-violet-600/65"
+        href="/blog"
+      >
+        Découvrir mes articles →
+      </Link>
     </section>
   )
 }

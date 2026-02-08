@@ -1,4 +1,3 @@
-import error from '../src/Error.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -20,7 +19,12 @@ export default function Error() {
         </Link>
       </div>
       <figure className="md:w-2/5 flex flex-col items-center justify-center">
-        <Image src={error} alt="personne perdue" width={500} height={500} />
+        <Image
+          src="/src/Error.png"
+          alt="personne perdue"
+          width={500}
+          height={500}
+        />
         <figcaption className="text-xs text-right">
           <Link href="https://storyset.com/travel">
             Travel illustrations by Storyset

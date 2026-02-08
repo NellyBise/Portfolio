@@ -4,12 +4,12 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+  --background-rgb: 255, 255, 252;
   font-family: var(--font-inter);
 }
 
 .dark {
-  --foreground-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 252;
   --background-rgb: 10, 10, 10;
 }
 
