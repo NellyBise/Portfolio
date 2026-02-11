@@ -31,5 +31,16 @@
     "slug": "EPC-prioritaires",
     "component": "EPC-vs-EPI.mdx",
     "tags": ["FDS", "prévention"]
+  },
+  {
+    "id": 4,
+    "title": "Bien utiliser une sorbonne ou une hotte",
+    "excerpt": "Une sorbonne mal utilisée, c’est un équipement qui ne protège pas.",
+    "intro": "La sorbonne est un équipement de protection collective phare au niveau de la prévention du risque chimique. Bien qu'elle paraisse simple d'utilisation, la sorbonne nécessite une formation pour garantir son efficacité.",
+    "date": "11 février 2026",
+    "image": "/posts/sorbonnes.png",
+    "slug": "bien-utiliser-sa-sorbonne",
+    "component": "sorbonnes.mdx",
+    "tags": ["EPC", "prévention"]
   }
 ]

@@ -1,0 +1,83 @@
+## Quelles sont les règles de stockage des produits chimiques ?
+
+Le tableau de compatibilité est un outil essentiel qui indique visuellement quels types de produits peuvent ou non être stockés ensemble en fonction de leurs pictogrammes :
+
+import ArticleImage from '../../components/ArticleImage'
+
+<ArticleImage src="/posts/tableau.png" alt="" width="400" />
+
+Au-delà du tableau, quatre règles sont incontournables :
+
+1. Séparer les produits incompatibles : acides/bases, oxydants/réducteurs (risque de réaction violente)
+2. Organiser par hauteur :
+   - Produits lourds ou volumineux en bas (risque de chute)
+   - Poudres au-dessus des liquides (évite les contaminations en cas de fuite)
+3. Protéger contre les fuites : bac de rétention obligatoire pour les liquides
+4. Respecter les conditions de stockage : température, ventilation (section 7 de la FDS)
+
+###
+
+**Important :** Les déchets chimiques suivent les mêmes règles de stockage que les produits neufs.
+
+## Comment faire lorsqu'un produit a plusieurs pictogrammes ?
+
+C'est dans ce cas que tout se complique, le tableau des compatibilités ne va pas donner la solution. Mais il ne sera pas pour autant inutile.
+
+Dans ce cas, il y a plusieurs questions à se poser pour analyser la situation :
+
+- quelles sont les propriétés du produit concerné ? (voir la section 10 de la Fiche de Données de Sécurité)
+- quels sont les autres produits stockés avec lesquels il pourrait y avoir une interaction ?
+- quels sont les principaux risques ?
+
+### L'exemple de l'acide nitrique
+
+L'acide nitrique concentré présente une situation complexe avec trois pictogrammes :
+
+import ArticleCallout from '../../components/ArticleCallout'
+
+<ArticleCallout
+  img="/posts/pictos_hno3.png"
+  title="Acide nitrique 65%"
+  items={[
+    'Danger',
+    'H272 - Peut aggraver un incendie ; comburant',
+    'H314 - Provoque de graves brûlures de la peau et de graves lésions des yeux',
+    'H330 - Mortel par inhalation',
+    'EUH 071 - Corrosif pour les voies respiratoires',
+    'CAS 231-714-2',
+  ]}
+/>
+
+Propriétés dangereuses (section 10 de la FDS) :
+
+- Réagit violemment avec les bases (neutralisation exothermique)
+- Oxyde les matières organiques et les métaux
+- Décomposition possible si chauffé ou exposé à la lumière
+
+###
+
+Produits incompatibles à éloigner :
+
+- Solvants organiques (acétone, éthanol...)
+- Métaux sous forme de poudre
+- Bases (soude, ammoniaque...)
+- Réducteurs
+
+###
+
+Solution de stockage recommandée :
+
+- Zone dédiée "acides comburants" (séparée des autres acides ordinaires)
+- Armoire ventilée avec bac de rétention en plastique ou verre (jamais métal)
+- Température fraîche (< 25°C recommandé), à l'abri de la lumière
+- Éloignement minimum de 2 mètres avec inflammables/organiques
+
+## À retenir
+
+Le stockage des produits chimiques nécessite une analyse rigoureuse :
+
+- Respecter le tableau de compatibilité
+- Analyser chaque produit multipictogrammes individuellement (sections 7 et 10 de la FDS)
+- Ne jamais négliger les déchets chimiques
+
+En cas de doute, contactez votre fournisseur ou un préventeur.

@@ -24,11 +24,27 @@ export function useMDXComponents(components) {
     ),
     ul: ({ children }) => (
       <ul
-        className="mb-1 pl-4"
-        style={{ listStyleType: 'disc', listStylePosition: 'inside' }}
+        className="my-2"
+        style={{
+          listStyleType: 'disc',
+          listStylePosition: 'inside',
+          marginLeft: '10px',
+        }}
       >
         {children}
       </ul>
+    ),
+    ol: ({ children }) => (
+      <ol
+        className="my-2"
+        style={{
+          listStyleType: 'number',
+          listStylePosition: 'inside',
+          marginLeft: '10px',
+        }}
+      >
+        {children}
+      </ol>
     ),
     li: ({ children }) => <li className="py-1">{children}</li>,
     ...components,
