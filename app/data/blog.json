@@ -42,5 +42,16 @@
     "slug": "bien-utiliser-sa-sorbonne",
     "component": "sorbonnes.mdx",
     "tags": ["EPC", "prévention"]
+  },
+  {
+    "id": 5,
+    "title": "Le stockage des produits chimiques",
+    "excerpt": "Comment prévenir les interactions lorsqu'on stocke de nombreux produits chimiques ? Il n'est pas toujours simple de répondre à cette question.",
+    "intro": "Le stockage des produits chimiques répond à quelques règles incontournables. Mais lorsqu'un produit présente plusieurs pictogrammes différents, les règles générales ne suffisent plus.",
+    "date": "25 février 2026",
+    "image": "/posts/stockage.png",
+    "slug": "stockage-produits-chimiques",
+    "component": "stockage-produits-chimiques.mdx",
+    "tags": ["FDS", "prévention"]
   }
 ]

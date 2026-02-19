@@ -10,13 +10,13 @@ export function useMDXComponents(components) {
     ),
     h3: ({ children }) => (
       <h3
-        className="font-semibold"
-        style={{ marginTop: '16px', marginBottom: '8px' }}
+        className="text-xl font-bold"
+        style={{ marginTop: '24px', marginBottom: '12px', fontFamily: 'Inter' }}
       >
         {children}
       </h3>
     ),
-    p: ({ children }) => <p className="my-4 leading-7">{children}</p>,
+    p: ({ children }) => <p className="my-[12px] leading-7">{children}</p>,
     a: ({ href, children }) => (
       <a href={href} className="text-blue-600 hover:underline">
         {children}
