@@ -22,7 +22,7 @@ export default function AboutSection() {
           <h1 className="text-3xl font-semibold text-center md:text-left dark:text-white">
             Technicienne de laboratoire
             <br />
-            Experte HSE & Amélioration continue
+            Experte HSE & amélioration continue
           </h1>
         </div>
       </div>
