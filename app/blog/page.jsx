@@ -30,7 +30,7 @@ export default function Blog() {
         </p>
       </div>
       <div className="flex flex-col gap-4 mb-12 p-4 md:p-0 md:flex-row flex-wrap py-4 justify-center">
-        {posts.reverse().map((post) => (
+        {posts.map((post) => (
           <Link
             href={`/blog/${post.slug}`}
             key={post.id}
