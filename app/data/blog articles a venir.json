@@ -1,13 +1,13 @@
 [
   {
-    "id": 6,
-    "title": "Réduire ses déchets chimiques",
-    "excerpt": "Afin de limiter les risques liés au stockage des déchets chimiques, une solution est de réduire ces derniers.",
-    "intro": "Les déchets chimiques répondent aux même règles de stockage que n'importe quel produit chimique. Afin de simplifier leur gestion, un axe essentiel est la diminution de leur quantité.",
+    "id": 7,
+    "title": "Bien choisir les gants",
+    "excerpt": "........",
+    "intro": "Les gants sont un des EPI les plus utilisés pour lutter contr le risque chimique. Ils sont très courants et pourtant ils sont parfois mal évalués.",
     "date": "4 mars 2026",
-    "image": "/posts/dechets.png",
-    "slug": "reduire-dechets-chimiques",
-    "component": "reduire-dechets.mdx",
-    "tags": ["FDS", "prévention"]
+    "image": "/posts/gants.png",
+    "slug": "choisir-les-gants",
+    "component": "choisir-les-gants.mdx",
+    "tags": ["EPI", "prévention"]
   }
 ]
