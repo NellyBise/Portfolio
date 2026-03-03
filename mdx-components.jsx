@@ -16,6 +16,13 @@ export function useMDXComponents(components) {
         {children}
       </h3>
     ),
+    h4: ({ children }) => (
+      <h4
+        style={{ marginTop: '24px', marginBottom: '12px', fontFamily: 'Inter' }}
+      >
+        {children}
+      </h4>
+    ),
     p: ({ children }) => <p className="my-[12px] leading-7">{children}</p>,
     a: ({ href, children }) => (
       <a href={href} className="text-blue-600 hover:underline">

@@ -3,48 +3,198 @@
 Les gants sont une **protection de dernier recours**. L'ordre de priorité reste :
 
 1. Suppression du risque (substitution du produit)
-2. Protection collective (automatisation)
-3. Organisation du travail (réduire la manipulation)
+2. Réduction du contact (automatisation, outils tels que les distributeurs...)
+3. Organisation du travail (réduire les durées et fréquence de manipulation)
 4. Protection avec des gants adaptés
 
 Les gants protègent contre les contacts accidentels ou lorsqu'aucune autre solution n'est possible.
 
 ## Comment choisir les gants ?
 
-Plusieurs critères entent dans le choix des bons gants
-
 ### Jetables ou réutilisables
 
-Si un contact avec le produit utilisé n'est pas évitable, les gants réutilisables seront privilégiés.
-Si le travail demande de la précision, il faudra s’orienter vers les gants jetables, plus fins. Dans le cas contraire, les gants réutilisables peuvent être envisagés mais attention à leur entretien.
+Le choix dépend de plusieurs critères :
 
-Les gants réutilisables semblent parfois être un bon compromis pour les économies. Cependant, comme tout EPI, il devront être entretenus rigoureusement.
+import ArticleTable from '../../components/ArticleTable'
+
+<ArticleTable
+  caption=""
+  columns={['Critère', 'Jetables', 'Réutilisables']}
+  rows={[
+    ['Contact produit', 'Occasionnel, léger', 'Fréquent, prolongé'],
+    ['Dextérité', 'Excellente (fins)', 'Réduite (plus épais)'],
+    ['Protection', 'Limitée dans le temps', 'Meilleure résistance'],
+    ['Entretien', 'Aucun (à usage unique)', 'Rigoureux et obligatoire'],
+  ]}
+/>
+
+En pratique :
+
+- Contact léger, manipulation précise, prélèvements → Jetables
+- Contact direct prolongé (nettoyage, décontamination) → Réutilisables
 
 ### Le choix du matériau
 
-Les gants de protection existent dans de nombreux matériaux. Pour bien choisir, il faut se référer aux fiches de données de sécurité des produits utilisés (section 8). L'INRS a aussi développé un outil très pratique pour déterminer les gants les plus efficaces : <a href="https://protecpo.inrs.fr/ProtecPo/jsp/Accueil.jsp" className="text-blue-500 underline">ProtecPo</a>.
+#### **Les matériaux courants**
 
-Lors du choix du matériau, il faut aussi penser aux éventuelles allergies, les plus courantes étant celles au latex et à la poudre d’amidon.
+- Nitrile : Résiste aux huiles, solvants, hydrocarbures. Alternative au latex (sans allergie)
+- Latex : Bonne résistance mécanique, mais allergène
+- Néoprène : Acides, bases, alcools
+- PVC : Acides, bases, usage général
+- Butyle : Cétones, esters (très spécialisé)
+- Viton : Solvants chlorés, aromatiques (haut de gamme)
 
-## L'entretien des gants
+Disponibilité : Latex et nitrile existent en versions jetables et réutilisables. Néoprène, PVC, butyle et viton sont uniquement réutilisables.
 
-### les gants jetables
+#### **La méthode de choix**
+
+1. Consultez la FDS (section 8) : elle indique parfois le type de gant recommandé
+2. Utilisez <a href="https://protecpo.inrs.fr/ProtecPo/jsp/Accueil.jsp" className="text-blue-500 underline">ProtecPo</a> (outil INRS gratuit) :
+   - Base de données gants/produits chimiques
+   - Indique le matériau adapté et le temps de protection
+   - Accessible sur inrs.fr
+3. Vérifiez la norme EN 374 sur l'emballage :
+   - Pictogramme bécher (protection chimique)
+   - Lettres indiquant les produits testés (A, J, K, L...)
+   - Indice de performance (1 à 6)
+
+**Attention aux allergies** : Le latex et la poudre d'amidon (dans certains gants) sont allergènes. Préférez des gants nitrile non poudrés en cas de doute.
+
+### Comprendre la norme EN 374
+
+Elle certifie la protection contre les produits chimiques et micro-organismes. Elle s'applique à tous les gants de protection chimique, jetables comme réutilisables.
+Sur l'emballage, vous trouverez plusieurs informations clés :
+
+#### **Le pictogramme**
+
+import ArticleImage from '../../components/ArticleImage'
+
+<ArticleImage src="/posts/becher.png" alt="" width="40" />
+
+1. Bécher (Erlenmeyer) : Protection chimique
+2. Micro-organismes : Protection contre bactéries/virus (pas notre sujet ici)
+
+#### **Les lettres**
+
+Elles correspondent aux produits chimiques testés.
+Le gant est testé contre 18 produits chimiques de référence, identifiés par des lettres de A à T. Attention, les lettres indiquent les produits testés, pas tous les produits résistants. Un gant peut résister à d'autres produits non listés.
+
+<ArticleTable
+  caption=""
+  columns={['Lettre', 'Produit chimique', 'Famille']}
+  rows={[
+    ['A', 'Méthanol', 'Alcool'],
+    ['B', 'Acétone', 'Cétone'],
+    ['C', 'Acétonitrile', 'Nitrile'],
+    ['D', 'Dichlorométhane', 'Solvant chloré'],
+    ['E', 'Bisulfure de carbone', 'Composé soufré'],
+    ['F', 'Toluène', 'Hydrocarbure aromatique'],
+    ['G', 'Diéthylamine', 'Amine'],
+    ['H', 'Tétrahydrofurane', 'Éther cyclique'],
+    ['I', "Acétate d'éthyle", 'Ester'],
+    ['J', 'n-Heptane', 'Hydrocarbure aliphatique'],
+    ['K', 'Hydroxyde de sodium 40%', 'Base forte'],
+    ['L', 'Acide sulfurique 96%', 'Acide fort'],
+    ['M', 'Acide nitrique 65%', 'Acide oxydant'],
+    ['N', 'Acide acétique 99%', 'Acide organique'],
+    ['O', 'Ammoniaque 25%', 'Base'],
+    ['P', "Peroxyde d'hydrogène 30%", 'Oxydant'],
+    ['S', 'Acide fluorhydrique 40%', 'Acide très corrosif'],
+    ['T', 'Formaldéhyde 37%', 'Aldéhyde'],
+  ]}
+/>
+
+Exemple : Un gant marqué "JKL" résiste à l'heptane (J), à la soude (K) et à l'acide sulfurique (L).
+
+#### **Les types de protection** (selon nombre de produits résistants)
+
+- Type A : Résiste à au moins 6 produits de la liste (dont perméation ≥ 30 min chacun)
+- Type B : Résiste à au moins 3 produits (dont perméation ≥ 30 min chacun)
+- Type C : Résiste à au moins 1 produit (dont perméation ≥ 10 min)
+
+#### **Le temps de perméation**
+
+En cas de contact avéré avec un produit, la durée de protection est un critère décisif.
+Le temps de perméation (breakthrough time), défini en classes par la norme EN 374, indique quand le produit chimique traverse le matériau du gant. Attention, le chronomètre démarre dès le premier contact avec le produit chimique, même si vous ne le voyez pas ! Un gant "propre" visuellement peut être perméé.
+
+<ArticleTable
+  caption="Classes de performance des gants"
+  columns={['Classe', 'Temps de passage']}
+  rows={[
+    ['1', '> 10 min'],
+    ['2', '> 30 min'],
+    ['3', '> 60 min'],
+    ['4', '> 120 min'],
+    ['5', '> 240 min'],
+    ['6', '> 480 min'],
+  ]}
+/>
+import ArticleCallout from '../../components/ArticleCallout'
+
+<ArticleCallout
+  variant="warning"
+  title="⚠️ Point crucial"
+  items={[
+    "Le temps de perméation commence au premier contact (même une micro-éclaboussure) et s'écoule en continu. Essuyer le gant ou ne plus être en contact avec le produit ne stoppe pas le chrono.",
+    'La seule solution : changer de gants.',
+  ]}
+/>
+
+#### **Exemple de lecture d'étiquette complète**
+
+<ArticleCallout
+  variant="insight"
+  title=""
+  items={[
+    'EN 374 TYPE B',
+    'JKL',
+    'Classe 4 (> 120 min)',
+    'Nitrile 0,38 mm',
+    'Taille 9',
+  ]}
+/>
+
+Ce que ça signifie :
+
+- Protection chimique certifiée (Type B)
+- Testé et résiste à : n-heptane, soude 40%, acide sulfurique 96%
+- Temps de perméation > 120 min (classe 4)
+- Matériau nitrile de 0,38 mm d'épaisseur
+
+## Utilisation et entretien des gants
+
+### Les gants jetables
 
 Par définition, ils ne sont pas conçus pour être réutilisés.
-Attenrion, une règle souvent oubliée : des gants souillés doivent être jetés. À la moindre éclaboussure, il faut les changer et se laver les mains.
+
+Les règles d'or :
+
+- Changer dès la moindre éclaboussure (et se laver les mains)
+- Jeter immédiatement après usage
+- Se laver les mains après utilisation
+- Ne jamais réutiliser
 
 ### Les gants réutilisables
 
-Avant toute utilisation, il faut vérifier l'intégrité des gants :
+Avant toute utilisation, il faut vérifier l'intégrité des gants. Si les critères suivants ne sont pas remplis, les gants doivent être changés :
 
-- absence de trous ou craquelures
-- pas de changement de couleur ou de points noirs
-- absence de fuites (souffler dans les gants)
+- Absence de trous ou craquelures
+- Pas de changement de couleur ou de points noirs
+- Pas de rigidification ou ramollissement
+- Absence de fuites (souffler dans les gants)
+- Durée maximale d'utilisation non atteinte (ex: tous les 3-6 mois si usage quotidien)
 
-Après chaque utilisation, ils doivent être lavés conformément aux prescriptions du fabricant.
+Après chaque utilisation, ils doivent être lavés conformément aux prescriptions du fabricant et séchés.
 
-###
-
-Remarque : Les gants réutilisables sont individuels, ils ne doivent pas être utilisés par plusieurs personnes
+#### Remarque : Les gants réutilisables sont individuels pour des raisons d'hygiène et d'ajustement (un gant mal ajusté protège mal).
 
 ## À retenir
+
+Le choix des gants ne s'improvise pas :
+
+1. Consultez la FDS et utilisez ProtecPo
+2. Vérifiez la norme EN 374 et le temps de perméation
+3. Respectez les règles d'usage (jetables = 1 usage, réutilisables = entretien rigoureux)
+4. Remplacez dès le moindre doute
+
+Un gant inadapté est pire que pas de gant : il donne une fausse impression de sécurité.

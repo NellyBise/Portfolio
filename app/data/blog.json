@@ -1,8 +1,19 @@
 [
   {
+    "id": 7,
+    "title": "Bien choisir les gants",
+    "excerpt": "Des gants mal choisis ne protègent pas. Matériau, temps de perméation, norme EN 374 : comment s'y retrouver ?",
+    "intro": "Les gants sont un des EPI les plus utilisés pour lutter contr le risque chimique. Ils sont très courants et pourtant ils sont parfois mal évalués.",
+    "date": "4 mars 2026",
+    "image": "/posts/gants.png",
+    "slug": "choisir-les-gants",
+    "component": "choisir-les-gants.mdx",
+    "tags": ["EPI", "prévention"]
+  },
+  {
     "id": 6,
     "title": "Réduire ses déchets chimiques",
-    "excerpt": "Afin de limiter les risques liés au stockage des déchets chimiques, une solution est de réduire ces derniers.",
+    "excerpt": "Les déchets chimiques posent des problèmes de stockage et de sécurité. Comment les réduire à la source ?",
     "intro": "Les déchets chimiques répondent aux même règles de stockage que n'importe quel produit chimique. Afin de simplifier leur gestion, un axe essentiel est la diminution de leur quantité.",
     "date": "25 février 2026",
     "image": "/posts/dechets.png",
@@ -57,7 +68,7 @@
   {
     "id": 1,
     "title": "Les produits ménagers",
-    "excerpt": "On ne pense pas à eux comme à de vrais produits chimiques et pourtant, ils peuvent eux aussi être dangereux.",
+    "excerpt": "Souvent oubliés de l'évaluation des risques, les produits ménagers sont pourtant de vrais produits chimiques.",
     "intro": "On associe souvent le risque chimique aux laboratoires ou à l’industrie. Mais les produits chimiques sont partout. Pensez aux produits ménagers, ils sont utilisés tous les jours. Et pourtant, ils sont régulièrement oubliés de l’évaluation des risques.",
     "date": "21 janvier 2026",
     "image": "/posts/produits-menagers.png",
