@@ -1,7 +1,7 @@
 import posts from '../../data/blog.json'
 
 export async function generateMetadata({ params }) {
-  const { slug } = params
+  const { slug } = await params
   const post = posts.find((post) => post.slug === slug)
 
   if (!post) {

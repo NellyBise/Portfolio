@@ -1,5 +1,16 @@
 [
   {
+    "id": 8,
+    "title": "Choix et utilisation des masques de protection respiratoire",
+    "excerpt": "FFP ou cartouche filtrante ? Point d'ébullition, couleur des filtres, ajustement... Le choix d'un masque ne s'improvise pas.",
+    "intro": "Porter un masque, c'est vraiment désagréable. Mais si l'on en arrive là, c'est qu'il n'y a pas d'autre moyen de protection. Et ce n'est certainement pas pour faire joli. Il ne faut donc pas le prendre à la légère.",
+    "date": "11 mars 2026",
+    "image": "/posts/masque.png",
+    "slug": "choisir-son-masque",
+    "component": "choisir-un-masque.mdx",
+    "tags": ["EPI", "prévention"]
+  },
+  {
     "id": 7,
     "title": "Bien choisir les gants",
     "excerpt": "Des gants mal choisis ne protègent pas. Matériau, temps de perméation, norme EN 374 : comment s'y retrouver ?",
