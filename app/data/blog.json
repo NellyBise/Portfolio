@@ -1,5 +1,16 @@
 [
   {
+    "id": 9,
+    "title": "Que faire en cas d'éclaboussure de produit chimique ?",
+    "excerpt": "Éclaboussure de produit chimique : rincer 15 min, alerter, consulter la FDS. Les réflexes qui sauvent.",
+    "intro": "Un accident peut arriver à tout moment : une bouteille qui glisse, un bouchon mal vissé, un geste brusque... En cas d'éclaboussure de produit chimique, chaque seconde compte. Voici la conduite à tenir.",
+    "date": "4 avril 2026",
+    "image": "/posts/eclaboussure.png",
+    "slug": "reaction-eclaboussure",
+    "component": "eclaboussure.mdx",
+    "tags": ["EPI", "prévention"]
+  },
+  {
     "id": 8,
     "title": "Choix et utilisation des masques de protection respiratoire",
     "excerpt": "FFP ou cartouche filtrante ? Point d'ébullition, couleur des filtres, ajustement... Le choix d'un masque ne s'improvise pas.",

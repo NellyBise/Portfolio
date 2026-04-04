@@ -23,7 +23,7 @@ export default function Outils() {
           obligatoires et les consignes d'urgence puis imprimer directement.
         </p>
         <p className="mt-4">
-          ⚠️ Outil en phase de test — vos retours sont précieux :{' '}
+          ⚠️ Outil en phase de test, vos retours sont précieux :{' '}
           <a
             className="font-bold underline pointer-events-auto dark:text-secondary-color  duration-300 hover:text-main-color"
             href="mailto:nellybise@free.fr"
